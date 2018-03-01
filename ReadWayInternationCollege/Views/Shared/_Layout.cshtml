@@ -28,12 +28,12 @@
                             <li><i class="fa fa-envelope top-icon"></i> hello@eduread.com</li>
                         </ul>
                     </div>
-                    <div class="col-sm-6 col-xs-12 header-top-right">
-                        <ul class="list-unstyled">
-                            <li><a href="register.html"><i class="fa fa-user-plus top-icon"></i> Sing up</a></li>
-                            <li><a href="login.html"><i class="fa fa-lock top-icon"></i>Login</a></li>
-                        </ul>
-                    </div>
+                    @*<div class="col-sm-6 col-xs-12 header-top-right">
+                            <ul class="list-unstyled">
+                                <li><a href="register.html"><i class="fa fa-user-plus top-icon"></i> Sing up</a></li>
+                                <li><a href="login.html"><i class="fa fa-lock top-icon"></i>Login</a></li>
+                            </ul>
+                        </div>*@
                 </div>
             </div>
         </div><!-- Ends: .header-top -->
@@ -52,15 +52,7 @@
                     <div class="collapse navbar-collapse edu-nav main-menu" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav pull-right">
                             <li class="active">
-                                <a data-scroll="" href="index.html">Home</a>
-                                <!-- dropdwon start -->
-                                <ul class="dropdown list-unstyled">
-                                    <li><a href="index.html">Home Version One</a></li>
-                                    <li><a href="index-02.html">Home Version Two</a></li>
-                                    <li><a href="index-03.html">Home Version Three</a></li>
-                                    <li><a href="index-04.html">Home Version Four</a></li>
-                                </ul>
-                                <!-- dropdown end -->
+                                <a data-scroll="" href="/Home/Index">Home</a>
                             </li>
                             <li>
                                 <a data-scroll="" href="courses-01.html">Courses</a>
@@ -156,95 +148,7 @@
         <!--==================
             Slider
         ===================-->
-        <div class="rev_slider_wrapper">
-            <div id="rev_slider_1" class="rev_slider" style="display:none">
-                <!-- BEGIN SLIDES LIST -->
-                <ul>
-                    <li data-transition="boxfade" data-title="Slide Title" data-param1="Additional Text" data-thumb="images/index/slider-01.jpg">
-                        <div class="slider-overlay"></div>
-                        <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                        <img src="~/Assets/images/index/slider-01.jpg" alt="Sky" class="rev-slidebg">
-                        <!-- BEGIN BASIC TEXT LAYER -->
-                        <!-- LAYER NR. 1 -->
-                        <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-1"
-                             data-x="left" data-hoffset="0"
-                             data-y="center" data-voffset="-140"
-                             data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; font-size:50px; color:#fff; text-transform:uppercase; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">
-                            better education for
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-2"
-                             data-x="left" data-hoffset="0"
-                             data-y="center" data-voffset="-80"
-                             data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; font-size:50px; color:#fff; text-transform:uppercase; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">
-                            a batter world
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-p"
-                             data-x="left" data-hoffset="0"
-                             data-y="center" data-voffset="-10"
-                             data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; line-height:25px; font-size:15px; color:#fff; font-family: 'Open Sans', sans-serif;, serif; white-space: nowrap;">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscingl elit sed diam nonumm nibhy euismod<br> tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption lfb tp-resizeme header-btn"
-                             data-x="left" data-hoffset="0"
-                             data-y="center" data-voffset="90"
-                             data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 8;">
-                            <a href="#." class="el-btn-regular slider-btn-left">Get Started Now</a> <a href="#." class="el-btn-regular">View Courses</a>
-                        </div>
-                    </li>
-                    <li data-transition="random" data-title="Slide Title" data-param1="Additional Text" data-thumb="images/index/slider-02.jpg">
-                        <div class="slider-overlay"></div>
-                        <!-- SLIDE'S MAIN BACKGROUND IMAGE -->
-                        <img src="~/Assets/images/index/slider-02.jpg" alt="Sky" class="rev-slidebg">
-                        <!-- BEGIN BASIC TEXT LAYER -->
-                        <!-- LAYER NR.1 -->
-                        <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4 header-1 title-line-1"
-                             data-x="left" data-hoffset="0"
-                             data-y="center" data-voffset="-140"
-                             data-frames='[{"delay":0,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; font-size:50px; color:#fff; text-transform:uppercase; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">
-                            better education for
-                        </div>
-
-                        <!-- LAYER NR. 2 -->
-                        <div class="tp-caption sfr font-extra-bold tp-resizeme letter-space-4  header-1 title-line-2"
-                             data-x="left" data-hoffset="0"
-                             data-y="center" data-voffset="-80"
-                             data-frames='[{"delay":1000,"speed":3000,"frame":"0","from":"x:[175%];y:0px;z:0;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:1;","mask":"x:[-100%];y:0;s:inherit;e:inherit;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; font-size:50px; color:#fff; text-transform:uppercase; font-family: 'Montserrat', sans-serif;, serif; white-space: nowrap;font-weight:700;">
-                            a batter world
-                        </div>
-
-                        <!-- LAYER NR. 3 -->
-                        <div class="tp-caption font-lora sfb tp-resizeme letter-space-5 header-p"
-                             data-x="left" data-hoffset="0"
-                             data-y="center" data-voffset="-10"
-                             data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:top;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 6; line-height:25px; font-size:15px; color:#fff; font-family: 'Open Sans', sans-serif;, serif; white-space: nowrap;">
-                            Lorem ipsum dolor sit amet, consectetuer adipiscingl elit sed diam nonumm nibhy euismod<br> tincidunt ut laoreet dolore magna aliquam erat volutpat.
-                        </div>
-
-                        <!-- LAYER NR. 4 -->
-                        <div class="tp-caption lfb tp-resizeme header-btn"
-                             data-x="left" data-hoffset="0"
-                             data-y="center" data-voffset="90"
-                             data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:bottom;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-                             style="z-index: 8;">
-                            <a href="#." class="el-btn-regular slider-btn-left">Get Started Now</a> <a href="#." class="el-btn-regular">View Courses</a>
-                        </div>
-                    </li>
-                </ul><!-- END SLIDES LIST -->
-            </div><!-- END SLIDER CONTAINER -->
-        </div><!-- END SLIDER CONTAINER WRAPPER -->
+        @RenderSection("Section", false)
     </header>
     <!--  End header section-->
     @RenderBody()
