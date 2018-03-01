@@ -60,8 +60,8 @@ namespace ReadWayInternationCollege
                       "~/Assets/css/assets/slick-theme.css",
                       "~/Assets/css/assets/meanmenu.css",
                       "~/Assets/css/style.css",
-                      "~/Assets/css/responsive.css",
-                      "~/Content/site.css"));
+                      "~/Assets/css/responsive.css"
+                      /*"~/Content/site.css"*/));
         }
     }
 }
