@@ -115,7 +115,7 @@
 	    position: absolute;
 	    left: 50%;
 	    top: 50%;
-	    background-image: url("../images/preloader.gif");
+	    background-image: url("../Assets/images/preloader.gif");
 	    background-repeat: no-repeat;
 	    background-position: center;
 	    margin: -100px 0 0 -100px;
@@ -508,7 +508,7 @@
 	    content: "";
 	}
 	header .tp-leftarrow:hover {
-	    background: url("../images/index/arror_left_hover.png") no-repeat center center/cover;
+	    background: url("/Assets/images/index/arror_left_hover.png") no-repeat center center/cover;
 	    border-radius: 100%;
 	}
 	header .tp-leftarrow {
