@@ -9,7 +9,7 @@ namespace ReadWayInternationCollege
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.UseCdn = true;
-            var googleFntsCDN = "/https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600";
+            var googleFntsCDN = "https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600";
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
                         "~/Assets/js/vendor/jquery-1.12.4.min.js",
@@ -54,13 +54,12 @@ namespace ReadWayInternationCollege
                       "~/Assets/css/assets/revolution/layers.css",
                       "~/Assets/css/assets/revolution/navigation.css",
                       "~/Assets/css/assets/revolution/settings.css",
-                      
                       "~/Assets/css/assets/slick.css",
                       "~/Assets/css/assets/slick-theme.css",
                       "~/Assets/css/assets/meanmenu.css",
                       "~/Assets/css/style.css",
                       "~/Assets/css/responsive.css"
-                      /*"~/Content/site.css"*/));
+                      ));
         }
     }
 }
