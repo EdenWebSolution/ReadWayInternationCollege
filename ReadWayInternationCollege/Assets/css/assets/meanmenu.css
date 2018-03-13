@@ -15,14 +15,14 @@ a.meanmenu-reveal {
 
 /* when under viewport size, .mean-container is added to body */
 .mean-container .mean-bar {
-	float: left;
-	width: 100%;
-	position: relative;
-	background: #292929;
-	padding: 4px 0;
-	min-height: 42px;
-	z-index: 999999;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    float: left;
+    width: 100%;
+    position: relative;
+    background: #022758;
+    padding: 4px 0;
+    min-height: 42px;
+    z-index: 999999;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .mean-container .mean-bar::before {
   color: #ffffff;
@@ -62,10 +62,10 @@ a.meanmenu-reveal {
 }
 
 .mean-container .mean-nav {
-	float: left;
-	width: 100%;
-	background: #292929;
-	margin-top: 44px;
+    float: left;
+    width: 100%;
+    background: #022758;
+    margin-top: 44px;
 }
 
 .mean-container .mean-nav ul {

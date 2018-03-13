@@ -394,6 +394,9 @@
 	    opacity: 0;
 	    visibility: hidden;
 	}
+    header .header-body .edu-navbar .edu-nav ul{
+        padding:20px;
+    }
 	header .header-body .edu-navbar .edu-nav .nav li ul.dropdown li .dropdown-list_2 .dropdown-list-box-03 {
 	    position: relative;
 	}
@@ -437,7 +440,7 @@
 	    color: #333333;
 	}
 	header .header-body .is-sticky .edu-navbar {
-	    padding: 20px 0;
+	    padding: 5px 0;
 	    background: #ffffff;
 	    z-index: 1000;
 	    transition: 0.5s ease;
