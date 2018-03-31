@@ -10,7 +10,8 @@ namespace ReadWayInternationCollege.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            int a = 3;
+            return View(a);
         }
 
         public ActionResult About()
