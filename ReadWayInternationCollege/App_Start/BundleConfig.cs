@@ -60,6 +60,10 @@ namespace ReadWayInternationCollege
                       "~/Assets/css/style.css",
                       "~/Assets/css/responsive.css"
                       ));
+
+
+            //BundleTable.EnableOptimizations = true;
+
         }
     }
 }
