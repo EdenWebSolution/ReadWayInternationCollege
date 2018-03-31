@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWayInternationCollege", "ReadWayInternationCollege\ReadWayInternationCollege.csproj", "{D935ADDD-6795-4CD8-B1A1-0A10F4F4F32E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadWayInternationalCollege.Services", "ReadWayInternationalCollege.Services\ReadWayInternationalCollege.Services.csproj", "{311EC1F7-F3AC-4A5F-AD37-9C3B4BED4627}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D935ADDD-6795-4CD8-B1A1-0A10F4F4F32E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D935ADDD-6795-4CD8-B1A1-0A10F4F4F32E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D935ADDD-6795-4CD8-B1A1-0A10F4F4F32E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{311EC1F7-F3AC-4A5F-AD37-9C3B4BED4627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{311EC1F7-F3AC-4A5F-AD37-9C3B4BED4627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{311EC1F7-F3AC-4A5F-AD37-9C3B4BED4627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{311EC1F7-F3AC-4A5F-AD37-9C3B4BED4627}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
