@@ -519,12 +519,10 @@
 	header .el-btn-regular:hover {
 	    background: #023f90;
 	    border: 1px solid #023f90;
-	    color: #333333;
 	    transition: all 0.3s ease-in-out;
 	}
 	header .slider-btn-left {
 	    margin-right: 10px;
-	    color: #333333;
 	    border: 1px solid #023f90;
 	    background: #023f90;
 	}
@@ -576,13 +574,13 @@
 	    padding: 0 0 0 4px;
 	}
 	.slider-content-bottom .content_body:hover .btm-item_01::before {
-	    background: #4886ff;
+	    background:linear-gradient(to left, #023d8b,#3089ff);
 	}
-	.slider-content-bottom .content_body:hover .btm-item_02::before {
-	    background: #b5d56a;
-	}
+        .slider-content-bottom .content_body:hover .btm-item_02::before {
+            background: radial-gradient(#3089ff,#023d8b);
+        }
 	.slider-content-bottom .content_body:hover .btm-item_03::before {
-	    background: #ff6f6f;
+	    background: linear-gradient(to right, #023d8b,#3089ff);
 	}
 	.slider-content-bottom .btm-item_01,
 	.slider-content-bottom .btm-item_02,
@@ -591,7 +589,7 @@
 	    transition: all 0.3s ease-in-out;
 	    position: relative;
 	    z-index: 1;
-	    padding: 30px 30px;
+	    padding: 15px;
 	}
 	.slider-content-bottom .btm-item_01::before,
 	.slider-content-bottom .btm-item_02::before,
@@ -603,7 +601,7 @@
 	    width: 100%;
 	    z-index: -1;
 	    content: "";
-	    transition: all 0.3s ease-in-out;
+	    transition: all 0.4s ease-in-out;
 	}
 	.slider-content-bottom .btm-item_01:hover,
 	.slider-content-bottom .btm-item_02:hover,
@@ -615,9 +613,9 @@
 	.slider-content-bottom .btm-item_01 {
 	    background: transparent url("../images/index/slide-btm-01.jpg") no-repeat center center/cover;
 	}
-        .slider-content-bottom .btm-item_01::before {
-            background: rgb(66, 130, 214);
-        }
+    .slider-content-bottom .btm-item_01::before {
+        background: rgb(48, 137, 255);
+    }
 	.slider-content-bottom .btm-item_02 {
 	    background: transparent url("../images/index/slide-btm-02.jpg") no-repeat center center/cover;
 	}
@@ -628,12 +626,12 @@
 	    background: transparent url("../images/index/slide-btm-03.jpg") no-repeat center center/cover;
 	}
 	.slider-content-bottom .btm-item_03::before {
-	    background: rgb(66, 130, 214);
+	    background: rgb(48, 137, 255);
 	}
 	.slider-content-bottom .slider-btm-box .btm-item-icon {
-	    height: 120px;
-	    width: 90px;
-	    padding-bottom: 30px;
+	    /*height: 120px;
+	    width: 90px;*/
+	    padding-bottom: 5px;
 	}
 	.slider-content-bottom .slider-btm-box h3 {
 	    color: #ffffff;
@@ -643,7 +641,7 @@
 	.slider-content-bottom .slider-btm-box p {
 	    color: #ffffff;
 	    margin: 0;
-	    padding: 15px 0;
+	    padding: 5px 0;
 	}
 	.slider-content-bottom .slider-btm-box a {
 	    color: #fff;

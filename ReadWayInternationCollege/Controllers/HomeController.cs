@@ -16,8 +16,8 @@ namespace ReadWayInternationCollege.Controllers
         }
         public ActionResult Index()
         {
-            var paths = _imagePathService.GetImagePath();
-            return View(paths);
+            //var paths = _imagePathService.GetImagePath();
+            return View(/*paths*/);
         }
 
         public ActionResult About()
