@@ -615,20 +615,20 @@
 	.slider-content-bottom .btm-item_01 {
 	    background: transparent url("../images/index/slide-btm-01.jpg") no-repeat center center/cover;
 	}
-	.slider-content-bottom .btm-item_01::before {
-	    background: rgba(72, 134, 255, 0.85);
-	}
+        .slider-content-bottom .btm-item_01::before {
+            background: rgb(66, 130, 214);
+        }
 	.slider-content-bottom .btm-item_02 {
 	    background: transparent url("../images/index/slide-btm-02.jpg") no-repeat center center/cover;
 	}
-	.slider-content-bottom .btm-item_02::before {
-	    background: rgba(181, 213, 106, 0.85);
-	}
+        .slider-content-bottom .btm-item_02::before {
+            background: rgb(2, 63, 144);
+        }
 	.slider-content-bottom .btm-item_03 {
 	    background: transparent url("../images/index/slide-btm-03.jpg") no-repeat center center/cover;
 	}
 	.slider-content-bottom .btm-item_03::before {
-	    background: rgba(255, 111, 111, 0.85);
+	    background: rgb(66, 130, 214);
 	}
 	.slider-content-bottom .slider-btm-box .btm-item-icon {
 	    height: 120px;
