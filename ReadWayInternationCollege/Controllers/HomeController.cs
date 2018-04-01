@@ -1,5 +1,4 @@
-﻿using ReadWayInternationalCollege.Services.ImagePathService;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,15 +8,10 @@ namespace ReadWayInternationCollege.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ImagePathService _imagePathService;
-        public HomeController(ImagePathService imagePathService)
-        {
-            _imagePathService = imagePathService;
-        }
+
         public ActionResult Index()
         {
-            //var paths = _imagePathService.GetImagePath();
-            return View(/*paths*/);
+            return View();
         }
 
         public ActionResult About()

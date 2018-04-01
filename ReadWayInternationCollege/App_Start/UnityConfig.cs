@@ -1,4 +1,3 @@
-using ReadWayInternationalCollege.Services.ImagePathService;
 using System;
 
 using Unity;
@@ -43,7 +42,7 @@ namespace ReadWayInternationCollege
 
             // TODO: Register your type's mappings here.
             // container.RegisterType<IProductRepository, ProductRepository>();
-            container.RegisterType<ImagePathService, ImagePathService>();
+            //container.RegisterType<ImagePathService, ImagePathService>();
         }
     }
 }
