@@ -136,7 +136,7 @@
 	}
 	/*=======[ Index Search Style ]========*/
 	
-	#search {
+	/*#search {
 	    position: fixed;
 	    top: 0px;
 	    left: 0px;
@@ -191,7 +191,7 @@
 	    height: 30px;
 	    width: 32px;
 	    text-align: center;
-	}
+	}*/
 	/*=================================================
 		===[ Home Version 01 ]===
 ===================================================*/
@@ -288,9 +288,9 @@
 	    padding: 14px 0;
 	    margin-bottom: 0px;
 	}*/
-	header .header-body .edu-navbar .edu-nav .nav li:last-child a:before {
+	/*header .header-body .edu-navbar .edu-nav .nav li:last-child a:before {
 	    display: none;
-	}
+	}*/
 	header .header-body .edu-navbar .edu-nav .nav li a {
 	    font-family: "Open Sans", sans-serif;
 	    font-weight: 700;
@@ -530,11 +530,11 @@
 	    content: "";
 	}
 	header .tp-leftarrow:hover {
-	    background: url("/Assets/images/index/arror_left_hover.png") no-repeat center center/cover;
+	    background: url("../Assets/Assets/images/index/arror_left_hover.png") no-repeat center center/cover;
 	    border-radius: 100%;
 	}
 	header .tp-leftarrow {
-	    background: url("../images/index/arror_left.png") no-repeat center center/cover;
+	    background: url("../Assets/images/index/arror_left.png") no-repeat center center/cover;
 	    border-radius: 100%;
 	    height: 72px;
 	    width: 72px;
@@ -544,11 +544,11 @@
 	    content: "";
 	}
 	header .tp-rightarrow:hover {
-	    background: url("../images/index/arror_right_hover.png") no-repeat center center/cover;
+	    background: url("../Assets/images/index/arror_right_hover.png") no-repeat center center/cover;
 	    border-radius: 100%;
 	}
 	header .tp-rightarrow {
-	    background: url("../images/index/arror_right.png") no-repeat center center/cover;
+	    background: url("../Assets/images/index/arror_right.png") no-repeat center center/cover;
 	    border-radius: 100%;
 	    height: 72px;
 	    width: 72px;
@@ -611,19 +611,19 @@
 	}
 
 	.slider-content-bottom .btm-item_01 {
-	    background: transparent url("../images/index/slide-btm-01.jpg") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/slide-btm-01.jpg") no-repeat center center/cover;
 	}
     .slider-content-bottom .btm-item_01::before {
         background: rgb(48, 137, 255);
     }
 	.slider-content-bottom .btm-item_02 {
-	    background: transparent url("../images/index/slide-btm-02.jpg") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/slide-btm-02.jpg") no-repeat center center/cover;
 	}
         .slider-content-bottom .btm-item_02::before {
             background: rgb(2, 63, 144);
         }
 	.slider-content-bottom .btm-item_03 {
-	    background: transparent url("../images/index/slide-btm-03.jpg") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/slide-btm-03.jpg") no-repeat center center/cover;
 	}
 	.slider-content-bottom .btm-item_03::before {
 	    background: rgb(48, 137, 255);
@@ -843,7 +843,7 @@
 	/*=======[ Indec Video Section Style ]========*/
 	
 	.video-main-area {
-	    background: transparent url("../images/index/video-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/video-bg.jpg") no-repeat center center/cover;
 	    padding: 255px 0;
 	}
 	.video-main-area .video-play-btn {
@@ -939,7 +939,7 @@
 	/*=======[ Index Counter Area Style ]========*/
 	
 	.counter-area {
-	    background: transparent url("../images/index/counter-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/counter-bg.jpg") no-repeat center center/cover;
 	    min-height: 500px;
 	    position: relative;
 	    padding: 100px 0;
@@ -965,7 +965,7 @@
 	    z-index: 1;
 	}
 	.counter-area .counters {
-	    background: transparent url("../images/index/counter-shape-bg.png") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/counter-shape-bg.png") no-repeat center center/cover;
 	    text-align: center;
 	    z-index: 2;
 	    color: #ffffff;
@@ -1077,7 +1077,7 @@
 	/*=======[Index News Area Style ]========*/
 	
 	.news-area {
-	    background: transparent url("../images/index/news-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/news-bg.jpg") no-repeat center center/cover;
 	    min-height: 500px;
 	    position: relative;
 	    padding: 100px 0;
@@ -1215,7 +1215,7 @@
 	    position: relative;
 	}
 	.students-say-area .carousel-text .single-box p::before {
-	    background: url("../images/index/quotation-01.png") no-repeat;
+	    background: url("../Assets/images/index/quotation-01.png") no-repeat;
 	    content: "";
 	    height: 80px;
 	    position: absolute;
@@ -1224,7 +1224,7 @@
 	    left: -65px;
 	}
 	.students-say-area .carousel-text .single-box p::after {
-	    background: url("../images/index/quotation-02.png") no-repeat;
+	    background: url("../Assets/images/index/quotation-02.png") no-repeat;
 	    content: "";
 	    height: 80px;
 	    position: absolute;
@@ -1247,15 +1247,15 @@
 	    font-size: 15px;
 	}
 	.students-say-area .slick-prev {
-	    background: url("../images/index/arror-02-left.png") center center no-repeat;
+	    background: url("../Assets/images/index/arror-02-left.png") center center no-repeat;
 	}
 	.students-say-area .slick-next {
-	    background: url("../images/index/arror-02-right.png") center center no-repeat;
+	    background: url("../Assets/images/index/arror-02-right.png") center center no-repeat;
 	}
 	/*=======[Index Instraction Area Style ]========*/
 	
 	.instraction-area {
-	    background: transparent url("../images/index/instraction-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/instraction-bg.jpg") no-repeat center center/cover;
 	    position: relative;
 	}
 	.instraction-area:before {
@@ -1307,7 +1307,7 @@
 	/*=======[Index Footer Area Style ]========*/
 	
 	footer {
-	    background: transparent url("../images/index/footer-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("../Assets/images/index/footer-bg.jpg") no-repeat center center/cover;
 	    min-height: 150px;
 	    padding-top: 100px;
 	}
