@@ -170,12 +170,7 @@
     <Content Include="Assets\css\assets\slick.css" />
     <Content Include="Assets\css\responsive.css" />
     <Content Include="Assets\css\style.css" />
-    <Content Include="Assets\fonts\fontawesome-webfont.eot" />
     <Content Include="Assets\fonts\fontawesome-webfont.svg" />
-    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
-    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Assets\fonts\FontAwesome.otf" />
     <Content Include="Assets\images\blog\blog-01.jpg" />
     <Content Include="Assets\images\blog\blog-02.jpg" />
     <Content Include="Assets\images\blog\blog-03.jpg" />
@@ -351,7 +346,6 @@
     <Content Include="Assets\images\index\welcome.png" />
     <Content Include="Assets\images\loader.gif" />
     <Content Include="Assets\images\logo.png" />
-    <Content Include="Assets\images\logoo.png" />
     <Content Include="Assets\images\post\l-post-03.jpg" />
     <Content Include="Assets\images\post\post-01.jpg" />
     <Content Include="Assets\images\post\post-author0-1.jpg" />
@@ -426,8 +420,11 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Properties\PublishProfiles\ReadWayInternationCollege - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\ReadWayInternationCollege - Web Deploy.pubxml" />
+    <Content Include="Assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
