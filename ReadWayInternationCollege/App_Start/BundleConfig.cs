@@ -8,8 +8,8 @@ namespace ReadWayInternationCollege
         // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.UseCdn = true;
-            var googleFntsCDN = "https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600";
+            //bundles.UseCdn = true;
+            //var googleFntsCDN = "https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600";
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
                         "~/Assets/js/vendor/jquery-1.12.4.min.js",
@@ -47,7 +47,7 @@ namespace ReadWayInternationCollege
                       "~/Assets/js/assets/bootstrap.min.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css", googleFntsCDN).Include(
+            bundles.Add(new StyleBundle("~/Content/css"/*, googleFntsCDN*/).Include(
                       "~/Assets/css/assets/bootstrap.min.css",
                       "~/Assets/css/assets/font-awesome.min.css",
                       "~/Assets/css/assets/magnific-popup.css",
