@@ -49,7 +49,7 @@ namespace ReadWayInternationCollege
 
             bundles.Add(new StyleBundle("~/Content/css"/*, googleFntsCDN*/).Include(
                       "~/Assets/css/assets/bootstrap.min.css",
-                      "~/Assets/css/assets/font-awesome.min.css",
+                      //"~/Assets/css/assets/font-awesome.min.css",
                       "~/Assets/css/assets/magnific-popup.css",
                       "~/Assets/css/assets/revolution/layers.css",
                       "~/Assets/css/assets/revolution/navigation.css",
