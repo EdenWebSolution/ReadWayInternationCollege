@@ -115,7 +115,7 @@
 	    position: absolute;
 	    left: 50%;
 	    top: 50%;
-	    background-image: url("../Assets/images/preloader.gif");
+	    background-image: url("/Assets/images/preloader.gif");
 	    background-repeat: no-repeat;
 	    background-position: center;
 	    margin: -100px 0 0 -100px;
@@ -530,7 +530,7 @@
 	    content: "";
 	}
 	header .tp-leftarrow:hover {
-	    background: url("../Assets/Assets/images/index/arror_left_hover.png") no-repeat center center/cover;
+	    background: url("/Assets/images/index/arror_left_hover.png") no-repeat center center/cover;
 	    border-radius: 100%;
 	}
 	header .tp-leftarrow {
@@ -2399,7 +2399,7 @@
 	    padding-left: 10px;
 	}
 	.home_version_03 .search-curses-area {
-	    background: url("../images/index-03/scarch-bg.jpg") no-repeat center center/cover;
+	    background: url("/Assets/images/index-03/scarch-bg.jpg") no-repeat center center/cover;
 	    background-position: center;
 	    position: relative;
 	    z-index: 1;
@@ -2439,7 +2439,7 @@
 	.home_version_03 .search-curses-area .search-courses-form .cearch-form .form-group .form-control {
 	    -moz-appearance: none;
 	    background-color: #fff;
-	    background-image: url("../images/index-03/down-arrow.png");
+	    background-image: url("/Assets/images/index-03/down-arrow.png");
 	    background-position: 95% 50%;
 	    background-repeat: no-repeat;
 	    padding-left: 15px;
