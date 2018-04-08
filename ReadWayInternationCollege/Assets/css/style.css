@@ -3350,7 +3350,7 @@
 	    padding-left: 10px;
 	}
 	.home_version_04 .about_vi_e-area .video-wapper .video-play-btn {
-	    background: transparent url("../images/index-04/video-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-04/video-bg.jpg") no-repeat center center/cover;
 	    min-height: 290px;
 	    text-align: center;
 	    z-index: 1;
