@@ -1,8 +1,10 @@
-﻿using System;
+﻿using ReadWayInternationCollege.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using RedWillow.MvcToastrFlash;
 
 namespace ReadWayInternationCollege.Controllers
 {
@@ -14,18 +16,23 @@ namespace ReadWayInternationCollege.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult AboutUs()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            var sendAMessageViewModel = new SendAMessageViewModel();
+            return View(sendAMessageViewModel);
+        }
 
-            return View();
+
+        [HttpPost]
+        public ActionResult Contact(SendAMessageViewModel sendAMessageViewModel)
+        {
+            this.Flash(Toastr.SUCCESS, "Sent", "Your message has been sent successfull");
+            return RedirectToAction("Contact", "Home");
         }
     }
 }
