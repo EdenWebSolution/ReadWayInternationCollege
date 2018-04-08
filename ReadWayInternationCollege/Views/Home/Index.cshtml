@@ -2,13 +2,6 @@
 @{
     ViewBag.Title = "Readway International College";
 }
-@{ 
-
-    int YearsOfHistory = DateTime.Now.Year - 2011;
-
-}
-
-
 @section Section
 {
     @Html.Partial("_MainSlider")
@@ -339,29 +332,29 @@
                     <div class="col-sm-6 counters-item">
                         <div class="section counter-box">
                             <img src="../Assets/images/index/counter-icon-01.png" alt="">
-                            <div class="project-count counter">7096</div>
-                            <span>active students</span>
+                            <div class="project-count counter">600</div>
+                            <span>ACTIVE STUDENTS</span>
                         </div>
                     </div>
                     <div class="col-sm-6 counters-item">
                         <div class="section counter-box">
                             <img src="../Assets/images/index/counter-icon-02.png" alt="">
-                            <div class="project-count counter">508</div>
-                            <span>online courses</span>
+                            <div class="project-count counter">50</div>
+                            <span>CLASS ROOMS</span>
                         </div>
                     </div>
                     <div class="col-sm-6 counters-item">
                         <div class="section counter-box">
                             <img src="../Assets/images/index/counter-icon-03.png" alt="">
-                            <div class="project-count counter">@YearsOfHistory</div>
-                            <span>Year of history</span>
+                            <div class="project-count counter">@(DateTime.Now.Year -2011)</div>
+                            <span>YEARS OF HISTORY</span>
                         </div>
                     </div>
                     <div class="col-sm-6 counters-item">
                         <div class="section counter-box">
                             <img src="../Assets/images/index/counter-icon-04.png" alt="">
-                            <div class="project-count counter">70</div>
-                            <span>active students</span>
+                            <div class="project-count counter">40</div>
+                            <span>TEACHERS</span>
                         </div>
                     </div>
                 </div>
