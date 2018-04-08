@@ -325,7 +325,7 @@
 	header .header-body .edu-navbar .edu-nav .nav li a:focus {
 	    background: transparent;
 	    outline: none;
-	    color: #023f90;
+	    color: #023f90 !important;
 	}
 	header .header-body .edu-navbar .edu-nav .nav li.active a:before,
 	header .header-body .edu-navbar .edu-nav .nav li:hover a::before,
@@ -7883,9 +7883,13 @@
 	    color: #023f90;
 	    transition: all 0.3s ease-in-out;
 	}
-	.contact .contact-area-02 {
-	    padding: 100px 0;
-	}
+	
+    .contact .contact-area-02 .maptag {
+        margin: 50px 0;
+    }
+    .contact .contact-area-02 .maptag h2 {
+        padding-bottom:40px;
+    }
 	.contact .contact-area-02 .contact-info h2 {
 	    font-size: 30px;
 	    text-align: left;
@@ -7921,6 +7925,7 @@
 	.contact .contact-area-02 .contact-info .contact-box .single-address-box .single-address p {
         display:grid;
 	    margin: 0;
+        font-size:12px;
 	}
 	.contact .contact-area-02 .contact-info .contact-box .single-address-box ul {
 	    margin: 0px;
