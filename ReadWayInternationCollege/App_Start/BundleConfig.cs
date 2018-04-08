@@ -65,6 +65,20 @@ namespace ReadWayInternationCollege
                       ));
 
 
+            #region login error message
+
+            bundles.Add(new StyleBundle("~/toastr/css").Include(
+            //"~/Content/site.css",
+            "~/Content/toastr.css"
+            ));
+
+            bundles.Add(new ScriptBundle("~/Bundles/toastr").Include(
+                "~/Scripts/toastr.js*"
+                 ));
+
+
+            #endregion
+
             //BundleTable.EnableOptimizations = true;
 
         }

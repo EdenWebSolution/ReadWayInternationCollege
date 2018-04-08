@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using RedWillow.MvcToastrFlash;
 
 namespace ReadWayInternationCollege.Controllers
 {
@@ -30,7 +31,8 @@ namespace ReadWayInternationCollege.Controllers
         [HttpPost]
         public ActionResult Contact(SendAMessageViewModel sendAMessageViewModel)
         {
-            return Content("message sent");
+            this.Flash(Toastr.SUCCESS, "Sent", "Your message has been sent successfull");
+            return RedirectToAction("Contact", "Home");
         }
     }
 }
