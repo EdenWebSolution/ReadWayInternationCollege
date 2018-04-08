@@ -453,6 +453,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\_MainSlider.cshtml" />
     <Content Include="Views\Home\_JoinUsNow.cshtml" />
+    <Content Include="Views\Home\_WhatParentsSay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
