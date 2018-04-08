@@ -574,13 +574,13 @@
 	    padding: 0 0 0 4px;
 	}
 	.slider-content-bottom .content_body:hover .btm-item_01::before {
-	    background:linear-gradient(to left, #023d8b,#3089ff);
+	    background:radial-gradient(#3089ff,#023d8b);
 	}
         .slider-content-bottom .content_body:hover .btm-item_02::before {
             background: radial-gradient(#3089ff,#023d8b);
         }
 	.slider-content-bottom .content_body:hover .btm-item_03::before {
-	    background: linear-gradient(to right, #023d8b,#3089ff);
+	    background: radial-gradient(#3089ff,#023d8b);
 	}
 	.slider-content-bottom .btm-item_01,
 	.slider-content-bottom .btm-item_02,
@@ -1262,7 +1262,7 @@
 	    position: relative;
 	}
 	.instraction-area:before {
-	    background: rgba(254, 199, 34, 0.75);
+	    background: rgba(2, 63, 144, 0.75);
 	    content: "";
 	    height: 100%;
 	    position: absolute;
