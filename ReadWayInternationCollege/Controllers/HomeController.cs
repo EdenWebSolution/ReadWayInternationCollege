@@ -37,9 +37,10 @@ namespace ReadWayInternationCollege.Controllers
             {
                 var messageBuilder = new EmailBuilder()
                 {
-                    To = "principal@readwayinternalcollege.com",
+                    From = "d015240@student.nibm.lk",
+                    To = "tnlthanzeel@gmail.com",
                     Subject = sendAMessageViewModel.Subject,
-                    Body = "Sender Name: " + sendAMessageViewModel.Name + "\n\nSender Email: " + sendAMessageViewModel.EmailAddress + "\n\n" + sendAMessageViewModel.Message,
+                    Body = "Dear Sir/Madam, I am " + sendAMessageViewModel.Name + ".\nMy Email address is " + sendAMessageViewModel.EmailAddress + ".\n\n" + sendAMessageViewModel.Message,
                 };
                 await EmailBuilder.SendEmailAsync(messageBuilder);
                 this.Flash(Toastr.SUCCESS, "Sent", "Your message has been sent successfull");
@@ -47,7 +48,7 @@ namespace ReadWayInternationCollege.Controllers
 
             }
 
-            catch(Exception ex)
+            catch (Exception ex)
 
             {
                 this.Flash(Toastr.ERROR, "Fail", "Oops! Something went wrong while sending your message. Please try again");

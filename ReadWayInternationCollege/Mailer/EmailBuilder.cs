@@ -30,7 +30,7 @@ namespace ReadWayInternationCollege.Mailer
 
         public static async Task SendEmailAsync(EmailBuilder messageBuilder)
         {
-            mailMessage = new MailMessage("contactus@readwayinternationalcollege.com", messageBuilder.To)
+            mailMessage = new MailMessage(messageBuilder.From, messageBuilder.To)
             {
                 Subject = messageBuilder.Subject,
                 Body = messageBuilder.Body
