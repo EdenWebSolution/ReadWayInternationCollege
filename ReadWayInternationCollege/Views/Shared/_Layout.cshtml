@@ -22,7 +22,9 @@
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
-<body>
+
+}
+<body class="@(ViewBag.BodyClass==null?string.Empty:ViewBag.BodyClass)">
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -43,12 +45,6 @@
                             </li>
                         </ul>
                     </div>
-                    @*<div class="col-sm-6 col-xs-12 header-top-right">
-                            <ul class="list-unstyled">
-                                <li><a href="register.html"><i class="fa fa-user-plus top-icon"></i> Sing up</a></li>
-                                <li><a href="login.html"><i class="fa fa-lock top-icon"></i>Login</a></li>
-                            </ul>
-                        </div>*@
                 </div>
             </div>
         </div><!-- Ends: .header-top -->
@@ -68,7 +64,7 @@
                         <ul class="nav navbar-nav">
                             <li><a href="/Home/Index">home</a></li>
                             <li><a href="#0">gallery</a></li>
-                            <li><a href="#0">about us</a></li>
+                            <li><a href="/Home/AboutUs">about us</a></li>
                             <li><a href="#0">admissions</a></li>
                             <li>
                                 <a data-scroll href="#0">sections</a>
@@ -79,7 +75,7 @@
                                 </ul>
                             </li>
                             <li><a href="#0">events</a></li>
-                            <li><a href="#0">contact us</a></li>
+                            <li><a href="/Home/Contact">contact us</a></li>
                             <li><a href="#0">career</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
@@ -91,6 +87,7 @@
         ===================-->
         @RenderSection("Section", false)
     </header>
+
     <!--  End header section-->
     @RenderBody()
     <footer>

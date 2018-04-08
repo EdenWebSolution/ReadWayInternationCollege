@@ -1522,7 +1522,7 @@
 	    color: #023f90;
 	}
 	.home_version_02 .register-area {
-	    background: transparent url("../images/index-02/register-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/register-bg.jpg") no-repeat center center/cover;
 	    min-height: 500px;
 	    position: relative;
 	    padding: 100px 0;
@@ -1717,7 +1717,7 @@
 	    color: #023f90;
 	}
 	.home_version_02 .information-area {
-	    background: transparent url("../images/index-02/info_bg_v2.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/info_bg_v2.jpg") no-repeat center center/cover;
 	    padding: 165px 0;
 	}
 	.home_version_02 .information-area .info-content-box {
@@ -1824,7 +1824,7 @@
 	    text-transform: uppercase;
 	}
 	.home_version_02 .stu-parent-say-area {
-	    background: transparent url("../images/index-02/parent-say-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/parent-say-bg.jpg") no-repeat center center/cover;
 	    min-height: 500px;
 	    position: relative;
 	    padding: 100px 0;
@@ -2109,7 +2109,7 @@
 	    color: #f56040;
 	}
 	.home_version_02 .instraction-area {
-	    background: transparent url("../images/index-02/instraction-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/instraction-bg.jpg") no-repeat center center/cover;
 	    position: relative;
 	}
 	.home_version_02 .instraction-area:before {
@@ -2122,7 +2122,7 @@
 	    width: 100%;
 	}
 	.home_version_02 footer {
-	    background: transparent url("../images/index-02/footer-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/footer-bg.jpg") no-repeat center center/cover;
 	    min-height: 150px;
 	    padding-top: 100px;
 	}
@@ -2162,7 +2162,7 @@
 	    transition: all 0.3s ease-in-out;
 	}
 	.home_version_03 header .header-body {
-	    background: url("../images/index-03/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/index-03/banner-bg.jpg") no-repeat center center;
 	    min-height: 810px;
 	    background-size: cover;
 	    position: relative;
@@ -2265,7 +2265,7 @@
 	    position: relative;
 	}
 	.home_version_03 .Welcome-area .wel-shap:before {
-	    background: url("../images/index-03/wel_shap.png") no-repeat center center;
+	    background: url("/Assets/images/index-03/wel_shap.png") no-repeat center center;
 	    content: "";
 	    height: 100%;
 	    left: 45%;
@@ -2317,7 +2317,7 @@
 	    margin-bottom: 50px;
 	}
 	.home_version_03 .Welcome-area .event-box .event-box-padding .event-img {
-	    background: url("../images/index-03/event-time-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/index-03/event-time-bg.jpg") no-repeat center center;
 	    background-position: center;
 	    position: relative;
 	    height: 65px;
@@ -2643,7 +2643,7 @@
 	    transition: all 0.3s ease-in-out;
 	}
 	.home_version_03 .achievment-area {
-	    background: url("../images/index-03/achievment-bg.jpg") no-repeat center center/cover;
+	    background: url("/Assets/images/index-03/achievment-bg.jpg") no-repeat center center/cover;
 	    background-position: center;
 	    position: relative;
 	    z-index: 1;
@@ -2672,7 +2672,7 @@
 	}
 	.home_version_03 .achievment-area .counters-item:before {
 	    position: absolute;
-	    background: url("../images/index-03/achievment-shap.png") no-repeat center center;
+	    background: url("/Assets/images/index-03/achievment-shap.png") no-repeat center center;
 	    content: "";
 	    height: 100%;
 	    left: 50%;
@@ -2763,7 +2763,7 @@
 	    opacity: 1;
 	}
 	.home_version_03 .all-stu-count-area {
-	    background: transparent url("../images/index-03/all-stu-count-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-03/all-stu-count-bg.jpg") no-repeat center center/cover;
 	    padding: 165px 0;
 	    position: relative;
 	}
@@ -2961,7 +2961,7 @@
 	    opacity: 1;
 	}
 	.home_version_03 footer {
-	    background: transparent url("../images/index-03/footer-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-03/footer-bg.jpg") no-repeat center center/cover;
 	    min-height: 150px;
 	    padding-top: 100px;
 	}
@@ -3272,7 +3272,7 @@
 	    margin-bottom: 50px;
 	}
 	.home_version_04 .about_vi_e-area .event-box .event-box-padding .event-img {
-	    background: url("../images/index-04/event-time-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/index-04/event-time-bg.jpg") no-repeat center center;
 	    background-position: center;
 	    position: relative;
 	    height: 65px;
@@ -3548,7 +3548,7 @@
 	}
 	.home_version_04 .trausted-stu-area .trausted-content {
 	    position: relative;
-	    background: transparent url("../images/index-04/trausted-stu.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-04/trausted-stu.jpg") no-repeat center center/cover;
 	    padding: 58px 68px;
 	}
 	.home_version_04 .trausted-stu-area .trausted-content:before {
@@ -3672,7 +3672,7 @@
 	}
 	.home_version_04 .reg-news_others .regi-full-box .regi-content {
 	    text-align: center;
-	    background: url("../images/index-04/regirster-bg.jpg") no-repeat center center/cover;
+	    background: url("/Assets/images/index-04/regirster-bg.jpg") no-repeat center center/cover;
 	    position: relative;
 	    z-index: 0;
 	    padding: 35px 30px 0;
@@ -3698,7 +3698,7 @@
 	    bottom: 0;
 	    height: 35px;
 	    width: 180px;
-	    background: url("../images/index-04/regi-shap.png") no-repeat center center/cover;
+	    background: url("/Assets/images/index-04/regi-shap.png") no-repeat center center/cover;
 	}
 	.home_version_04 .reg-news_others .regi-full-box .regi-content p {
 	    font-family: "Montserrat", sans-serif;
@@ -3781,7 +3781,7 @@
 	    background: #023f90;
 	}
 	.home_version_04 footer {
-	    background: transparent url("../images/index-04/footer-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-04/footer-bg.jpg") no-repeat center center/cover;
 	    min-height: 150px;
 	    padding-top: 100px;
 	}
@@ -3795,7 +3795,7 @@
 	    /*===[ Single Courses Style tow]====*/
 	}
 	.single-courses_v header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -4490,7 +4490,7 @@
 	    text-decoration: none;
 	}
 	.single-courses_v .single-courses-area .sidebar-content .special-offer {
-	    background: url("../images/Single_cources/discount-offer.jpg") no-repeat center center/cover;
+	    background: url("/Assets/images/Single_cources/discount-offer.jpg") no-repeat center center/cover;
 	    position: relative;
 	    margin-top: 40px;
 	    padding: 55px 30px;
@@ -4795,7 +4795,7 @@
 	    /*=======[Courses Style 04 ]========*/
 	}
 	.courses header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -5412,7 +5412,7 @@
 =====================================================================================================*/
 	
 	.blog_1 header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -5840,7 +5840,7 @@
 =====================================================================================================*/
 	
 	.post-1 header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -6439,7 +6439,7 @@
 =====================================================================================================*/
 	
 	.teachers-01 header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -6651,7 +6651,7 @@
 =====================================================================================================*/
 	
 	.t-profile-01 header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -7018,7 +7018,7 @@
 =====================================================================================================*/
 	
 	.become_teachers header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -7177,7 +7177,7 @@
 =====================================================================================================*/
 	
 	.event-details-1 header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -7573,7 +7573,7 @@
 	    /*=======[ Up Comming Events ]========*/
 	}
 	.event-01 header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -7839,7 +7839,7 @@
 =====================================================================================================*/
 	
 	.contact header .header-body {
-	    background: url("../images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -7991,13 +7991,13 @@
 	/*====================================================================================================
 										===[ Register Style ]===
 =====================================================================================================*/
-	
-	.register header .header-body {
-	    background: url("../images/register-bg.jpg") no-repeat center center;
-	    min-height: 360px;
-	    background-size: cover;
-	    position: relative;
-	}
+
+.register header .header-body {
+    background: url("/Assets/images/register-bg.jpg") no-repeat center center;
+    min-height: 360px;
+    background-size: cover;
+    position: relative;
+}
 	.register header .header-body:before {
 	    background: rgba(0, 0, 0, 0.5);
 	    content: "";
@@ -8096,13 +8096,13 @@
 	/*====================================================================================================
 										===[ Login Style ]===
 =====================================================================================================*/
-	
-	.login header .header-body {
-	    background: url("../images/register-bg.jpg") no-repeat center center;
-	    min-height: 360px;
-	    background-size: cover;
-	    position: relative;
-	}
+
+.login header .header-body {
+    background: url("/Assets/images/register-bg.jpg") no-repeat center center;
+    min-height: 360px;
+    background-size: cover;
+    position: relative;
+}
 	.login header .header-body:before {
 	    background: rgba(0, 0, 0, 0.5);
 	    content: "";

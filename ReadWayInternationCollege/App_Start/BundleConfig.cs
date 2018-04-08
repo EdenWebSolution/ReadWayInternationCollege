@@ -47,6 +47,9 @@ namespace ReadWayInternationCollege
                       "~/Assets/js/assets/bootstrap.min.js",
                       "~/Scripts/respond.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+                        "~/Scripts/jquery.validate*"));
+
             bundles.Add(new StyleBundle("~/Content/css"/*, googleFntsCDN*/).Include(
                       "~/Assets/css/assets/bootstrap.min.css",
                       //"~/Assets/css/assets/font-awesome.min.css",

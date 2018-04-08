@@ -1,0 +1,107 @@
+﻿@model ReadWayInternationCollege.Models.SendAMessageViewModel
+
+@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.BodyClass = "contact";
+}
+
+<section class="contact-area-02">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-5 contact-info">
+                <div class="col-sm-12 contact-title">
+                    <h2>Contact Info</h2>
+                    <p class="content-sub_p">Welcome to our akmals home. We are glad to have you around.</p>
+                </div>
+                <div class="col-sm-12 contact-box">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 single-address-box">
+                            <div class="single-address">
+                                <i class="fa fa-phone"></i>
+                                <h4>Phone</h4>
+                                <p>0112 669 797</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6  single-address-box">
+                            <div class="single-address">
+                                <i class="fa fa-envelope"></i>
+                                <h4>Email</h4>
+                                <p>info@readwayinternational.com</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12 single-address-box">
+                            <div class="single-address">
+                                <i class="fa fa-map-marker"></i>
+                                <h4>Location:</h4>
+                                <p>Readway International College, No.236 Gnanawimala Rd, Colombo - 09</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 single-address-box">
+                            <ul class="list-unstyled">
+                                <li><a href=""><i class="fa fa-facebook teacher-icon"></i></a></li>
+                                <li><a href=""><i class="fa fa-twitter teacher-icon"></i></a></li>
+                                <li><a href=""><i class="fa fa-google-plus teacher-icon"></i></a></li>
+                                <li><a href=""><i class="fa fa-linkedin teacher-icon"></i></a></li>
+                                <li><a href=""><i class="fa fa-instagram teacher-icon"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6  col-sm-offset-1 contact-form">
+                <div class="row">
+                    <div class="col-sm-12 contact-title-btm">
+                        <h2>Send A Message</h2>
+                        <p class="content-sub_p">Welcome to our Website. We are glad to have you around.</p>
+                    </div>
+                </div>
+                <div class="input-contact-form">
+                    <div id="contact">
+                        <div id="message"></div>
+                        @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
+                        {
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        @Html.TextBoxFor(m => m.Name, new { placeholder = "Name", @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Name, null, new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        @Html.TextBoxFor(m => m.EmailAddress, new { placeholder = "Email", @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.EmailAddress, null, new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        @Html.TextBoxFor(m => m.Subject, new { placeholder = "Subject", @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Subject, null, new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        @Html.TextAreaFor(m => m.Message, new { placeholder = "Message", @class = "form-control" })
+                                        @Html.ValidationMessageFor(m => m.Message, null, new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="full-width">
+                                        <input value="Send" type="submit" name="submit" id="submit">
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
