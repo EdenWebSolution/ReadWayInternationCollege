@@ -7842,7 +7842,7 @@
 =====================================================================================================*/
 	
 	.contact header .header-body {
-	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/contact/bannerpage.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -7883,9 +7883,11 @@
 	    color: #023f90;
 	    transition: all 0.3s ease-in-out;
 	}
-	
+	.contact .contact-area-02 {
+        padding: 100px 0 0;
+	}
     .contact .contact-area-02 .maptag {
-        margin: 50px 0;
+        margin-bottom:50px;
     }
     .contact .contact-area-02 .maptag h2 {
         padding-bottom:40px;
