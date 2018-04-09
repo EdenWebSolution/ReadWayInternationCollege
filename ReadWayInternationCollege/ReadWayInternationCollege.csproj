@@ -198,6 +198,8 @@
     <Content Include="Assets\images\blog\recent-work-04.jpg" />
     <Content Include="Assets\images\blog\recent-work-05.jpg" />
     <Content Include="Assets\images\blog\recent-work-06.jpg" />
+    <Content Include="Assets\images\contact\bannerpage.jpg" />
+    <Content Include="Assets\images\contact\contact-banner.jpg" />
     <Content Include="Assets\images\event\event-details.jpg" />
     <Content Include="Assets\images\event\events-01.jpg" />
     <Content Include="Assets\images\event\events-02.jpg" />
