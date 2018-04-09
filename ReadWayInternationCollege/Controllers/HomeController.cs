@@ -55,5 +55,10 @@ namespace ReadWayInternationCollege.Controllers
                 return RedirectToAction("Contact", "Home");
             }
         }
+
+        public ActionResult Gallery(SendAMessageViewModel sendAMessageViewModel)
+        {
+            return View();
+        }
     }
 }
