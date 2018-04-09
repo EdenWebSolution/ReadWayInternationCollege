@@ -68,6 +68,10 @@
 	    text-transform: uppercase;
 	    transition: all 0.3s ease-in-out;
 	}
+    a{
+        color:#fff;
+
+    }
 	.section-header-box {
 	    margin-bottom: 40px;
 	}
@@ -3798,7 +3802,7 @@
 	    /*===[ Single Courses Style tow]====*/
 	}
 	.single-courses_v header .header-body {
-	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/about/aboutus-banner.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -3813,7 +3817,7 @@
 	}
 	.single-courses_v header .header-body .intro-text {
 	    text-align: center;
-	    margin-top: 80px;
+	    margin-top: 50px;
 	}
 	.single-courses_v header .header-body .intro-text h1 {
 	    font-family: "Montserrat", sans-serif;
@@ -3852,6 +3856,9 @@
 	    font-size: 30px;
 	    text-align: left;
 	}
+    .single-courses_v .single-courses-area .single-curses-contert h2 .h2-sub{
+
+    }
 	.single-courses_v .single-courses-area .single-curses-contert h3 {
 	    font-weight: 700;
 	}
@@ -3872,7 +3879,7 @@
 	    font-size: 13px;
 	    display: inline-block;
 	}
-	.single-courses_v .single-courses-area .single-curses-contert .review-option .teacher-info .teacher-name span:last-child {
+	.single-courses_v .single-courses-area .single-curses-contert .review-option .teacher-info .teacher-name span:first-child {
 	    margin-top: 5px;
 	    font-size: 15px;
 	    font-weight: 600;
@@ -4189,7 +4196,6 @@
 	}
 	.single-courses_v .single-courses-area .single-curses-contert .comments .comment-single-item .comment-left-bar .comment-text p {
 	    margin: 0;
-	    padding-top: 10px;
 	}
 	.single-courses_v .single-courses-area .single-curses-contert .leave_a_comment {
 	    margin-top: 40px;
@@ -4340,7 +4346,7 @@
 	    color: #023f90;
 	}
 	.single-courses_v .single-courses-area .sidebar-content .share-socila-link {
-	    margin-top: 40px;
+	    margin-top: 0;
 	}
 	.single-courses_v .single-courses-area .sidebar-content .share-socila-link .social-hading {
 	    text-align: center;
@@ -4363,6 +4369,9 @@
 	    float: left;
 	    margin: 8px;
 	}
+    .single-courses_v .single-courses-area .sidebar-content .share-socila-link .social-icon ul li:hover{
+        transform:scale(1.1)
+    }
 	.single-courses_v .single-courses-area .sidebar-content .share-socila-link .social-icon ul li a {
 	    background: red none repeat scroll 0 0;
 	    color: #ffffff;
@@ -4372,6 +4381,7 @@
 	    font-size: 23px;
 	    text-align: center;
 	    padding: 8px;
+        border-radius:50%;
 	}
 	.single-courses_v .single-courses-area .sidebar-content .share-socila-link .social-icon ul li a i {
 	    height: 25px;
@@ -4472,10 +4482,8 @@
 	    height: auto;
 	}
 	.single-courses_v .single-courses-area .sidebar-content .latest-courses .latest-courses-text .latest-single .course-prefix {
-	    padding: 0 0 0 15px;
 	}
 	.single-courses_v .single-courses-area .sidebar-content .latest-courses .latest-courses-text .latest-single .course-prefix h3 {
-	    margin-top: -8px;
 	    margin-bottom: 10px;
 	    padding: 0;
 	    font-size: 16px;

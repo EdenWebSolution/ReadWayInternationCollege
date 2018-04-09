@@ -56,5 +56,10 @@ namespace ReadWayInternationCollege.Controllers
                 return PartialView("_ContactFormMessage");
             }
         }
+
+        public ActionResult Gallery(SendAMessageViewModel sendAMessageViewModel)
+        {
+            return View();
+        }
     }
 }

@@ -181,6 +181,7 @@
     <Content Include="Assets\fonts\fontawesome-webfont.woff" />
     <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Assets\fonts\FontAwesome.otf" />
+    <Content Include="Assets\images\about\schoolbadge.jpg" />
     <Content Include="Assets\images\blog\blog-01.jpg" />
     <Content Include="Assets\images\blog\blog-02.jpg" />
     <Content Include="Assets\images\blog\blog-03.jpg" />
@@ -385,10 +386,12 @@
     <Content Include="Views\Home\_WhatParentsSay.cshtml" />
     <Content Include="Views\Home\AboutUs.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\_ContactFormMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Assets\images\gallery\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
