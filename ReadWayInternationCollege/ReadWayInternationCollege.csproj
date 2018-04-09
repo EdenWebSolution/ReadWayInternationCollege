@@ -181,6 +181,7 @@
     <Content Include="Assets\fonts\fontawesome-webfont.woff" />
     <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Assets\fonts\FontAwesome.otf" />
+    <Content Include="Assets\images\about\schoolbadge.jpg" />
     <Content Include="Assets\images\blog\blog-01.jpg" />
     <Content Include="Assets\images\blog\blog-02.jpg" />
     <Content Include="Assets\images\blog\blog-03.jpg" />
