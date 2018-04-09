@@ -1,9 +1,12 @@
-﻿@model ReadWayInternationCollege.Models.SendAMessageViewModel
-
-@{
+﻿@{
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewBag.BodyClass = "contact";
+}
+
+@section ajaxScript
+{
+    @Scripts.Render("~/Ajax-scripts")
 }
 
 <section class="contact-area-02">
@@ -58,41 +61,9 @@
                 </div>
                 <div class="input-contact-form">
                     <div id="contact">
+
                         <div id="message"></div>
-                        @using (Html.BeginForm("Contact", "Home", FormMethod.Post))
-                    {
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    @Html.TextBoxFor(m => m.Name, new { placeholder = "Name", @class = "form-control" })
-                                    @Html.ValidationMessageFor(m => m.Name, null, new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    @Html.TextBoxFor(m => m.EmailAddress, new { placeholder = "Email", @class = "form-control" })
-                                    @Html.ValidationMessageFor(m => m.EmailAddress, null, new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    @Html.TextBoxFor(m => m.Subject, new { placeholder = "Subject", @class = "form-control" })
-                                    @Html.ValidationMessageFor(m => m.Subject, null, new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    @Html.TextAreaFor(m => m.Message, new { placeholder = "Message", @class = "form-control" })
-                                    @Html.ValidationMessageFor(m => m.Message, null, new { @class = "text-danger" })
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="full-width">
-                                    <input value="Send" type="submit" name="submit" id="submit">
-                                </div>
-                            </div>
-                        </div>
-                }
+                        @Html.Partial("_ContactFormMessage")
                     </div>
                 </div>
             </div>

@@ -79,6 +79,11 @@ namespace ReadWayInternationCollege
 
             #endregion
 
+
+            bundles.Add(new ScriptBundle("~/Ajax-scripts").Include(
+                "~/Scripts/jquery-1.10.2.js",
+                "~/Scripts/jquery.unobtrusive-ajax.js"
+                ));
             //BundleTable.EnableOptimizations = true;
 
         }

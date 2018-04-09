@@ -31,6 +31,7 @@ namespace ReadWayInternationCollege.Controllers
 
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public async Task<ActionResult> Contact(SendAMessageViewModel sendAMessageViewModel)
         {
             try
@@ -44,7 +45,7 @@ namespace ReadWayInternationCollege.Controllers
                 };
                 await EmailBuilder.SendEmailAsync(messageBuilder);
                 this.Flash(Toastr.SUCCESS, "Sent", "Your message has been sent successfull");
-                return RedirectToAction("Contact", "Home");
+                return PartialView("_ContactFormMessage");
 
             }
 
@@ -52,7 +53,7 @@ namespace ReadWayInternationCollege.Controllers
 
             {
                 this.Flash(Toastr.ERROR, "Fail", "Oops! Something went wrong while sending your message. Please try again");
-                return RedirectToAction("Contact", "Home");
+                return PartialView("_ContactFormMessage");
             }
         }
     }
