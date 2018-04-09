@@ -3818,7 +3818,6 @@
 	.single-courses_v header .header-body .intro-text {
 	    text-align: center;
 	    margin-top: 50px;
-        text-shadow: 1px 1px #000000;
 	}
 	.single-courses_v header .header-body .intro-text h1 {
 	    font-family: "Montserrat", sans-serif;
@@ -4370,6 +4369,9 @@
 	    float: left;
 	    margin: 8px;
 	}
+    .single-courses_v .single-courses-area .sidebar-content .share-socila-link .social-icon ul li:hover{
+        transform:scale(1.1)
+    }
 	.single-courses_v .single-courses-area .sidebar-content .share-socila-link .social-icon ul li a {
 	    background: red none repeat scroll 0 0;
 	    color: #ffffff;
@@ -4379,6 +4381,7 @@
 	    font-size: 23px;
 	    text-align: center;
 	    padding: 8px;
+        border-radius:50%;
 	}
 	.single-courses_v .single-courses-area .sidebar-content .share-socila-link .social-icon ul li a i {
 	    height: 25px;
