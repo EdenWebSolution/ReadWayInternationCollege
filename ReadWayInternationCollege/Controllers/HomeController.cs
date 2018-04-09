@@ -45,7 +45,7 @@ namespace ReadWayInternationCollege.Controllers
                 };
                 await EmailBuilder.SendEmailAsync(messageBuilder);
                 this.Flash(Toastr.SUCCESS, "Sent", "Your message has been sent successfull");
-                return PartialView("_ContactFormMessage");
+                return PartialView("_ContactFormMessage", new SendAMessageViewModel());
 
             }
 
@@ -53,7 +53,7 @@ namespace ReadWayInternationCollege.Controllers
 
             {
                 this.Flash(Toastr.ERROR, "Fail", "Oops! Something went wrong while sending your message. Please try again");
-                return PartialView("_ContactFormMessage");
+                return PartialView("_ContactFormMessage",new SendAMessageViewModel());
             }
         }
 

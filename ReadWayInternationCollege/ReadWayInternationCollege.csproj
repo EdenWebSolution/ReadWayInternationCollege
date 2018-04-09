@@ -181,7 +181,16 @@
     <Content Include="Assets\fonts\fontawesome-webfont.woff" />
     <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
     <Content Include="Assets\fonts\FontAwesome.otf" />
+    <Content Include="Assets\images\about\aboutus-banner.jpg" />
+    <Content Include="Assets\images\about\award1.jpg" />
+    <Content Include="Assets\images\about\award2.jpg" />
+    <Content Include="Assets\images\about\award3.jpg" />
+    <Content Include="Assets\images\about\award4.jpg" />
+    <Content Include="Assets\images\about\board1.jpg" />
+    <Content Include="Assets\images\about\board2.jpg" />
+    <Content Include="Assets\images\about\board3.jpg" />
     <Content Include="Assets\images\about\schoolbadge.jpg" />
+    <Content Include="Assets\images\about\schoolenvironment.jpg" />
     <Content Include="Assets\images\blog\blog-01.jpg" />
     <Content Include="Assets\images\blog\blog-02.jpg" />
     <Content Include="Assets\images\blog\blog-03.jpg" />
@@ -355,6 +364,7 @@
     <None Include="Properties\PublishProfiles\ReadWayInternationalCollege - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\ReadWayInternationalCollege - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\ContactUs.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
