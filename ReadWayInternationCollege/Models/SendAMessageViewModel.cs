@@ -9,7 +9,7 @@ namespace ReadWayInternationCollege.Models
     public class SendAMessageViewModel
     {
         [Required(ErrorMessage = "Please enter your name")]
-        [RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Your name cannot contain any numbers")]
+        [RegularExpression(@"^[a-zA-Z\s]+$", ErrorMessage = "Your name must consist only of alphabets")]
         [DataType(DataType.Text)]
         public string Name { get; set; }
 
