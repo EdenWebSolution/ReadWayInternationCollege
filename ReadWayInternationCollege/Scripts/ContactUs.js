@@ -25,6 +25,7 @@
             },
             error: function (jqXHR, textStatus, errorThrown) {
                 $('#secondaryLoader').hide();
+                $('#message').show();
                 toastr.error("Something went wrong, please try refreshing the page", "Fail");
             }
         });
