@@ -9,7 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Readway International College</title>
     <link rel="shortcut icon" href="~/Assets/images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/toastr/css")
@@ -161,22 +163,10 @@
         </div><!-- ./ End footer-bottom -->
     </footer><!-- ./ End Footer Area-->
 
-
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
     @Scripts.Render("~/Bundles/toastr")
     @Html.ToastrNotifications()
-
-    @*<script src="~/Scripts/toastr.js"></script>
-        <script>
-            $(function () {
-
-                toastr.error("asa", "sdsds");
-                // alert("ab" + a)
-            })
-        </script>*@
-
-
 </body>
 </html>

@@ -30,7 +30,6 @@ namespace ReadWayInternationCollege.Controllers
             return View(sendAMessageViewModel);
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Contact(SendAMessageViewModel sendAMessageViewModel)
@@ -46,7 +45,7 @@ namespace ReadWayInternationCollege.Controllers
                 };
                 await EmailBuilder.SendEmailAsync(messageBuilder);
 
-                return Json(new { status = TransactionStatusEnum.success, subject = "Delivered", message = "Your message has been sent successfull" }, JsonRequestBehavior.AllowGet);
+                return Json(new { status = TransactionStatusEnum.success, subject = "Sent", message = "Your message has been sent successfully" }, JsonRequestBehavior.AllowGet);
             }
 
             catch (Exception)

@@ -9,7 +9,6 @@
         event.preventDefault();
         event.stopImmediatePropagation();
         var action = $("#ContactUsForm").attr("action");
-        // Setting.  
         dataString = new FormData($("#ContactUsForm").get(0));
         contentType = false;
         processData = false;
