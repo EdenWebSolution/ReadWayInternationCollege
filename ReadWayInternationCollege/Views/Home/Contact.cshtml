@@ -62,9 +62,13 @@
                 </div>
                 <div class="input-contact-form">
                     <div id="contact">
+                        <div id="secondaryLoader" hidden>
+                            <img src="~/Assets/images/secondaryLoader.gif" />
+                        </div>
+                        <div id="message">
+                            @Html.Partial("_ContactFormMessage")
+                        </div>
 
-                        <div id="message"></div>
-                        @Html.Partial("_ContactFormMessage")
                     </div>
                 </div>
             </div>

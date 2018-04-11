@@ -1,6 +1,6 @@
 ﻿@model ReadWayInternationCollege.Models.SendAMessageViewModel
 
-@using (Ajax.BeginForm("Contact", "Home", new AjaxOptions { HttpMethod = "POST", UpdateTargetId = "contact" }))
+@using (Ajax.BeginForm("Contact", "Home", new AjaxOptions { HttpMethod = "POST", OnSuccess = "onAjaxRequestSuccess" }, new { @id = "ContactUsForm", role = "form" }))
 {
     @Html.AntiForgeryToken()
     <div class="row">
@@ -30,7 +30,7 @@
         </div>
         <div class="col-sm-12">
             <div class="full-width">
-                <input value="Send" type="submit" name="submityt" id="btnSend-ContactUsMessage">
+                <input value="Send" type="submit" name="submityt" id="s">
             </div>
         </div>
     </div>

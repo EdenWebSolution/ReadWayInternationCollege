@@ -8,18 +8,20 @@ namespace ReadWayInternationCollege.Models
 {
     public class SendAMessageViewModel
     {
-        [Required(ErrorMessage ="Please enter your name")]
+        [Required(ErrorMessage = "Please enter your name")]
+        [RegularExpression(@"^[a-zA-Z]+$", ErrorMessage = "Your name cannot contain any numbers")]
+        [DataType(DataType.Text)]
         public string Name { get; set; }
 
-        [Required(ErrorMessage ="Please enter your email address")]
+        [Required(ErrorMessage = "Please enter your email address")]
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string EmailAddress { get; set; }
 
-        [Required(ErrorMessage ="Please enter a subject")]
+        [Required(ErrorMessage = "Please enter the subject of your message")]
         public string Subject { get; set; }
 
 
-        [Required(ErrorMessage ="Please enter a message")]
+        [Required(ErrorMessage = "Please enter your message")]
         public string Message { get; set; }
     }
 }

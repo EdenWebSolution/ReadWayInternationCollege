@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Web.Mvc;
 using RedWillow.MvcToastrFlash;
 using ReadWayInternationCollege.Mailer;
+using ReadWayInternationCollege.Enumerations;
 
 namespace ReadWayInternationCollege.Controllers
 {
@@ -44,16 +45,13 @@ namespace ReadWayInternationCollege.Controllers
                     Body = "Dear Sir/Madam, I am " + sendAMessageViewModel.Name + ".\nMy Email address is " + sendAMessageViewModel.EmailAddress + ".\n\n" + sendAMessageViewModel.Message,
                 };
                 await EmailBuilder.SendEmailAsync(messageBuilder);
-                this.Flash(Toastr.SUCCESS, "Sent", "Your message has been sent successfull");
-                return PartialView("_ContactFormMessage", new SendAMessageViewModel());
 
+                return Json(new { status = TransactionStatusEnum.success, subject = "Delivered", message = "Your message has been sent successfull" }, JsonRequestBehavior.AllowGet);
             }
 
-            catch (Exception ex)
-
+            catch (Exception)
             {
-                this.Flash(Toastr.ERROR, "Fail", "Oops! Something went wrong while sending your message. Please try again");
-                return PartialView("_ContactFormMessage",new SendAMessageViewModel());
+                return Json(new { status = TransactionStatusEnum.fail, subject = "Failed", message = "Oops! Something went wrong while sending your message. Please try again" }, JsonRequestBehavior.AllowGet);
             }
         }
 

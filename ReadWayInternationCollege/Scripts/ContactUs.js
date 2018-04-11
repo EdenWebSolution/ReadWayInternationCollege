@@ -1,11 +1,48 @@
-﻿var isSent = '@Viewbag.Sent';
-$(function () {
+﻿$(document).ready(function () {
+    $("#ContactUsForm").submit(function (event) {
+        if (!$("#ContactUsForm").valid()) { return; }
+        $('#secondaryLoader').removeAttr('hidden');
+        $('#secondaryLoader').show();
+        $('#message').hide();
 
-    $('#btnSend-ContactUsMessage').click(function () {
+        var dataString;
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        var action = $("#ContactUsForm").attr("action");
+        // Setting.  
+        dataString = new FormData($("#ContactUsForm").get(0));
+        contentType = false;
+        processData = false;
+        $.ajax({
+            type: "POST",
+            url: action,
+            data: dataString,
+            dataType: "json",
+            contentType: contentType,
+            processData: processData,
+            success: function (result) {
 
-        if ($('#Name').val().length > 0 && $('#EmailAddress').val().length > 0 && $('#Subject').val().length > 0 && $('#Message').val().length > 0) {
-
-            // $('#Name').val(''); $('#EmailAddress').val(''); $('#Subject').val(''); $('#Message').val('');
-        }
+                onAjaxRequestSuccess(result);
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+                alert("fail");
+            }
+        });
     });
 });
+var onAjaxRequestSuccess = function (result) {
+    var status = result.status;
+    if (status == 0) {
+        toastr.success(result.message, result.subject);
+        $('#Name').val('');
+        $('#EmailAddress').val('');
+        $('#Subject').val('');
+        $('#Message').val('');
+        $('#secondaryLoader').hide();
+        $('#message').show();
+    }
+
+    if (status == 1) {
+        toastr.error(result.message, result.subject);
+    }
+}  

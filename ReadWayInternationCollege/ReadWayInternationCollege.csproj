@@ -154,6 +154,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Enumerations\TransactionStatusEnum.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -294,6 +295,7 @@
     <Content Include="Assets\images\post\recent-work-06.jpg" />
     <Content Include="Assets\images\preloader.gif" />
     <Content Include="Assets\images\register-bg.jpg" />
+    <Content Include="Assets\images\secondaryLoader.gif" />
     <Content Include="Assets\images\Single_cources\banner-bg.jpg" />
     <Content Include="Assets\images\Single_cources\comment-01.jpg" />
     <Content Include="Assets\images\Single_cources\course-author.jpg" />
