@@ -24,7 +24,8 @@
                 onAjaxRequestSuccess(result);
             },
             error: function (jqXHR, textStatus, errorThrown) {
-                alert("fail");
+                $('#secondaryLoader').hide();
+                toastr.error("Something went wrong, please try refreshing the page", "Fail");
             }
         });
     });
