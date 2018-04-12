@@ -128,14 +128,24 @@
                     <div class="col-xs-12 col-sm-4">
                         <h3>get in touch</h3>
                         <p>Enter your email and we'll send you more information.</p>
-                        <form action="#">
+                        @using (Ajax.BeginForm("SendMoreInfo", "Home", null, new AjaxOptions { HttpMethod = "POST", OnSuccess = "onAjaxRequestSuccess" }, new { @id = "SendMoreInfoForm", role = "form" }))
+                        {
+                            @Html.AntiForgeryToken()
                             <div class="form-group">
-                                <input placeholder="Your Email" type="email" required="">
-                                <div class="submit-btn">
-                                    <button type="submit" class="text-center">GET STARTED NOW</button>
+                                <div id="getIntouchloader" hidden align="center">
+                                    <img src="~/Assets/images/whitepngloader.gif" style="height: 80px;" />
+                                    <p style="color:cadetblue;align-content:center;font-size:16px;"> sending your message...</p>
+                                </div>
+                                <div id="getIntouchID">
+                                    <input type="text" id="getInfoEmail" placeholder="Your Email" />
+                                    <div class="submit-btn">
+                                        <button type="submit" class="text-center">GET STARTED NOW</button>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+
+                        }
+
                     </div>
                 </div>
             </div>

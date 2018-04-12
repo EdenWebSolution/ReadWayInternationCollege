@@ -331,6 +331,7 @@
     <Content Include="Assets\images\teachars\teachar-08.jpg" />
     <Content Include="Assets\images\teachars\teachar-09.jpg" />
     <Content Include="Assets\images\teachars\teachar-10.jpg" />
+    <Content Include="Assets\images\whitepngloader.gif" />
     <Content Include="Assets\js\assets\bg-video-youtube.js" />
     <Content Include="Assets\js\assets\bootstrap.min.js" />
     <Content Include="Assets\js\assets\jquery.counterup.min.js" />

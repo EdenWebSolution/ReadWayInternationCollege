@@ -10,11 +10,16 @@ using ReadWayInternationCollege.Mailer;
 using ReadWayInternationCollege.Enumerations;
 using Microsoft.Security.Application;
 using ReadWayInternationCollege.MailTemplates;
+using System.ComponentModel.DataAnnotations;
 
 namespace ReadWayInternationCollege.Controllers
 {
     public class HomeController : Controller
     {
+        [Required(ErrorMessage ="Please enter you email")]
+        [DataType(DataType.EmailAddress)]
+        public string GetStartedNowEmail  { get; set; }
+
 
         public ActionResult Index()
         {
@@ -26,6 +31,7 @@ namespace ReadWayInternationCollege.Controllers
             return View();
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
             var sendAMessageViewModel = new SendAMessageViewModel();
@@ -64,6 +70,13 @@ namespace ReadWayInternationCollege.Controllers
         public ActionResult Gallery(SendAMessageViewModel sendAMessageViewModel)
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult SendMoreInfo(string emailAddress)
+        {
+            var a = emailAddress;
+            return Json(new { status = TransactionStatusEnum.success, subject = "Sent", message = "Your message has been sent successfully" }, JsonRequestBehavior.AllowGet);
         }
     }
 }
