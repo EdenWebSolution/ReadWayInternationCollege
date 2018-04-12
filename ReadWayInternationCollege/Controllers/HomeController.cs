@@ -62,12 +62,13 @@ namespace ReadWayInternationCollege.Controllers
             }
         }
 
-        public ActionResult Gallery(SendAMessageViewModel sendAMessageViewModel)
+        public ActionResult Gallery()
         {
             return View();
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult SendMoreInfo(string emailAddress)
         {
             var safeEmail = Sanitizer.GetSafeHtmlFragment(emailAddress);
