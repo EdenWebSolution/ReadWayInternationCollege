@@ -33,11 +33,11 @@
 	/* Variables */
 	
 	body {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    overflow-x: hidden;
 	}
 	p {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 14px;
 	    color: #727272;
 	    line-height: 24px;
@@ -48,7 +48,7 @@
 	h4,
 	h5,
 	h6 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 700;
 	}
 	h2 {
@@ -132,7 +132,7 @@
 	    background: #023f90;
 	    color: #333333;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    padding: 18px 50px;
 	    text-decoration: none;
@@ -218,7 +218,7 @@
 	    padding-right: 15px;
 	    display: inline-block;
 	    color: #ffffff;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    color: #ffffff;
 	    font-size: 13px;
@@ -237,7 +237,7 @@
 	    padding-left: 15px;
 	}
 	header .header-top .header-top-right ul li a {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    color: #ffffff;
 	    font-size: 13px;
@@ -276,7 +276,7 @@
 	    font-size: 20px;
 	    text-transform: uppercase;
 	    font-weight: 700;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    padding-left: 5px;
 	    line-height: 30px;
 	    letter-spacing: 1px;
@@ -296,7 +296,7 @@
 	    display: none;
 	}*/
 	header .header-body .edu-navbar .edu-nav .nav li a {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 700;
 	    color: #fff;
 	    text-transform: uppercase;
@@ -331,6 +331,11 @@
 	    outline: none;
 	    color: #023f90 !important;
 	}
+    a:active,a:hover{
+        background: transparent;
+	    outline: none;
+	    color: #023f90 !important;
+    }
 	header .header-body .edu-navbar .edu-nav .nav li.active a:before,
 	header .header-body .edu-navbar .edu-nav .nav li:hover a::before,
 	header .header-body .edu-navbar .edu-nav .nav li:focus a::before {
@@ -414,7 +419,7 @@
 	    visibility: hidden;
 	}
     header .header-body .edu-navbar .edu-nav ul{
-        padding:35px 0;
+        padding:55px 0;
         transition:all 0.5s ease;
     }
 	header .header-body .edu-navbar .edu-nav .nav li ul.dropdown li .dropdown-list_2 .dropdown-list-box-03 {
@@ -515,7 +520,7 @@
 	    font-size: 15px;
 	    font-weight: 500;
 	    padding: 15px 25px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    text-transform: uppercase;
 	    transition: all 0.3s ease-in-out;
@@ -534,11 +539,13 @@
 	    content: "";
 	}
 	header .tp-leftarrow:hover {
-	    background: url("/Assets/images/index/arror_left_hover.png") no-repeat center center/cover;
+	    background: url("/Assets/images/index/arror_left_hover.png") no-repeat center center;
 	    border-radius: 100%;
+        background-size:cover;
 	}
 	header .tp-leftarrow {
-	    background: url("/Assets/images/index/arror_left.png") no-repeat center center/cover;
+	    background: url("/Assets/images/index/arror_left.png") no-repeat center center;
+        background-size:cover;
 	    border-radius: 100%;
 	    height: 72px;
 	    width: 72px;
@@ -548,11 +555,13 @@
 	    content: "";
 	}
 	header .tp-rightarrow:hover {
-	    background: url("/Assets/images/index/arror_right_hover.png") no-repeat center center/cover;
+	    background: url("/Assets/images/index/arror_right_hover.png") no-repeat center center;
+        background-size:cover;
 	    border-radius: 100%;
 	}
 	header .tp-rightarrow {
-	    background: url("/Assets/images/index/arror_right.png") no-repeat center center/cover;
+	    background: url("/Assets/images/index/arror_right.png") no-repeat center center;
+        background-size:cover;
 	    border-radius: 100%;
 	    height: 72px;
 	    width: 72px;
@@ -615,19 +624,22 @@
 	}
 
 	.slider-content-bottom .btm-item_01 {
-	    background: transparent url("/Assets/images/index/slide-btm-01.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/slide-btm-01.jpg") no-repeat center center;
+        background-size:cover;
 	}
     .slider-content-bottom .btm-item_01::before {
         background: rgb(48, 137, 255);
     }
 	.slider-content-bottom .btm-item_02 {
-	    background: transparent url("/Assets/images/index/slide-btm-02.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/slide-btm-02.jpg") no-repeat center center;
+        background-size:cover;
 	}
         .slider-content-bottom .btm-item_02::before {
             background: rgb(2, 63, 144);
         }
 	.slider-content-bottom .btm-item_03 {
-	    background: transparent url("/Assets/images/index/slide-btm-03.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/slide-btm-03.jpg") no-repeat center center;
+        background-size:cover;
 	}
 	.slider-content-bottom .btm-item_03::before {
 	    background: rgb(48, 137, 255);
@@ -652,7 +664,7 @@
         }
 	.slider-content-bottom .slider-btm-box a {
 	    color: #fff;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 16px;
 	    text-transform: uppercase;
 	    text-decoration: none;
@@ -673,7 +685,7 @@
 	.Welcome-area .Welcome-area-text p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	    padding-bottom: 25px;
 	}
@@ -682,7 +694,7 @@
 	    font-size: 16px;
 	    text-transform: uppercase;
 	    text-decoration: none;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    position: relative;
 	    padding-right: 15px;
@@ -764,7 +776,7 @@
 	}
 	.Courses-area .single-courses figure figcaption div a {
 	    background: #023f90;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    border-radius: 0;
 	    color: #333333;
@@ -795,7 +807,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 18px;
 	    transition: all 0.3s ease-in-out;
@@ -831,7 +843,7 @@
 	.Courses-area .single-courses .courses-content-box .courses-content-bottom ul li:first-child {
 	    color: #023f90;
 	    float: left;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 15px;
 	    font-weight: 600;
 	    padding-left: 0px;
@@ -850,7 +862,8 @@
 	/*=======[ Indec Video Section Style ]========*/
 	
 	.video-main-area {
-	    background: transparent url("/Assets/images/index/video-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/video-bg.jpg") no-repeat center center;
+        background-size:cover;
 	    padding: 255px 0;
 	}
 	.video-main-area .video-play-btn {
@@ -926,7 +939,7 @@
 	.events-area .event-info p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	    padding-bottom: 15px;
 	}
@@ -935,7 +948,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 16px;
 	    transition: all 0.3s ease-in-out;
@@ -946,7 +959,8 @@
 	/*=======[ Index Counter Area Style ]========*/
 	
 	.counter-area {
-	    background: transparent url("/Assets/images/index/counter-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/counter-bg.jpg") no-repeat center center;
+        background-size:cover;
 	    min-height: 500px;
 	    position: relative;
 	    padding: 100px 0;
@@ -972,7 +986,8 @@
 	    z-index: 1;
 	}
 	.counter-area .counters {
-	    background: transparent url("/Assets/images/index/counter-shape-bg.png") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/counter-shape-bg.png") no-repeat center center;
+        background-size:cover;
 	    text-align: center;
 	    z-index: 2;
 	    color: #ffffff;
@@ -986,12 +1001,12 @@
 	.counter-area .counters .counters-item .counter-box .counter {
 	    color: #ffffff;
 	    font-size: 35px;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	}
 	.counter-area .counters .counters-item .counter-box span {
 	    color: #ffffff;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 18px;
 	    text-transform: uppercase;
 	}
@@ -1011,7 +1026,7 @@
 	.counter-area .counter-text-bottom .counter-text-box .counter-text p {
 	    margin: 0;
 	    font-size: 18px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    line-height: 26px;
 	}
 	.counter-area .counter-text-bottom .counter-text-box .counter-btn {
@@ -1023,7 +1038,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 25px;
 	}
@@ -1063,7 +1078,7 @@
 	.publication-area .publication-single-item .publication-text ul li {
 	    display: inline-block;
 	    color: #023f90;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 15px;
 	    font-weight: 600;
 	}
@@ -1072,7 +1087,7 @@
 	}
 	.publication-area .publication-single-item .publication-text ul li a {
 	    color: #333333;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 10px;
 	    font-weight: 600;
 	    text-transform: uppercase;
@@ -1084,7 +1099,8 @@
 	/*=======[Index News Area Style ]========*/
 	
 	.news-area {
-	    background: transparent url("/Assets/images/index/news-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/news-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    min-height: 500px;
 	    position: relative;
 	    padding: 100px 0;
@@ -1153,7 +1169,7 @@
 	    color: #333333;
 	    font-size: 18px;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    transition: all 0.3s ease-in-out;
 	}
@@ -1168,7 +1184,7 @@
 	.news-area .news-single-box .news-content p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	}
 	.news-area .news-single-box .news-content a {
@@ -1176,7 +1192,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 16px;
 	    transition: all 0.3s ease-in-out;
@@ -1208,7 +1224,7 @@
 	    text-align: center;
 	}
 	.students-say-area .carousel-text .single-box {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 400;
 	    color: #666666;
 	    font-size: 15px;
@@ -1248,7 +1264,7 @@
 	}
 	.students-say-area .carousel-text .single-box h3 {
 	    padding-bottom: 6px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	}
 	.students-say-area .carousel-text .single-box span {
 	    font-size: 15px;
@@ -1262,7 +1278,8 @@
 	/*=======[Index Instraction Area Style ]========*/
 	
 	.instraction-area {
-	    background: transparent url("/Assets/images/index/instraction-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/instraction-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    position: relative;
 	}
 	.instraction-area:before {
@@ -1290,7 +1307,7 @@
 	.instraction-area .inspiration-full-box .section-header-l p {
 	    color: #333333;
 	    font-size: 18px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    margin: 0;
 	    padding: 0px;
 	    text-align: left;
@@ -1306,7 +1323,7 @@
 	    line-height: 55px;
 	    color: #ffffff;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    text-decoration: none;
 	    text-transform: uppercase;
@@ -1314,7 +1331,8 @@
 	/*=======[Index Footer Area Style ]========*/
 	
 	footer {
-	    background: transparent url("/Assets/images/index/footer-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index/footer-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    min-height: 150px;
 	    padding-top: 100px;
 	}
@@ -1331,7 +1349,7 @@
 	    font-size: 28px;
 	}
 	footer .footer-content-box p {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 14px;
 	    padding-bottom: 10px;
 	    color: #a0a0a0;
@@ -1380,7 +1398,7 @@
 	    outline: medium none;
 	    padding: 8px 15px;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 13px;
 	}
@@ -1392,7 +1410,7 @@
 	}
 	footer .footer-bottom .footer-bottom-inner p {
 	    margin: 0;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 400;
 	    font-size: 14px;
 	    color: #9f9f9f;
@@ -1405,7 +1423,7 @@
 	    margin: 0;
 	}
 	footer .footer-bottom .footer-bottom-inner .footer-menu span a {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 14px;
 	    color: #9f9f9f;
@@ -1423,7 +1441,7 @@
 	footer .footer-bottom .footer-bottom-inner .footer-menu li a {
 	    font-size: 14px;
 	    color: #9f9f9f;
-	    text-decoretion: none;
+	    text-decoration: none;
 	    transition: all 0.1s ease-in-out;
 	}
 	footer .footer-bottom .footer-bottom-inner .footer-menu li a:hover .facebook {
@@ -1514,7 +1532,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 16px;
 	    transition: all 0.3s ease-in-out;
@@ -1529,7 +1547,8 @@
 	    color: #023f90;
 	}
 	.home_version_02 .register-area {
-	    background: transparent url("/Assets/images/index-02/register-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/register-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    min-height: 500px;
 	    position: relative;
 	    padding: 100px 0;
@@ -1595,7 +1614,7 @@
 	    border: none;
 	    border-radius: 0px;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	}
 	.home_version_02 .register-area .form-full-box .register-form .register-btn-box .register-btn:hover {
@@ -1665,7 +1684,7 @@
 	    text-transform: uppercase;
 	    color: #ffffff;
 	    font-weight: 700;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	}
 	.home_version_02 .Courses-area-02 .single-courses figure figcaption ul {
 	    margin: 0;
@@ -1673,7 +1692,7 @@
 	.home_version_02 .Courses-area-02 .single-courses figure figcaption ul li {
 	    display: inline-block;
 	    text-align: left;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #023f90;
 	}
 	.home_version_02 .Courses-area-02 .single-courses figure figcaption ul li:last-child {
@@ -1724,7 +1743,8 @@
 	    color: #023f90;
 	}
 	.home_version_02 .information-area {
-	    background: transparent url("/Assets/images/index-02/info_bg_v2.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/info_bg_v2.jpg") no-repeat center center;
+        background-size: cover;
 	    padding: 165px 0;
 	}
 	.home_version_02 .information-area .info-content-box {
@@ -1750,7 +1770,7 @@
 	    background: #023f90;
 	    color: #333333;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    padding: 15px 50px;
 	    text-decoration: none;
@@ -1798,7 +1818,7 @@
 	.home_version_02 .events-area .event-info p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	    padding-bottom: 15px;
 	}
@@ -1807,7 +1827,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 16px;
 	    transition: all 0.3s ease-in-out;
@@ -1824,14 +1844,15 @@
 	    background: #023f90;
 	    color: #333333;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    padding: 18px 50px;
 	    text-decoration: none;
 	    text-transform: uppercase;
 	}
 	.home_version_02 .stu-parent-say-area {
-	    background: transparent url("/Assets/images/index-02/parent-say-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/parent-say-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    min-height: 500px;
 	    position: relative;
 	    padding: 100px 0;
@@ -1901,7 +1922,7 @@
 	    padding-left: 15px;
 	}
 	.home_version_02 .stu-parent-say-area .screen-content-box .single--item .images-box ul li:last-child h3 {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    margin: 0;
 	    padding: 0;
@@ -1977,7 +1998,7 @@
 	}
 	.home_version_02 .teachers-area .teacher-body .teachars-info span {
 	    font-size: 14px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    text-transform: uppercase;
 	    color: #666;
 	}
@@ -2050,7 +2071,7 @@
 	    color: #333333;
 	    font-size: 18px;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    transition: all 0.3s ease-in-out;
 	}
@@ -2064,7 +2085,7 @@
 	}
 	.home_version_02 .blog-area .blog-single-box .blog-content p {
 	    margin: 0;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	}
 	.home_version_02 .blog-area .blog-single-box .blog-content .content-bottom p {
@@ -2083,7 +2104,7 @@
 	}
 	.home_version_02 .blog-area .blog-single-box .blog-content .content-bottom ul li:first-child {
 	    float: left;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 15px;
 	    font-weight: 600;
 	    padding-left: 0px;
@@ -2101,7 +2122,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 14px;
 	    transition: all 0.3s ease-in-out;
@@ -2116,7 +2137,8 @@
 	    color: #f56040;
 	}
 	.home_version_02 .instraction-area {
-	    background: transparent url("/Assets/images/index-02/instraction-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/instraction-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    position: relative;
 	}
 	.home_version_02 .instraction-area:before {
@@ -2129,7 +2151,8 @@
 	    width: 100%;
 	}
 	.home_version_02 footer {
-	    background: transparent url("/Assets/images/index-02/footer-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-02/footer-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    min-height: 150px;
 	    padding-top: 100px;
 	}
@@ -2187,7 +2210,7 @@
 	    margin-top: 200px;
 	}
 	.home_version_03 header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 50px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -2210,7 +2233,7 @@
 	    font-size: 15px;
 	    font-weight: 500;
 	    padding: 15px 25px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    text-transform: uppercase;
 	    transition: all 0.3s ease-in-out;
@@ -2247,7 +2270,7 @@
 	    top: 8px;
 	    left: 0;
 	    margin-left: 12px;
-	    margin-top: 10;
+	    margin-top: 10px;
 	    content: "";
 	    transition: all 0.2s ease-in-out;
 	}
@@ -2280,9 +2303,9 @@
 	    width: 100%;
 	}
 	.home_version_03 .Welcome-area .wel-shap .img-full-box .images-box {
-	    min-height: 290px img;
-	    min-height-height: 100%;
-	    min-height-width: 100%;
+	    min-height: 290px;
+	    min-height: 100%;
+	    min-width: 100%;
 	}
 	.home_version_03 .Welcome-area .wel-shap .content-full-box {
 	    padding-right: 70px;
@@ -2301,7 +2324,7 @@
 	    font-size: 16px;
 	    text-transform: uppercase;
 	    text-decoration: none;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    position: relative;
 	    padding-right: 15px;
@@ -2347,7 +2370,7 @@
 	    font-size: 15px;
 	    text-transform: uppercase;
 	    font-weight: 600;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    line-height: 16px;
 	    padding-top: 5px;
 	}
@@ -2363,7 +2386,7 @@
 	}
 	.home_version_03 .Welcome-area .event-box .event-box-padding .event-content h3 a {
 	    padding-bottom: 15px;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    text-transform: none;
 	    font-size: 18px;
@@ -2388,7 +2411,7 @@
 	    font-size: 16px;
 	    text-transform: uppercase;
 	    text-decoration: none;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    position: relative;
 	    padding-right: 15px;
@@ -2406,7 +2429,8 @@
 	    padding-left: 10px;
 	}
 	.home_version_03 .search-curses-area {
-	    background: url("/Assets/images/index-03/scarch-bg.jpg") no-repeat center center/cover;
+	    background: url("/Assets/images/index-03/scarch-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    background-position: center;
 	    position: relative;
 	    z-index: 1;
@@ -2468,7 +2492,7 @@
 	    border-radius: 0;
 	    color: #333333;
 	    font-weight: 600;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    margin-top: 40px;
 	    padding: 15px 40px;
 	    text-transform: uppercase;
@@ -2518,7 +2542,7 @@
 	}
 	.home_version_03 .Courses-area .courses-wrapper .single-courses figure figcaption div a {
 	    background: #023f90;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    border-radius: 0;
 	    color: #333333;
@@ -2561,7 +2585,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 18px;
 	    transition: all 0.3s ease-in-out;
@@ -2608,7 +2632,7 @@
 	.home_version_03 .Courses-area .courses-wrapper .single-courses .courses-content-box .courses-content-bottom ul li:first-child {
 	    color: #023f90;
 	    float: left;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 15px;
 	    font-weight: 600;
 	    padding-left: 0px;
@@ -2650,7 +2674,8 @@
 	    transition: all 0.3s ease-in-out;
 	}
 	.home_version_03 .achievment-area {
-	    background: url("/Assets/images/index-03/achievment-bg.jpg") no-repeat center center/cover;
+	    background: url("/Assets/images/index-03/achievment-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    background-position: center;
 	    position: relative;
 	    z-index: 1;
@@ -2696,12 +2721,12 @@
 	.home_version_03 .achievment-area .counters-item .counter-box .counter {
 	    color: #ffffff;
 	    font-size: 35px;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	}
 	.home_version_03 .achievment-area .counters-item .counter-box span {
 	    color: #ffffff;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 18px;
 	    text-transform: uppercase;
 	}
@@ -2762,7 +2787,7 @@
 	    visibility: visible;
 	    opacity: 1;
 	    transform: rotate(0deg) scale(1);
-	    width: 100;
+	    width: 100px;
 	}
 	.home_version_03 .gallery-area .gallery-body-img .gallery-c-02 .gallery-single-item:hover figcaption {
 	    visibility: visible;
@@ -2770,7 +2795,8 @@
 	    opacity: 1;
 	}
 	.home_version_03 .all-stu-count-area {
-	    background: transparent url("/Assets/images/index-03/all-stu-count-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-03/all-stu-count-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    padding: 165px 0;
 	    position: relative;
 	}
@@ -2805,7 +2831,7 @@
 	    border: medium none;
 	    border-radius: 0;
 	    color: #333333;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 15px;
 	    font-weight: 600;
 	    margin-top: 40px;
@@ -2856,7 +2882,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 18px;
 	    transition: all 0.3s ease-in-out;
@@ -2909,7 +2935,7 @@
 	    color: #b2b2b2;
 	    text-decoration: none;
 	    font-size: 14px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	}
 	.home_version_03 .blog-area .blog-wrapper .blog-single-box .content-full-box .bolg-content-bottom ul li a .blog-icon {
 	    padding-right: 5px;
@@ -2968,7 +2994,8 @@
 	    opacity: 1;
 	}
 	.home_version_03 footer {
-	    background: transparent url("/Assets/images/index-03/footer-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-03/footer-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    min-height: 150px;
 	    padding-top: 100px;
 	}
@@ -2989,7 +3016,7 @@
 	}
 	.home_version_04 .section-h-medium {
 	    padding: 0;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    text-transform: none;
 	    color: #333333;
 	    text-decoration: none;
@@ -3007,7 +3034,7 @@
 	    padding-right: 15px;
 	    display: inline-block;
 	    color: #333333;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 13px;
 	}
@@ -3030,7 +3057,7 @@
 	    font-size: 20px;
 	    text-transform: uppercase;
 	    font-weight: 700;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    padding-left: 5px;
 	    line-height: 30px;
 	    letter-spacing: 1px;
@@ -3045,7 +3072,7 @@
 	    padding-left: 15px;
 	}
 	.home_version_04 .header-top .header-top-right ul li a {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    color: #333333;
 	    font-size: 13px;
@@ -3088,7 +3115,7 @@
 	    display: none;
 	}
 	.home_version_04 .header-body .edu-navbar .edu-nav .nav li a {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 700;
 	    color: #fff;
 	    text-transform: uppercase;
@@ -3255,7 +3282,7 @@
 	    font-size: 16px;
 	    text-transform: uppercase;
 	    text-decoration: none;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    position: relative;
 	    padding-right: 15px;
@@ -3302,7 +3329,7 @@
 	    font-size: 15px;
 	    text-transform: uppercase;
 	    font-weight: 600;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    line-height: 16px;
 	    padding-top: 5px;
 	}
@@ -3318,7 +3345,7 @@
 	}
 	.home_version_04 .about_vi_e-area .event-box .event-box-padding .event-content h3 a {
 	    padding-bottom: 15px;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    text-transform: none;
 	    font-size: 18px;
@@ -3340,7 +3367,7 @@
 	    font-size: 16px;
 	    text-transform: uppercase;
 	    text-decoration: none;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    position: relative;
 	    padding-right: 15px;
@@ -3357,7 +3384,8 @@
 	    padding-left: 10px;
 	}
 	.home_version_04 .about_vi_e-area .video-wapper .video-play-btn {
-	    background: transparent url("/Assets/images/index-04/video-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-04/video-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    min-height: 290px;
 	    text-align: center;
 	    z-index: 1;
@@ -3413,7 +3441,7 @@
 	}
 	.home_version_04 .facilities-area .Facilities-single-box h2 a {
 	    padding-bottom: 0px;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    color: #ffffff;
 	    text-decoration: none;
@@ -3533,7 +3561,7 @@
 	.home_version_04 .Courses-area-04 .single-courses .courses-content .read_more-btn {
 	    color: #333333;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    text-decoration: none;
 	    text-transform: uppercase;
@@ -3555,7 +3583,8 @@
 	}
 	.home_version_04 .trausted-stu-area .trausted-content {
 	    position: relative;
-	    background: transparent url("/Assets/images/index-04/trausted-stu.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-04/trausted-stu.jpg") no-repeat center center;
+        background-size: cover;
 	    padding: 58px 68px;
 	}
 	.home_version_04 .trausted-stu-area .trausted-content:before {
@@ -3576,7 +3605,7 @@
 	.home_version_04 .trausted-stu-area .trausted-content p {
 	    color: #666666;
 	    font-size: 18px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    margin: 0;
 	    padding: 0px;
 	    text-align: left;
@@ -3597,7 +3626,7 @@
 	    line-height: 55px;
 	    color: #323232;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    text-decoration: none;
 	    text-transform: uppercase;
@@ -3633,7 +3662,7 @@
 	    color: #333333;
 	    font-size: 18px;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    transition: all 0.3s ease-in-out;
 	}
@@ -3651,14 +3680,14 @@
 	.home_version_04 .reg-news_others .news-item-box .single-item .news-content p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #b2b2b2;
 	}
 	.home_version_04 .reg-news_others .news-item-box a {
 	    color: #323232;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 16px;
 	    transition: all 0.3s ease-in-out;
@@ -3679,7 +3708,8 @@
 	}
 	.home_version_04 .reg-news_others .regi-full-box .regi-content {
 	    text-align: center;
-	    background: url("/Assets/images/index-04/regirster-bg.jpg") no-repeat center center/cover;
+	    background: url("/Assets/images/index-04/regirster-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    position: relative;
 	    z-index: 0;
 	    padding: 35px 30px 0;
@@ -3705,10 +3735,11 @@
 	    bottom: 0;
 	    height: 35px;
 	    width: 180px;
-	    background: url("/Assets/images/index-04/regi-shap.png") no-repeat center center/cover;
+	    background: url("/Assets/images/index-04/regi-shap.png") no-repeat center center;
+        background-size: cover;
 	}
 	.home_version_04 .reg-news_others .regi-full-box .regi-content p {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #333333;
 	    font-size: 19px;
 	    z-index: 2;
@@ -3744,7 +3775,7 @@
 	    border: none;
 	    border-radius: 0px;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    transition: all 0.3s ease-in-out;
 	}
@@ -3768,7 +3799,7 @@
 	    margin-bottom: 6px;
 	}
 	.home_version_04 .reg-news_others .success-story .success-author-info .section-h-medium a {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    text-transform: uppercase;
 	    color: #333333;
 	    text-decoration: none;
@@ -3788,7 +3819,8 @@
 	    background: #023f90;
 	}
 	.home_version_04 footer {
-	    background: transparent url("/Assets/images/index-04/footer-bg.jpg") no-repeat center center/cover;
+	    background: transparent url("/Assets/images/index-04/footer-bg.jpg") no-repeat center center;
+        background-size: cover;
 	    min-height: 150px;
 	    padding-top: 100px;
 	}
@@ -3820,7 +3852,7 @@
 	    margin-top: 50px;
 	}
 	.single-courses_v header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -3929,7 +3961,7 @@
 	    margin-top: 5px;
 	    font-weight: 600;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	}
 	.single-courses_v .single-courses-area .single-curses-contert .details-img-bxo img {
 	    height: 100%;
@@ -3947,7 +3979,7 @@
 	    padding-bottom: 20px;
 	}
 	.single-courses_v .single-courses-area .single-curses-contert .description-content .requirements ul li {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    line-height: 24px;
 	    font-size: 14px;
 	    padding-left: 15px;
@@ -3967,7 +3999,7 @@
 	    padding: 0;
 	}
 	.single-courses_v .single-courses-area .single-curses-contert .description-content .count-list ol li {
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	    line-height: 24px;
 	    font-size: 14px;
@@ -4020,7 +4052,7 @@
 	    float: right;
 	    font-size: 15px;
 	    padding-right: 30px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #333333;
 	    line-height: 20px;
 	}
@@ -4112,7 +4144,7 @@
 	.single-courses_v .single-courses-area .single-curses-contert .review-content .five-star-rating .rating-box .five {
 	    font-size: 70px;
 	    color: #023f90;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    line-height: 50px;
 	}
 	.single-courses_v .single-courses-area .single-curses-contert .review-content .five-star-rating .rating-box ul {
@@ -4501,7 +4533,8 @@
 	    text-decoration: none;
 	}
 	.single-courses_v .single-courses-area .sidebar-content .special-offer {
-	    background: url("/Assets/images/Single_cources/discount-offer.jpg") no-repeat center center/cover;
+	    background: url("/Assets/images/Single_cources/discount-offer.jpg") no-repeat center center;
+        background-size: cover;
 	    position: relative;
 	    margin-top: 40px;
 	    padding: 55px 30px;
@@ -4644,7 +4677,7 @@
 	}
 	.single-courses_v .single-courses-area-01 .courses-wrapper .single-courses figure figcaption div a {
 	    background: #023f90;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    border-radius: 0;
 	    color: #333333;
@@ -4688,7 +4721,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 18px;
 	    transition: all 0.3s ease-in-out;
@@ -4735,7 +4768,7 @@
 	.single-courses_v .single-courses-area-01 .courses-wrapper .single-courses .courses-content-box .courses-content-bottom ul li:first-child {
 	    color: #023f90;
 	    float: left;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 15px;
 	    font-weight: 600;
 	    padding-left: 0px;
@@ -4819,12 +4852,19 @@
 	    width: 100%;
 	    left: 0;
 	}
+    .intro-text{
+        margin-top:20px !important;
+    }
+    .intro-text h1 {
+        font-size:55px !important;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0,0.75);
+}
 	.courses header .header-body .intro-text {
 	    text-align: center;
 	    margin-top: 80px;
 	}
 	.courses header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -4908,7 +4948,7 @@
 	}
 	.courses .courses-1 .single-courses figure figcaption div a {
 	    background: #023f90;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    border-radius: 0;
 	    color: #333333;
@@ -4939,7 +4979,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 18px;
 	    transition: all 0.3s ease-in-out;
@@ -4975,7 +5015,7 @@
 	.courses .courses-1 .single-courses .courses-content-box .courses-content-bottom ul li:first-child {
 	    color: #023f90;
 	    float: left;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 15px;
 	    font-weight: 600;
 	    padding-left: 0px;
@@ -5037,7 +5077,7 @@
 	    text-transform: uppercase;
 	    color: #ffffff;
 	    font-weight: 700;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	}
 	.courses .courses-02 .single-courses figure figcaption ul {
 	    margin: 0;
@@ -5045,7 +5085,7 @@
 	.courses .courses-02 .single-courses figure figcaption ul li {
 	    display: inline-block;
 	    text-align: left;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #023f90;
 	}
 	.courses .courses-02 .single-courses figure figcaption ul li:last-child {
@@ -5088,7 +5128,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 18px;
 	    transition: all 0.3s ease-in-out;
@@ -5207,7 +5247,7 @@
 	.courses .courses-03 .single-courses .courses-content .read_more-btn {
 	    color: #333333;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    text-decoration: none;
 	    text-transform: uppercase;
@@ -5269,7 +5309,7 @@
 	}
 	.courses .courses-area-04 .courses-wrapper .single-courses figure figcaption div a {
 	    background: #023f90;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    border-radius: 0;
 	    color: #333333;
@@ -5312,7 +5352,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 18px;
 	    transition: all 0.3s ease-in-out;
@@ -5359,7 +5399,7 @@
 	.courses .courses-area-04 .courses-wrapper .single-courses .courses-content-box .courses-content-bottom ul li:first-child {
 	    color: #023f90;
 	    float: left;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 15px;
 	    font-weight: 600;
 	    padding-left: 0px;
@@ -5441,7 +5481,7 @@
 	    margin-top: 80px;
 	}
 	.blog_1 header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -5869,7 +5909,7 @@
 	    margin-top: 80px;
 	}
 	.post-1 header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -6178,7 +6218,7 @@
 	}
 	.post-1 .post_1_area .post_left-side .post_slider .blog-post figure figcaption div a {
 	    background: #023f90;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    border-radius: 0;
 	    color: #333333;
@@ -6222,7 +6262,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: none;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 18px;
 	    transition: all 0.3s ease-in-out;
@@ -6468,7 +6508,7 @@
 	    margin-top: 80px;
 	}
 	.teachers-01 header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -6526,7 +6566,7 @@
 	}
 	.teachers-01 .teachers-area .teachers-wapper-01 .teacher-body .teachars-info span {
 	    font-size: 14px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    text-transform: uppercase;
 	    color: #727272;
 	}
@@ -6617,7 +6657,7 @@
 	}
 	.teachers-01 .teachers-area .teachers-wapper-02 figure .teachers-name span {
 	    font-size: 14px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    text-transform: uppercase;
 	    color: #727272;
 	}
@@ -6680,7 +6720,7 @@
 	    margin-top: 80px;
 	}
 	.t-profile-01 header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -7047,7 +7087,7 @@
 	    margin-top: 80px;
 	}
 	.become_teachers header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -7206,7 +7246,7 @@
 	    margin-top: 80px;
 	}
 	.event-details-1 header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -7417,7 +7457,7 @@
 	    color: #333333;
 	    font-size: 16px;
 	    text-transform: uppercase;
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    transition: all 0.3s ease-in-out;
 	}
@@ -7435,7 +7475,7 @@
 	.event-details-1 .event-details .post_left-side .more-events .event-single-box .blog-content p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	}
 	.event-details-1 .event-details .post_left-side .more-events .event-single-box .blog-content .content-bottom p {
@@ -7452,7 +7492,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 14px;
 	    transition: all 0.3s ease-in-out;
@@ -7584,7 +7624,7 @@
 	    /*=======[ Up Comming Events ]========*/
 	}
 	.event-01 header .header-body {
-	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/admissions/admissions-banner.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -7602,7 +7642,7 @@
 	    margin-top: 80px;
 	}
 	.event-01 header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -7667,7 +7707,7 @@
 	.event-01 .events-grid-2 .event-info p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	    padding-bottom: 15px;
 	}
@@ -7676,7 +7716,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 16px;
 	    transition: all 0.3s ease-in-out;
@@ -7693,7 +7733,7 @@
 	    background: #023f90;
 	    color: #333333;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    padding: 18px 50px;
 	    text-decoration: none;
@@ -7741,7 +7781,7 @@
 	.event-01 .events-grid-3 .event-info p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	    padding-bottom: 15px;
 	}
@@ -7750,7 +7790,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 16px;
 	    transition: all 0.3s ease-in-out;
@@ -7767,7 +7807,7 @@
 	    background: #023f90;
 	    color: #333333;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    padding: 18px 50px;
 	    text-decoration: none;
@@ -7814,7 +7854,7 @@
 	.event-01 .events-list-03 .event-info p {
 	    margin: 0;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    color: #666666;
 	    padding-bottom: 15px;
 	}
@@ -7823,7 +7863,7 @@
 	    margin: 0px;
 	    text-decoration: none;
 	    text-transform: uppercase;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    font-size: 16px;
 	    transition: all 0.3s ease-in-out;
@@ -7839,7 +7879,7 @@
 	    background: #023f90;
 	    color: #333333;
 	    font-size: 15px;
-	    font-family: "Open Sans", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-weight: 600;
 	    padding: 18px 50px;
 	    text-decoration: none;
@@ -7868,7 +7908,7 @@
 	    margin-top: 80px;
 	}
 	.contact header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -7913,7 +7953,7 @@
 	    color: #666;
 	}
 	.contact .contact-area-02 .contact-info .contact-box {
-	    margin-top: 60px;
+	    margin-top: 40px;
 	}
 	.contact .contact-area-02 .contact-info .contact-box .single-address-box {
 	    padding: 30px 0;
@@ -7935,8 +7975,11 @@
 	.contact .contact-area-02 .contact-info .contact-box .single-address-box .single-address p {
         display:grid;
 	    margin: 0;
-        font-size:12px;
+        word-break:break-word;
 	}
+    .contact .contact-area-02 .contact-info .contact-box .single-address-box .single-address a {
+        color:#727272;
+    }
 	.contact .contact-area-02 .contact-info .contact-box .single-address-box ul {
 	    margin: 0px;
 	}
@@ -8030,7 +8073,7 @@
 	    margin-top: 80px;
 	}
 	.register header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;
@@ -8135,7 +8178,7 @@
 	    margin-top: 80px;
 	}
 	.login header .header-body .intro-text h1 {
-	    font-family: "Montserrat", sans-serif;
+	    font-family: 'Raleway', sans-serif;
 	    font-size: 40px;
 	    font-weight: 700;
 	    color: #ffffff;

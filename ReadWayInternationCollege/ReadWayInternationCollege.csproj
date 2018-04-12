@@ -409,9 +409,11 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\_ContactFormMessage.cshtml" />
+    <Content Include="Views\Home\Admissions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Assets\images\admissions\" />
     <Folder Include="Assets\images\gallery\" />
   </ItemGroup>
   <ItemGroup>

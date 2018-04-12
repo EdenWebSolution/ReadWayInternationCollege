@@ -67,7 +67,7 @@ namespace ReadWayInternationCollege.Controllers
             }
         }
 
-        public ActionResult Gallery(SendAMessageViewModel sendAMessageViewModel)
+        public ActionResult Gallery()
         {
             return View();
         }
@@ -85,6 +85,10 @@ namespace ReadWayInternationCollege.Controllers
                 return Json(new { status = TransactionStatusEnum.fail, subject = "Failed", message = "Oops! Something went wrong while sending your message. Please try again" }, JsonRequestBehavior.AllowGet);
             }
 
+        }
+        public ActionResult Admissions()
+        {
+            return View();
         }
     }
 }
