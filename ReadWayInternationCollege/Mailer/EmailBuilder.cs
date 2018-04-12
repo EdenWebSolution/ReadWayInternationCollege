@@ -25,6 +25,7 @@ namespace ReadWayInternationCollege.Mailer
         public string From { get; set; }
 
         public string To { get; set; }
+        public bool IsBodyHtml { get; set; }
         public List<string> ToMany { get; set; }
 
 
@@ -32,6 +33,7 @@ namespace ReadWayInternationCollege.Mailer
         {
             mailMessage = new MailMessage(messageBuilder.From, messageBuilder.To)
             {
+                IsBodyHtml = messageBuilder.IsBodyHtml,
                 Subject = messageBuilder.Subject,
                 Body = messageBuilder.Body
             };

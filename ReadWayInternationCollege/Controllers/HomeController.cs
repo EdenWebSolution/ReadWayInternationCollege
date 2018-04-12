@@ -9,6 +9,7 @@ using RedWillow.MvcToastrFlash;
 using ReadWayInternationCollege.Mailer;
 using ReadWayInternationCollege.Enumerations;
 using Microsoft.Security.Application;
+using ReadWayInternationCollege.MailTemplates;
 
 namespace ReadWayInternationCollege.Controllers
 {
@@ -41,13 +42,13 @@ namespace ReadWayInternationCollege.Controllers
                 sendAMessageViewModel.Message = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Message);
                 sendAMessageViewModel.Name = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Name);
                 sendAMessageViewModel.Subject = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Subject);
-
                 var messageBuilder = new EmailBuilder()
                 {
                     From = "d015240@student.nibm.lk",
                     To = "tnlthanzeel@gmail.com",
-                    Subject = sendAMessageViewModel.Subject,
-                    Body = "Dear Sir/Madam, I am " + sendAMessageViewModel.Name + ".\nMy Email address is " + sendAMessageViewModel.EmailAddress + ".\n\n" + sendAMessageViewModel.Message,
+                    Subject = "Message From Parent",
+                    IsBodyHtml = true,
+                    Body = BuildMailTemplate.CreateContactUsTemplate(sendAMessageViewModel)
                 };
                 await EmailBuilder.SendEmailAsync(messageBuilder);
 
