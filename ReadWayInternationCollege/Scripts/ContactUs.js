@@ -1,7 +1,6 @@
 ﻿$(document).ready(function () {
     $("#ContactUsForm").submit(function (event) {
         if (!$("#ContactUsForm").valid()) { return; }
-        $('#secondaryLoader').removeAttr('hidden');
         $('#secondaryLoader').show();
         $('#message').hide();
 
