@@ -42,7 +42,7 @@ var onAjaxRequestSuccess = function (result) {
         $('#message').show();
     }
 
-    if (status == 1) {
+    else if (status == 1) {
         toastr.error(result.message, result.subject);
     }
 }  
