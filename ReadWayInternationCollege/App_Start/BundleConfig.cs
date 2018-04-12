@@ -1,13 +1,14 @@
-﻿using System.Web;
+﻿using System;
+using System.Web;
 using System.Web.Optimization;
 
 namespace ReadWayInternationCollege
 {
     public class BundleConfig
     {
-        // For more information on bundling, visit https://go.microsoft.com/fwlink/?LinkId=301862
         public static void RegisterBundles(BundleCollection bundles)
         {
+            AddDefaultIgnorePatterns(bundles.IgnoreList);
             //bundles.UseCdn = true;
             //var googleFntsCDN = "https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600";
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
@@ -38,8 +39,7 @@ namespace ReadWayInternationCollege
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            // Use the development version of Modernizr to develop with and learn from. Then, when you're
-            // ready for production, use the build tool at https://modernizr.com to pick only the tests you need.
+
             bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
                         "~/Scripts/modernizr-*"));
 
@@ -68,7 +68,6 @@ namespace ReadWayInternationCollege
             #region login error message
 
             bundles.Add(new StyleBundle("~/toastr/css").Include(
-            //"~/Content/site.css",
             "~/Content/toastr.css"
             ));
 
@@ -79,13 +78,25 @@ namespace ReadWayInternationCollege
 
             #endregion
 
-
             bundles.Add(new ScriptBundle("~/Ajax-scripts").Include(
                 "~/Scripts/jquery-1.10.2.js",
                 "~/Scripts/jquery.unobtrusive-ajax.js"
                 ));
-            //BundleTable.EnableOptimizations = true;
 
+            bundles.Add(new ScriptBundle("~/ContactUs/js").Include(
+                "~/Scripts/ContactUs.js"
+                ));
+
+            BundleTable.EnableOptimizations = true;
+        }
+        public static void AddDefaultIgnorePatterns(IgnoreList ignoreList)
+        {
+            if (ignoreList == null)
+                throw new ArgumentNullException("ignoreList");
+            ignoreList.Ignore("*.intellisense.js");
+            ignoreList.Ignore("*-vsdoc.js");
+            ignoreList.Ignore("*.debug.js", OptimizationMode.WhenEnabled);
+            ignoreList.Ignore("*.min.css", OptimizationMode.WhenDisabled);
         }
     }
 }
