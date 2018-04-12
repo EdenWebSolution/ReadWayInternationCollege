@@ -363,7 +363,7 @@ $(document).ready(function () {
             data: { "emailAddress": Email.toString() },
             success: function (result) {
 
-                onAjaxRequestSuccess(result);
+                onFooterAjaxRequestSuccess(result);
             },
             error: function (jqXHR, textStatus, errorThrown) {
 
@@ -376,7 +376,7 @@ $(document).ready(function () {
     });
 });
 
-var onAjaxRequestSuccess = function (result) {
+var onFooterAjaxRequestSuccess = function (result) {
     var status = result.status;
     if (status == 0) {
         toastr.success(result.message, result.subject);

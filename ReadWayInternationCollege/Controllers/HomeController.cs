@@ -16,9 +16,9 @@ namespace ReadWayInternationCollege.Controllers
 {
     public class HomeController : Controller
     {
-        [Required(ErrorMessage ="Please enter you email")]
+        [Required(ErrorMessage = "Please enter you email")]
         [DataType(DataType.EmailAddress)]
-        public string GetStartedNowEmail  { get; set; }
+        public string GetStartedNowEmail { get; set; }
 
 
         public ActionResult Index()
@@ -75,8 +75,16 @@ namespace ReadWayInternationCollege.Controllers
         [HttpPost]
         public ActionResult SendMoreInfo(string emailAddress)
         {
-            var a = emailAddress;
-            return Json(new { status = TransactionStatusEnum.success, subject = "Sent", message = "Your message has been sent successfully" }, JsonRequestBehavior.AllowGet);
+            var safeEmail = Sanitizer.GetSafeHtmlFragment(emailAddress);
+            try
+            {
+                return Json(new { status = TransactionStatusEnum.success, subject = "Sent", message = "Your message has been sent successfully" }, JsonRequestBehavior.AllowGet);
+            }
+            catch (Exception)
+            {
+                return Json(new { status = TransactionStatusEnum.fail, subject = "Failed", message = "Oops! Something went wrong while sending your message. Please try again" }, JsonRequestBehavior.AllowGet);
+            }
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿@model ReadWayInternationCollege.Models.SendAMessageViewModel
 
-@using (Ajax.BeginForm("Contact", "Home", new AjaxOptions { HttpMethod = "POST", OnSuccess = "onAjaxRequestSuccess" }, new { @id = "ContactUsForm", role = "form" }))
+@using (Ajax.BeginForm("Contact", "Home", null, new AjaxOptions { HttpMethod = "POST", OnSuccess = "onAjaxRequestSuccess" }, new { @id = "ContactUsForm", role = "form" }))
 {
     @Html.AntiForgeryToken()
     <div class="row">
