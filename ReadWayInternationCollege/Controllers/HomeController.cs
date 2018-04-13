@@ -16,11 +16,6 @@ namespace ReadWayInternationCollege.Controllers
 {
     public class HomeController : Controller
     {
-        [Required(ErrorMessage = "Please enter you email")]
-        [DataType(DataType.EmailAddress)]
-        public string GetStartedNowEmail { get; set; }
-
-
         public ActionResult Index()
         {
             return View();
@@ -73,6 +68,7 @@ namespace ReadWayInternationCollege.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult SendMoreInfo(string emailAddress)
         {
             var safeEmail = Sanitizer.GetSafeHtmlFragment(emailAddress);

@@ -335,6 +335,7 @@ $(document).ready(function () {
         }
     });
 
+
     $("#SendMoreInfoForm").submit(function (event) {
         event.preventDefault();
         event.stopImmediatePropagation();
@@ -356,10 +357,22 @@ $(document).ready(function () {
         var action = $("#SendMoreInfoForm").attr("action");
         dataString = new FormData($("#SendMoreInfoForm").get(0));
 
+
+        var formID = $(this).closest("form").attr('id');
+
+        var token = $('input[name="__RequestVerificationToken"]').val();
+        $.ajaxPrefilter(function (options, originalOptions) {
+            if (options.type.toUpperCase() == "POST" && formID == 'SendMoreInfoForm') {
+                options.data = $.param($.extend(originalOptions.data, { __RequestVerificationToken: token }));
+                formID = null;
+            }
+        });
+
         $.ajax({
             type: 'post',
             dataType: 'json',
             url: action,
+
             data: { "emailAddress": Email.toString() },
             success: function (result) {
 
