@@ -95,9 +95,10 @@
 	.section-header-l p {
 	    margin: 0;
 	}
-	.section-header-l h2 {
-	    text-align: left;
-	}
+        .section-header-l h2 {
+            text-align: left;
+            color: #333333;
+        }
 	.section-header-l:before {
 	    left: 15px;
 	    transform: none;
@@ -1304,9 +1305,10 @@
 	.instraction-area .inspiration-full-box .section-header-l h2 {
 	    padding-bottom: 0px;
 	    margin-bottom: 20px;
+        color: aliceblue;
 	}
 	.instraction-area .inspiration-full-box .section-header-l p {
-	    color: #333333;
+	    color: aliceblue;
 	    font-size: 18px;
 	    font-family: 'Raleway', sans-serif;
 	    margin: 0;
