@@ -65,7 +65,7 @@ namespace ReadWayInternationCollege
                       ));
 
 
-            #region login error message
+            #region toastr
 
             bundles.Add(new StyleBundle("~/toastr/css").Include(
             "~/Content/toastr.css"
