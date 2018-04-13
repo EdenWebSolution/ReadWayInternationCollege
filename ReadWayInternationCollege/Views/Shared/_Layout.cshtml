@@ -127,7 +127,7 @@
                     <div class="col-xs-12 col-sm-4">
                         <h3>get in touch</h3>
                         <p>Enter your email and we'll send you more information.</p>
-                        @using (Ajax.BeginForm("SendMoreInfo", "Home", null, new AjaxOptions { HttpMethod = "POST", OnSuccess = "onFooterAjaxRequestSuccess" }, new { @id = "SendMoreInfoForm", role = "form" }))
+                        @using (Ajax.BeginForm("SendMoreInfo", "Home", null, new AjaxOptions { HttpMethod = "POST", OnSuccess = "onFooterAjaxRequestSuccess" }, new { @id = "SendMoreInfoForm", role = "form", name = "SendMoreInfoForm" }))
                         {
                             @Html.AntiForgeryToken()
                             <div class="form-group">

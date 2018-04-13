@@ -357,10 +357,14 @@ $(document).ready(function () {
         var action = $("#SendMoreInfoForm").attr("action");
         dataString = new FormData($("#SendMoreInfoForm").get(0));
 
+
+        var formID = $(this).closest("form").attr('id');
+
         var token = $('input[name="__RequestVerificationToken"]').val();
         $.ajaxPrefilter(function (options, originalOptions) {
-            if (options.type.toUpperCase() == "POST") {
+            if (options.type.toUpperCase() == "POST" && formID == 'SendMoreInfoForm') {
                 options.data = $.param($.extend(originalOptions.data, { __RequestVerificationToken: token }));
+                formID = null;
             }
         });
 
