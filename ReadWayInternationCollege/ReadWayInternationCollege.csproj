@@ -199,6 +199,13 @@
     <Content Include="Assets\images\about\board3.jpg" />
     <Content Include="Assets\images\about\schoolbadge.jpg" />
     <Content Include="Assets\images\about\schoolenvironment.jpg" />
+    <Content Include="Assets\images\admissions\admissions-banner.jpg" />
+    <Content Include="Assets\images\admissions\admissions.jpg" />
+    <Content Include="Assets\images\admissions\dates.jpg" />
+    <Content Include="Assets\images\admissions\guide.jpg" />
+    <Content Include="Assets\images\admissions\srilanka.jpg" />
+    <Content Include="Assets\images\admissions\uniform.jpg" />
+    <Content Include="Assets\images\admissions\visit.jpg" />
     <Content Include="Assets\images\blog\blog-01.jpg" />
     <Content Include="Assets\images\blog\blog-02.jpg" />
     <Content Include="Assets\images\blog\blog-03.jpg" />
@@ -413,7 +420,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\images\admissions\" />
     <Folder Include="Assets\images\gallery\" />
   </ItemGroup>
   <ItemGroup>
