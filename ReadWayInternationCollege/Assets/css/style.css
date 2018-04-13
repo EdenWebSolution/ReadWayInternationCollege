@@ -774,18 +774,18 @@
 	    transition: all 0.3s ease-in-out;
 	    opacity: 0;
 	}
-	.Courses-area .single-courses figure figcaption div a {
-	    background: #023f90;
-	    font-family: 'Raleway', sans-serif;
-	    font-weight: 600;
-	    border-radius: 0;
-	    color: #333333;
-	    display: inline-block;
-	    font-size: 15px;
-	    padding: 10px 30px;
-	    text-transform: uppercase;
-	    text-decoration: none;
-	}
+        .Courses-area .single-courses figure figcaption div a {
+            background: #023f90;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            border-radius: 0;
+            color: #ffffff;
+            display: inline-block;
+            font-size: 15px;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
 	.Courses-area .single-courses:hover figcaption {
 	    visibility: visible;
 	    top: 50%;
@@ -802,16 +802,17 @@
 	.Courses-area .single-courses .courses-content-box .courses-content h3 {
 	    margin: 0;
 	}
-	.Courses-area .single-courses .courses-content-box .courses-content h3 a {
-	    color: #323232;
-	    margin: 0px;
-	    text-decoration: none;
-	    text-transform: uppercase;
-	    font-family: 'Raleway', sans-serif;
-	    font-weight: 600;
-	    font-size: 18px;
-	    transition: all 0.3s ease-in-out;
-	}
+        .Courses-area .single-courses .courses-content-box .courses-content h3 a {
+            color: #323232;
+            text-align: center;
+            margin: 0px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 200;
+            font-size: 30px;
+            transition: all 0.3s ease-in-out;
+        }
 	.Courses-area .single-courses .courses-content-box .courses-content ul {
 	    margin: 0;
 	    padding-bottom: 15px;
