@@ -87,7 +87,7 @@ namespace ReadWayInternationCollege
                 "~/Scripts/ContactUs.js"
                 ));
 
-            //BundleTable.EnableOptimizations = true;
+            BundleTable.EnableOptimizations = true;
         }
         public static void AddDefaultIgnorePatterns(IgnoreList ignoreList)
         {

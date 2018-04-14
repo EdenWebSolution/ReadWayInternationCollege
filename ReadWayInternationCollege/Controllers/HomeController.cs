@@ -56,7 +56,7 @@ namespace ReadWayInternationCollege.Controllers
                 return Json(new { status = TransactionStatusEnum.success, subject = "Sent", message = "Your message has been sent successfully" }, JsonRequestBehavior.AllowGet);
             }
 
-            catch (Exception)
+            catch (Exception ex)
             {
                 return Json(new { status = TransactionStatusEnum.fail, subject = "Failed", message = "Oops! Something went wrong while sending your message. Please try again" }, JsonRequestBehavior.AllowGet);
             }
