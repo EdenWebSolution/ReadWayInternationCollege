@@ -44,5 +44,7 @@ var onAjaxRequestSuccess = function (result) {
 
     else if (status == 1) {
         toastr.error(result.message, result.subject);
+        $('#secondaryLoader').hide();
+        $('#message').show();
     }
 }  
