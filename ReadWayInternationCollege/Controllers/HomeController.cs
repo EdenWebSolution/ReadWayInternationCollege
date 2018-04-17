@@ -78,7 +78,7 @@ namespace ReadWayInternationCollege.Controllers
         public ActionResult ShowImages(string albumName)
         {
             var ImagePaths = _galleryFilePathService.GetImagePath(albumName);
-            return View("album");
+            return View("album", ImagePaths);
         }
 
         [HttpPost]
