@@ -51,6 +51,8 @@ namespace ReadWayInternationCollege.Controllers
                 sendAMessageViewModel.Message = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Message);
                 sendAMessageViewModel.Name = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Name);
                 sendAMessageViewModel.Subject = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Subject);
+                sendAMessageViewModel.EmailAddress = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.EmailAddress);
+
                 var messageBuilder = new EmailBuilder()
                 {
                     From = "d015240@student.nibm.lk",
