@@ -8,7 +8,7 @@ namespace ReadWayInternationCollege
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            //AddDefaultIgnorePatterns(bundles.IgnoreList);
+            ///AddDefaultIgnorePatterns(bundles.IgnoreList);
             //bundles.UseCdn = true;
             //var googleFntsCDN = "https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600";
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
