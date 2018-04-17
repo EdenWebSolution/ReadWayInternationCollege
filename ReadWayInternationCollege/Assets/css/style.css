@@ -334,7 +334,6 @@
     a:active,a:hover{
         background: transparent;
 	    outline: none;
-	    color: #023f90 !important;
     }
 	header .header-body .edu-navbar .edu-nav .nav li.active a:before,
 	header .header-body .edu-navbar .edu-nav .nav li:hover a::before,
@@ -526,6 +525,7 @@
 	    transition: all 0.3s ease-in-out;
 	}
 	header .el-btn-regular:hover {
+        color: #fff !important;
 	    background: #023f90;
 	    border: 1px solid #023f90;
 	    transition: all 0.3s ease-in-out;
@@ -2733,7 +2733,6 @@
 	}
 	.home_version_03 .gallery-area {
 	    background: #ffffff;
-	    padding: 100px 0;
 	}
 	.home_version_03 .gallery-area .gallery-body-img .gallery-c-01 {
 	    padding: 0;
@@ -2994,12 +2993,7 @@
 	.home_version_03 .partners-area .owl-item.active {
 	    opacity: 1;
 	}
-	.home_version_03 footer {
-	    background: transparent url("/Assets/images/index-03/footer-bg.jpg") no-repeat center center;
-        background-size: cover;
-	    min-height: 150px;
-	    padding-top: 100px;
-	}
+	
 	/*====================================================================================================
 										===[ Index  Version 04  ]===
 =====================================================================================================*/
@@ -8533,4 +8527,3 @@
 	    color: #023f90;
 	    text-decoration: none;
 	}
-	/*# sourceMappingURL=style.css.map */

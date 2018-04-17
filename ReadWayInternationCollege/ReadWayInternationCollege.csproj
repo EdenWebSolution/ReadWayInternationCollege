@@ -242,6 +242,21 @@
     <Content Include="Assets\images\event\up-event-02.jpg" />
     <Content Include="Assets\images\event\up-event-03.jpg" />
     <Content Include="Assets\images\favicon.ico" />
+    <Content Include="Assets\images\gallery\album-01\album-01.jpg" />
+    <Content Include="Assets\images\gallery\album-01\album-02.jpg" />
+    <Content Include="Assets\images\gallery\album-01\album-03.jpg" />
+    <Content Include="Assets\images\gallery\album-01\album-04.jpg" />
+    <Content Include="Assets\images\gallery\album-01\album-05.jpg" />
+    <Content Include="Assets\images\gallery\album-01\album-06.jpg" />
+    <Content Include="Assets\images\gallery\album-01\album-07.jpg" />
+    <Content Include="Assets\images\gallery\album-01\album-08.jpg" />
+    <Content Include="Assets\images\gallery\album-covers\album-cover-01.jpg" />
+    <Content Include="Assets\images\gallery\album-covers\album-cover-02.jpg" />
+    <Content Include="Assets\images\gallery\album-covers\album-cover-03.jpg" />
+    <Content Include="Assets\images\gallery\album-covers\album-cover-04.jpg" />
+    <Content Include="Assets\images\gallery\album-covers\album-cover-05.jpg" />
+    <Content Include="Assets\images\gallery\album-covers\album-cover-06.jpg" />
+    <Content Include="Assets\images\gallery\gallery-banner.jpg" />
     <Content Include="Assets\images\index\arror-02-left.png" />
     <Content Include="Assets\images\index\arror-02-right.png" />
     <Content Include="Assets\images\index\arror_left.png" />
@@ -421,7 +436,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\images\gallery\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
