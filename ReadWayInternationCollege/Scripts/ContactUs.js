@@ -35,8 +35,9 @@ var onAjaxRequestSuccess = function (result) {
     if (status == 0) {
         toastr.success(result.message, result.subject);
         $('#Name').val('');
-        $('#EmailAddress').val('');
+        $('#PhoneNumber').val('');
         $('#Subject').val('');
+        $('#EmailAddress').val('');
         $('#Message').val('');
         $('#secondaryLoader').hide();
         $('#message').show();

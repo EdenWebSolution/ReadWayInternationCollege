@@ -47,7 +47,7 @@ namespace ReadWayInternationCollege.Controllers
         {
             try
             {
-                sendAMessageViewModel.EmailAddress = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.EmailAddress);
+                sendAMessageViewModel.PhoneNumber = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.PhoneNumber);
                 sendAMessageViewModel.Message = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Message);
                 sendAMessageViewModel.Name = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Name);
                 sendAMessageViewModel.Subject = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Subject);
