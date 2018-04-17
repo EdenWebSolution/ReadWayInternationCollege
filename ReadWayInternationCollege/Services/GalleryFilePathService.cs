@@ -11,10 +11,8 @@ namespace ReadWayInternationCollege.Services
 
         public string[] GetImagePath(string albumName)
         {
-            //var ImagePaths = System.IO.File.ReadAllLines(@"~/ReadWayInternationCollege/Files/ImagePaths.txt");
-            var Path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory.ToString(), @"Files\"+ albumName + ".txt");
+            var Path = System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory.ToString(), @"Files\" + albumName + ".txt");
             var ImagePaths = System.IO.File.ReadAllLines(Path);
-
             return ImagePaths;
         }
     }
