@@ -11,11 +11,19 @@ using ReadWayInternationCollege.Enumerations;
 using Microsoft.Security.Application;
 using ReadWayInternationCollege.MailTemplates;
 using System.ComponentModel.DataAnnotations;
+using ReadWayInternationCollege.Services;
 
 namespace ReadWayInternationCollege.Controllers
 {
+
     public class HomeController : Controller
     {
+        private readonly GalleryFilePathService _galleryFilePathService;
+
+        public HomeController(GalleryFilePathService galleryFilePathService)
+        {
+            _galleryFilePathService = galleryFilePathService;
+        }
         public ActionResult Index()
         {
             return View();
@@ -64,7 +72,8 @@ namespace ReadWayInternationCollege.Controllers
 
         public ActionResult Gallery()
         {
-            return View();
+            var ImagePaths=_galleryFilePathService.GetImagePath();
+            return Content(ImagePaths[0]);
         }
 
         [HttpPost]
