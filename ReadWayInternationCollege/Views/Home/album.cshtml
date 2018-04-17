@@ -7,6 +7,14 @@
 }
 
 <ul class="album">
+    @foreach (var path in Model)
+    {
+        <li class="galleryItem">
+            <a class="caption" href="#1" data-title="colored landscape">
+                <img src="@path" alt="Landscape image">
+            </a>
+        </li>
+    }
     <li class="galleryItem">
         <a href="#1" data-title="colored landscape">
             <img src="http://media.digitalcameraworld.com/files/2012/10/Vertorama_landscape_photography_tips_PHO17.insight02and03.vertorama.jpg" alt="Landscape image">
