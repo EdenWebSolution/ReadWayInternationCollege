@@ -16,8 +16,8 @@ namespace ReadWayInternationCollege
 
             routes.MapRoute(
                 name: "Home",
-                url: "Home/album/{albumName}",
-                defaults: new { controller = "Home", action = "Gallery", albumName = UrlParameter.Optional }
+                url: "Home/ShowImages/",
+                defaults: new { controller = "Home", action = "Gallery" }
 );
 
             routes.MapRoute(
