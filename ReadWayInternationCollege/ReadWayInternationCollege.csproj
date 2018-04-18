@@ -243,14 +243,6 @@
     <Content Include="Assets\images\event\up-event-02.jpg" />
     <Content Include="Assets\images\event\up-event-03.jpg" />
     <Content Include="Assets\images\favicon.ico" />
-    <Content Include="Assets\images\gallery\album-01\album-01.jpg" />
-    <Content Include="Assets\images\gallery\album-01\album-02.jpg" />
-    <Content Include="Assets\images\gallery\album-01\album-03.jpg" />
-    <Content Include="Assets\images\gallery\album-01\album-04.jpg" />
-    <Content Include="Assets\images\gallery\album-01\album-05.jpg" />
-    <Content Include="Assets\images\gallery\album-01\album-06.jpg" />
-    <Content Include="Assets\images\gallery\album-01\album-07.jpg" />
-    <Content Include="Assets\images\gallery\album-01\album-08.jpg" />
     <Content Include="Assets\images\gallery\album-covers\album-cover-01.jpg" />
     <Content Include="Assets\images\gallery\album-covers\album-cover-02.jpg" />
     <Content Include="Assets\images\gallery\album-covers\album-cover-03.jpg" />

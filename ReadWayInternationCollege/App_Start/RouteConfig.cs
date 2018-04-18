@@ -13,6 +13,13 @@ namespace ReadWayInternationCollege
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+            routes.MapRoute(
+                name: "Home",
+                url: "Home/album/{id}",
+                defaults: new { controller = "Home", action = "Gallery", id = UrlParameter.Optional }
+);
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

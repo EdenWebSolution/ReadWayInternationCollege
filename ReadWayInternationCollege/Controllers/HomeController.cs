@@ -47,10 +47,12 @@ namespace ReadWayInternationCollege.Controllers
         {
             try
             {
-                sendAMessageViewModel.EmailAddress = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.EmailAddress);
+                sendAMessageViewModel.PhoneNumber = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.PhoneNumber);
                 sendAMessageViewModel.Message = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Message);
                 sendAMessageViewModel.Name = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Name);
                 sendAMessageViewModel.Subject = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Subject);
+                sendAMessageViewModel.EmailAddress = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.EmailAddress);
+
                 var messageBuilder = new EmailBuilder()
                 {
                     From = "d015240@student.nibm.lk",
@@ -77,6 +79,7 @@ namespace ReadWayInternationCollege.Controllers
 
         public ActionResult ShowImages(string albumName)
         {
+            if (string.IsNullOrEmpty(albumName)) return RedirectToAction("Gallery");
             var ImagePaths = _galleryFilePathService.GetImagePath(albumName);
             return View("album", ImagePaths);
         }
