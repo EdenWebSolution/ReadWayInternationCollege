@@ -8552,8 +8552,8 @@
     .galleryItem img {
         width: 250px;
         height: 250px;
+        object-fit:cover;
     }
-
 .lightbox {
     display: none;
     position: fixed;
