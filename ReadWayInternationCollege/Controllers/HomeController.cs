@@ -79,6 +79,7 @@ namespace ReadWayInternationCollege.Controllers
 
         public ActionResult ShowImages(string albumName)
         {
+            if (string.IsNullOrEmpty(albumName)) return RedirectToAction("Gallery");
             var ImagePaths = _galleryFilePathService.GetImagePath(albumName);
             return View("album", ImagePaths);
         }

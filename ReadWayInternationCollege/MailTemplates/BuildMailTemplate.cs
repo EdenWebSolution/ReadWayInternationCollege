@@ -18,9 +18,12 @@ namespace ReadWayInternationCollege.MailTemplates
             {
                 body = reader.ReadToEnd();
             }
+            body = body.Replace("{name}", sendAMessageViewModel.Name);
+            body = body.Replace("{email}", sendAMessageViewModel.EmailAddress);
+            body = body.Replace("{date}", DateTime.Now.Date.ToShortDateString());
+            body = body.Replace("{phonenumber}", sendAMessageViewModel.PhoneNumber);
             body = body.Replace("{subject}", sendAMessageViewModel.Subject);
-            body = body.Replace("{parentName}", sendAMessageViewModel.Name);
-
+            body = body.Replace("{message}", sendAMessageViewModel.Message);
             return body;
         }
     }

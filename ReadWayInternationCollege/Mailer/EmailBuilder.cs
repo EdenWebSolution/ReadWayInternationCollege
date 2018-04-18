@@ -25,7 +25,9 @@ namespace ReadWayInternationCollege.Mailer
         public string From { get; set; }
 
         public string To { get; set; }
+
         public bool IsBodyHtml { get; set; }
+
         public List<string> ToMany { get; set; }
 
 
