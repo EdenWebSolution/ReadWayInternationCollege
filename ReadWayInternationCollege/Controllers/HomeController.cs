@@ -77,10 +77,10 @@ namespace ReadWayInternationCollege.Controllers
             return View();
         }
 
-        public ActionResult ShowImages(string albumName)
+        public ActionResult ShowImages(string id)
         {
-            if (string.IsNullOrEmpty(albumName)) return RedirectToAction("Gallery");
-            var ImagePaths = _galleryFilePathService.GetImagePath(albumName);
+            if (string.IsNullOrEmpty(id)) return RedirectToAction("Gallery");
+            var ImagePaths = _galleryFilePathService.GetImagePath(id);
             return View("album", ImagePaths);
         }
 

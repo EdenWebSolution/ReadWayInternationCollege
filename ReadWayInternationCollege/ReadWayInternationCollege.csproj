@@ -243,6 +243,8 @@
     <Content Include="Assets\images\event\up-event-02.jpg" />
     <Content Include="Assets\images\event\up-event-03.jpg" />
     <Content Include="Assets\images\favicon.ico" />
+    <Content Include="Assets\images\gallery\2018_concert\1.jpg" />
+    <Content Include="Assets\images\gallery\2018_concert\hqdefault.jpg" />
     <Content Include="Assets\images\gallery\album-covers\album-cover-01.jpg" />
     <Content Include="Assets\images\gallery\album-covers\album-cover-02.jpg" />
     <Content Include="Assets\images\gallery\album-covers\album-cover-03.jpg" />
@@ -377,7 +379,7 @@
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
-    <Content Include="Files\album1.txt" />
+    <Content Include="Files\2018-concert.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
