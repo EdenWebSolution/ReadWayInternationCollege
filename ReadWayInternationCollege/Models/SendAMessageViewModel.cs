@@ -13,7 +13,6 @@ namespace ReadWayInternationCollege.Models
         [DataType(DataType.Text)]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Please enter your email address")]
         [EmailAddress(ErrorMessage = "Invalid Email Address")]
         public string EmailAddress { get; set; }
 
