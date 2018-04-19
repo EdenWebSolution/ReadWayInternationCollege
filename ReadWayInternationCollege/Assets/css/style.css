@@ -7066,7 +7066,7 @@
 =====================================================================================================*/
 	
 	.become_teachers header .header-body {
-	    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
+	    background: url("/Assets/images/careers/careers-banner.jpg") no-repeat center center;
 	    min-height: 360px;
 	    background-size: cover;
 	    position: relative;
@@ -7140,12 +7140,20 @@
 	    margin-top: 100px;
 	}
 	.become_teachers .become-teachers-01 .contact-form {
+        min-height:373px;
 	    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
 	}
 	.become_teachers .become-teachers-01 .contact-form h3 {
 	    margin: 0;
 	    padding: 25px 0;
 	}
+    .become_teachers .become-teachers-01 .contact-form ul{
+        padding:0 40px;
+        text-align:left;
+    }
+    .become_teachers .become-teachers-01 .contact-form ul li{
+        padding-bottom:17px;
+    }
 	.become_teachers .become-teachers-01 .contact-form p {
 	    background: #d9edf7;
 	    font-size: 13px;
