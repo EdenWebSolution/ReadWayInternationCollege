@@ -1369,7 +1369,7 @@
 	    transition: all 0.1s ease-in-out;
 	}
 	footer .footer-content-box ul li a:hover {
-	    color: #023f90;
+	    color: #fff;
 	    transition: all 0.1s ease-in-out;
 	    padding-left: 3px;
 	}
