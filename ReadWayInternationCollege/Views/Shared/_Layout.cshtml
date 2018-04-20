@@ -17,7 +17,7 @@
     @Scripts.Render("~/Ajax-scripts")
 </head>
 
-<body class="@(ViewBag.BodyClass==null?string.Empty:ViewBag.BodyClass)">
+<body class="@(ViewBag.BodyClass?? string.Empty)">
     <!-- Preloader -->
 
     <div id="preloader">

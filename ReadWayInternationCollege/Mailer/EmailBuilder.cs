@@ -24,22 +24,23 @@ namespace ReadWayInternationCollege.Mailer
 
         public string From { get; set; }
 
-        public string To { get; set; }
-
         public bool IsBodyHtml { get; set; }
 
-        public string[] ToMany { get; set; }
+        public string[] To { get; set; }
 
 
         public static async Task SendEmailAsync(EmailBuilder messageBuilder)
         {
-            mailMessage = new MailMessage(messageBuilder.From, messageBuilder.To)
+            foreach (var emailAddress in messageBuilder.To)
             {
-                IsBodyHtml = messageBuilder.IsBodyHtml,
-                Subject = messageBuilder.Subject,
-                Body = messageBuilder.Body
-            };
-            await smtpClient.SendMailAsync(mailMessage);
+                mailMessage = new MailMessage(messageBuilder.From, emailAddress)
+                {
+                    IsBodyHtml = messageBuilder.IsBodyHtml,
+                    Subject = messageBuilder.Subject,
+                    Body = messageBuilder.Body
+                };
+                await smtpClient.SendMailAsync(mailMessage);
+            }
         }
     }
 }

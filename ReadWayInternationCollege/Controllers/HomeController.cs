@@ -56,7 +56,7 @@ namespace ReadWayInternationCollege.Controllers
                 var messageBuilder = new EmailBuilder()
                 {
                     From = "d015240@student.nibm.lk",
-                    To = "tnlthanzeel@gmail.com",
+                    To = new string[] { "akmal@gmail.com" },
                     Subject = "Message From Parent",
                     IsBodyHtml = true,
                     Body = BuildMailTemplate.CreateContactUsTemplate(sendAMessageViewModel)
