@@ -20,7 +20,7 @@ namespace ReadWayInternationCollege.MailTemplates
                 body = reader.ReadToEnd();
             }
             body = body.Replace("{name}", sendAMessageViewModel.Name);
-            body = body.Replace("{email}", (sendAMessageViewModel.EmailAddress != "" ? sendAMessageViewModel.EmailAddress : "Email address not provided"));
+            body = body.Replace("{email}", (sendAMessageViewModel.EmailAddress != "" ? sendAMessageViewModel.EmailAddress : " Email address not provided"));
             body = body.Replace("{date}", DateTime.Now.Date.ToShortDateString());
             body = body.Replace("{phonenumber}", sendAMessageViewModel.PhoneNumber);
             body = body.Replace("{subject}", sendAMessageViewModel.Subject);

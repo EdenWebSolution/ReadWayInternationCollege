@@ -28,7 +28,7 @@ namespace ReadWayInternationCollege.Mailer
 
         public bool IsBodyHtml { get; set; }
 
-        public List<string> ToMany { get; set; }
+        public string[] ToMany { get; set; }
 
 
         public static async Task SendEmailAsync(EmailBuilder messageBuilder)
