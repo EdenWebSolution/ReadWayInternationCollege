@@ -1,6 +1,10 @@
 $(document).ready(function () {
     "use strict";
 
+    //---- back to page top button --
+    $('.totop').tottTop();
+    
+
     //Mean Menu
     jQuery('header .main-menu').meanmenu({
         meanScreenWidth: "767"
