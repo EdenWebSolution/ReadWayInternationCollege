@@ -32,22 +32,6 @@
 ======================================*/
 /* Variables */
 
-.totop {
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    cursor: pointer;
-    display: none;
-    background: #a05b7e;
-    color: #fff;
-    border-radius: 25px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 30px;
-    font-size: 18px;
-    z-index:999;
-}
-
 body {
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
@@ -10213,3 +10197,22 @@ footer {
     }
 
 /*..............................Gallery area end...............................*/
+/*.............................To top Button...................................*/
+.totop {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    display: none;
+    background: rgba(2, 63, 144, .7);
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    font-size: 25px;
+    z-index: 999;
+    -moz-box-shadow: 0px 0px 10px #888888;
+    -webkit-box-shadow: 0px 0px 10px #888888;
+    box-shadow: 0px 0px 10px #888888;
+}
+/*.............................To top button end...............................*/
