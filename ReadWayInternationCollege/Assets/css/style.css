@@ -805,9 +805,6 @@ header .tp-rightarrow {
         margin-top: 33px;
     }
 
-        .Welcome-area .welcome-img img {
-            transform: scale(1.05);
-        }
 /*=======[ Index Courses Area Style ]========*/
 
 .Courses-area {
@@ -1549,7 +1546,6 @@ footer {
         }
 
             footer .footer-content-box h3 span {
-                color: #023f90;
                 font-size: 28px;
             }
 
