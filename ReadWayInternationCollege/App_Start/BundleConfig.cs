@@ -33,6 +33,8 @@ namespace ReadWayInternationCollege
                         "~/Assets/js/assets/revolution/extensions/revolution.extension.slideanims.min.js",
                         "~/Assets/js/assets/revolution/extensions/revolution.extension.video.min.js",
                         "~/Assets/js/assets/revolution/revolution.js",
+                        "~/Scripts/totop.js",
+                        "~/Scripts/totop.min.js",
                         "~/Assets/js/custom.js"
                         ));
 
