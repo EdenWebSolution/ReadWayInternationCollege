@@ -160,6 +160,7 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SectionsController.cs" />
     <Compile Include="Enumerations\TransactionStatusEnum.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -419,9 +420,9 @@
     <Content Include="Views\Home\Admissions.cshtml" />
     <Content Include="Views\Home\album.cshtml" />
     <Content Include="Views\Home\Career.cshtml" />
-    <Content Include="Views\Home\Kindergarten.cshtml" />
-    <Content Include="Views\Home\Primary.cshtml" />
-    <Content Include="Views\Home\Secondary.cshtml" />
+    <Content Include="Views\Sections\Kindergarten.cshtml" />
+    <Content Include="Views\Sections\Primary.cshtml" />
+    <Content Include="Views\Sections\Secondary.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
