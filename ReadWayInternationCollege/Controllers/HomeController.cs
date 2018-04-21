@@ -55,14 +55,13 @@ namespace ReadWayInternationCollege.Controllers
 
                 var messageBuilder = new EmailBuilder()
                 {
-                    From = "mohamedakmal03@gmail.com"/*"d015240@student.nibm.lk"*//*"tnlthanzeel@gmail.com"*/,
-                    To = new string[] { "tnlthanzeel@gmail.com", "d015240@student.nibm.lk", "kg.prabhani@gmail.com", "edenbritishacademy@gmail.com", "mohamedakmal03@gmail.com" },
-                    Subject = "Message From Parent",
+                    From = MailingList.MailFromNoReply,
+                    To = MailingList.ToAllStaff,
+                    Subject = "Inquiry",
                     IsBodyHtml = true,
                     Body = BuildMailTemplate.CreateContactUsTemplate(sendAMessageViewModel)
                 };
                 await EmailBuilder.SendEmailAsync(messageBuilder, sendAMessageViewModel.EmailAddress);
-
                 return Json(new { status = TransactionStatusEnum.success, subject = "Sent", message = "Your message has been sent successfully" }, JsonRequestBehavior.AllowGet);
             }
 
@@ -112,7 +111,7 @@ namespace ReadWayInternationCollege.Controllers
 
         }
 
-        
+
 
     }
 }

@@ -366,6 +366,7 @@ header {
 a:active, a:hover {
     background: transparent;
     outline: none;
+    color:#ccc;
 }
 
 header .header-body .edu-navbar .edu-nav .nav li.active a:before,
@@ -5276,7 +5277,7 @@ footer {
 
             .single-courses_v .single-courses-area .sidebar-content .latest-courses .latest-courses-text {
                 background: #fafafa;
-                padding: 40px 45px;
+                padding: 40px 15px;
             }
 
                 .single-courses_v .single-courses-area .sidebar-content .latest-courses .latest-courses-text .latest-single {
@@ -5288,7 +5289,7 @@ footer {
                     }
 
                     .single-courses_v .single-courses-area .sidebar-content .latest-courses .latest-courses-text .latest-single .course-image {
-                        padding: 0;
+                        padding: 0 0 0 20px;
                         height: 80px;
                         width: 100px;
                     }
@@ -9421,12 +9422,12 @@ footer {
                 }
 
         .gallery .events-grid-2 .event-info {
-            padding: 30px 35px;
+            padding: 10px 35px;
         }
 
             .gallery .events-grid-2 .event-info h3 {
                 transition: all 0.3s ease-in-out;
-                padding-bottom: 15px;
+                padding-bottom: 5px;
             }
 
             .gallery .events-grid-2 .event-info .events-time span {
@@ -9444,7 +9445,7 @@ footer {
                 font-size: 15px;
                 font-family: 'Raleway', sans-serif;
                 color: #666666;
-                padding-bottom: 15px;
+                padding-bottom: 5px;
             }
 
             .gallery .events-grid-2 .event-info a {
@@ -10097,20 +10098,49 @@ footer {
 }
 
 .galleryItem {
-    width: 250px;
-    height: 250px;
-    margin: 10px;
+    position:relative;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
     border: solid 0px #fff;
     padding: 0;
     display: inline-block;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.galleryItem a:hover img{
+    transform:scale(1.1);
+    transition: .3s ease-in;
+    border-radius:0;
+    filter: blur(1px);
+    -webkit-filter: blur(1);
+    -moz-filter:blur(1px);
+}
+.galleryItem a .text{
+    position: absolute;
+    top: 40%;
+    left: 43%;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity:0;
+}
+.galleryItem a:hover .text{
+    opacity:1;
+    color:#fff;
 }
 
     .galleryItem img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
+        border-radius: 10px;
+        transition: .3s ease-out;
+        filter: blur(0);
+        -webkit-filter: blur(0);
+        -moz-filter:blur(0);
     }
 
 .lightbox {
