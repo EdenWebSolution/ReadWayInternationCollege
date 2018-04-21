@@ -37,12 +37,13 @@ namespace ReadWayInternationCollege.Mailer
                 {
                     IsBodyHtml = messageBuilder.IsBodyHtml,
                     Subject = messageBuilder.Subject,
-                    Body = messageBuilder.Body,
+                    Body = messageBuilder.Body
                 };
-
                 if (replyTo != "") mailMessage.ReplyToList.Add(replyTo);
+
                 await smtpClient.SendMailAsync(mailMessage);
             }
+            mailMessage.Dispose();
         }
     }
 }
