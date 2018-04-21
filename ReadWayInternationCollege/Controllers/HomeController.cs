@@ -52,12 +52,13 @@ namespace ReadWayInternationCollege.Controllers
                 sendAMessageViewModel.Name = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Name);
                 sendAMessageViewModel.Subject = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Subject);
                 sendAMessageViewModel.EmailAddress = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.EmailAddress);
+                var mailingList = new MailingList();
 
                 var messageBuilder = new EmailBuilder()
                 {
-                    From = "mohamedakmal03@gmail.com"/*"d015240@student.nibm.lk"*//*"tnlthanzeel@gmail.com"*/,
-                    To = new string[] { "tnlthanzeel@gmail.com", "d015240@student.nibm.lk", "kg.prabhani@gmail.com", "edenbritishacademy@gmail.com", "mohamedakmal03@gmail.com" },
-                    Subject = "Message From Parent",
+                    From = mailingList.MailFromNoReply,
+                    To = mailingList.ToAllStaff,
+                    Subject = "Inquiry",
                     IsBodyHtml = true,
                     Body = BuildMailTemplate.CreateContactUsTemplate(sendAMessageViewModel)
                 };
@@ -112,7 +113,7 @@ namespace ReadWayInternationCollege.Controllers
 
         }
 
-        
+
 
     }
 }
