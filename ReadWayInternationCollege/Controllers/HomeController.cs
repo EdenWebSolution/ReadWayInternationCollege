@@ -109,5 +109,21 @@ namespace ReadWayInternationCollege.Controllers
             return View();
 
         }
+
+        public ActionResult Kindergarten()
+        {
+            return View();
+        }
+
+        public ActionResult Primary()
+        {
+            return View();
+        }
+
+        public ActionResult Secondary()
+        {
+            return View();
+        }
+
     }
 }
