@@ -39,7 +39,7 @@ body {
 
 p {
     font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #727272;
     line-height: 24px;
 }
@@ -4654,10 +4654,11 @@ footer {
             .single-courses_v .single-courses-area .single-curses-contert .description-content .requirements ul li {
                 font-family: 'Raleway', sans-serif;
                 line-height: 24px;
-                font-size: 14px;
-                padding-left: 15px;
-                position: relative;
+                font-size: 18px;
+             
+               
                 color: #666666;
+                padding:10px 15px;
             }
 
                 .single-courses_v .single-courses-area .single-curses-contert .description-content .requirements ul li:before {
@@ -4666,7 +4667,7 @@ footer {
                     content: "\f101";
                     font-family: FontAwesome;
                     left: 0;
-                    font-size: 15px;
+                    font-size: 18px;
                 }
 
         .single-courses_v .single-courses-area .single-curses-contert .description-content .count-list ol {
