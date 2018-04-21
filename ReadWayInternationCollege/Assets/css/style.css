@@ -366,6 +366,7 @@ header {
 a:active, a:hover {
     background: transparent;
     outline: none;
+    color:#ccc;
 }
 
 header .header-body .edu-navbar .edu-nav .nav li.active a:before,
@@ -5275,7 +5276,7 @@ footer {
 
             .single-courses_v .single-courses-area .sidebar-content .latest-courses .latest-courses-text {
                 background: #fafafa;
-                padding: 40px 45px;
+                padding: 40px 15px;
             }
 
                 .single-courses_v .single-courses-area .sidebar-content .latest-courses .latest-courses-text .latest-single {
@@ -5287,7 +5288,7 @@ footer {
                     }
 
                     .single-courses_v .single-courses-area .sidebar-content .latest-courses .latest-courses-text .latest-single .course-image {
-                        padding: 0;
+                        padding: 0 0 0 20px;
                         height: 80px;
                         width: 100px;
                     }
@@ -10096,20 +10097,30 @@ footer {
 }
 
 .galleryItem {
-    width: 250px;
-    height: 250px;
-    margin: 10px;
+    width: 300px;
+    height: 300px;
+    margin: 25px;
     border: solid 0px #fff;
     padding: 0;
     display: inline-block;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.galleryItem a:hover img{
+    transform:scale(1.1);
+    transition: .3s ease-in;
+    border-radius:0;
 }
 
     .galleryItem img {
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
+        border-radius: 10px;
+        transition:.3s ease-out;
+        
     }
 
 .lightbox {

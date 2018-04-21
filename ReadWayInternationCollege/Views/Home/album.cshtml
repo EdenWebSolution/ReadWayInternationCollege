@@ -18,3 +18,18 @@
     }
 </ul>
 
+@{
+    counter = 0;
+}
+@foreach (var path in Model)
+{
+    <div class="lightbox" id="@(++counter)">
+        <div class="image">
+            <img src="@path">
+            <a href="#@(counter-1)" class="prev"></a>
+            <a href="#" class="close"></a>
+            <a href="#@(counter+1)" class="next"></a>
+        </div>
+    </div>
+}
+
