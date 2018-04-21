@@ -55,7 +55,7 @@ namespace ReadWayInternationCollege.Controllers
 
                 var messageBuilder = new EmailBuilder()
                 {
-                    From = "d015240@student.nibm.lk"/*"tnlthanzeel@gmail.com"*/,
+                    From = "mohamedakmal03@gmail.com"/*"d015240@student.nibm.lk"*//*"tnlthanzeel@gmail.com"*/,
                     To = new string[] { "tnlthanzeel@gmail.com", "d015240@student.nibm.lk", "kg.prabhani@gmail.com", "edenbritishacademy@gmail.com", "mohamedakmal03@gmail.com" },
                     Subject = "Message From Parent",
                     IsBodyHtml = true,
@@ -68,7 +68,9 @@ namespace ReadWayInternationCollege.Controllers
 
             catch (Exception ex)
             {
-                return Json(new { status = TransactionStatusEnum.fail, subject = "Failed", message = "Oops! Something went wrong while sending your message. Please try again" }, JsonRequestBehavior.AllowGet);
+                return Json(new { status = TransactionStatusEnum.fail, subject = "Failed", message = ex.Message.ToString() }, JsonRequestBehavior.AllowGet);
+
+                //return Json(new { status = TransactionStatusEnum.fail, subject = "Failed", message = "Oops! Something went wrong while sending your message. Please try again" }, JsonRequestBehavior.AllowGet);
             }
         }
 
