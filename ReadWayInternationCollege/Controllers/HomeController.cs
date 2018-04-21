@@ -52,18 +52,16 @@ namespace ReadWayInternationCollege.Controllers
                 sendAMessageViewModel.Name = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Name);
                 sendAMessageViewModel.Subject = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.Subject);
                 sendAMessageViewModel.EmailAddress = Sanitizer.GetSafeHtmlFragment(sendAMessageViewModel.EmailAddress);
-                var mailingList = new MailingList();
 
                 var messageBuilder = new EmailBuilder()
                 {
-                    From = mailingList.MailFromNoReply,
-                    To = mailingList.ToAllStaff,
+                    From = MailingList.MailFromNoReply,
+                    To = MailingList.ToAllStaff,
                     Subject = "Inquiry",
                     IsBodyHtml = true,
                     Body = BuildMailTemplate.CreateContactUsTemplate(sendAMessageViewModel)
                 };
                 await EmailBuilder.SendEmailAsync(messageBuilder, sendAMessageViewModel.EmailAddress);
-
                 return Json(new { status = TransactionStatusEnum.success, subject = "Sent", message = "Your message has been sent successfully" }, JsonRequestBehavior.AllowGet);
             }
 
