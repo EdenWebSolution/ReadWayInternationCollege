@@ -31,8 +31,6 @@ namespace ReadWayInternationCollege.Mailer
 
         public static async Task SendEmailAsync(EmailBuilder messageBuilder, string replyTo)
         {
-            var mailerName = new MailAddress(messageBuilder.From, "Thanzeel");
-
             foreach (var emailAddress in messageBuilder.To)
             {
                 mailMessage = new MailMessage(messageBuilder.From, emailAddress)

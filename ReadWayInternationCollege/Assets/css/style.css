@@ -4656,10 +4656,8 @@ footer {
                 font-family: 'Raleway', sans-serif;
                 line-height: 24px;
                 font-size: 18px;
-             
-               
                 color: #666666;
-                padding:10px 15px;
+                padding: 10px 15px;
             }
 
                 .single-courses_v .single-courses-area .single-curses-contert .description-content .requirements ul li:before {
@@ -6939,7 +6937,7 @@ footer {
 =====================================================================================================*/
 
 .post-1 header .header-body {
-    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
+    background: url("/Assets/images/sections/primary/primary-banner.jpg") no-repeat center center;
     min-height: 360px;
     background-size: cover;
     position: relative;
@@ -7908,7 +7906,7 @@ footer {
 =====================================================================================================*/
 
 .t-profile-01 header .header-body {
-    background: url("/Assets/images/Single_cources/banner-bg.jpg") no-repeat center center;
+    background: url("/Assets/images/sections/secondary/secondary-banner.jpg") no-repeat center center;
     min-height: 360px;
     background-size: cover;
     position: relative;
@@ -8445,13 +8443,22 @@ footer {
         }
 
         .become_teachers .become-teachers-01 .contact-form ul {
-            padding: 0 40px;
+            padding: 30px 40px;
             text-align: left;
+            list-style-type: none;
         }
 
-            .become_teachers .become-teachers-01 .contact-form ul li {
-                padding-bottom: 17px;
-            }
+        .become_teachers .become-teachers-01 .contact-form ul li {
+            padding-bottom: 17px;
+        }
+    .become_teachers .become-teachers-01 .contact-form ul li::before {
+        color: #023f90;
+        position: absolute;
+        content: "\f101";
+        font-family: FontAwesome;
+        left: 30px;
+        font-size: 18px;
+    }
 
         .become_teachers .become-teachers-01 .contact-form p {
             background: #d9edf7;
@@ -9719,7 +9726,7 @@ footer {
     }
 
         .contact .contact-area-02 .maptag h2 {
-            padding-bottom: 40px;
+            padding: 40px 0;
         }
 
     .contact .contact-area-02 .contact-info h2 {
@@ -9971,7 +9978,7 @@ footer {
 =====================================================================================================*/
 
 .login header .header-body {
-    background: url("/Assets/images/register-bg.jpg") no-repeat center center;
+    background: url("/Assets/images/sections/kindergarten/kindergarten.jpg") no-repeat center center;
     min-height: 360px;
     background-size: cover;
     position: relative;
@@ -10110,13 +10117,19 @@ footer {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-.galleryItem a:hover img{
-    transform:scale(1.1);
-    transition: .3s ease-in;
-    border-radius:0;
-    filter: blur(1px);
-    -webkit-filter: blur(1);
-    -moz-filter:blur(1px);
+.galleryItem a:hover img {
+    transform: scale(1.1);
+    border-radius: 0;
+    -webkit-filter: brightness(1.2);
+    -moz-filter: brightness(1.2);
+    -ms-filter: brightness(1.2);
+    -o-filter: brightness(1.2);
+    filter: brightness(1.2);
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
 }
 .galleryItem a .text{
     position: absolute;
@@ -10132,16 +10145,17 @@ footer {
     color:#fff;
 }
 
-    .galleryItem img {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 10px;
-        transition: .3s ease-out;
-        filter: blur(0);
-        -webkit-filter: blur(0);
-        -moz-filter:blur(0);
-    }
+.galleryItem img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
 
 .lightbox {
     display: none;
@@ -10243,3 +10257,145 @@ footer {
     box-shadow: 0px 0px 10px rgba(0,0,0,.5);
 }
 /*.............................To top button end...............................*/
+
+/*...............................Admissions....................................*/
+.admission .sec-pad{
+    padding: 50px 0;
+}
+.admission h2{
+    margin-bottom: 30px;
+    padding-bottom:20px;
+    text-align: left;
+}
+.admission h2:before{
+    border-bottom: 1px solid #333333;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 80px;
+}
+.admission h2 span{
+    font-weight: 300;
+}
+.admission .admission-desc .info {
+    padding: 20px 10px;
+    background: #f1f0f0;
+    border: 2px solid #023f90;
+}
+.admission .admission-desc .info h3{
+    padding-bottom: 10px;
+    text-align:center;
+}
+.admission .admission-desc .info a{
+    display:inline-block;
+    color: inherit;
+}
+.admission .admission-desc .info .send-us{
+    text-align: center;
+}
+.admission .admission-desc .info .send-us a{
+    padding: 10px 15px;
+    background: #023f90;
+    color: #fff;
+    text-transform:uppercase;
+    border: 2px solid transparent;
+}
+.admission .admission-desc .info .send-us a:hover{
+    border: 2px solid #023f90;
+    text-decoration:none;
+    background:#f1f0f0;
+    color: #023f90;
+}
+.admission .admission-desc .info .fa {
+    color: #023f90;
+}
+.admission .applications .application-inner {
+    padding: 45px 0;
+    text-align: center;
+    border-bottom: 2px solid #b5b5b5;
+}
+.admission .applications .application-inner a .download-icon-hover{
+    display:none;
+}
+.admission .applications .application-inner a:hover .download-icon-hover{
+    display:block;
+}
+.admission .applications .application-inner a:hover .download-icon{
+    display:none;
+}
+.admission .applications .application-inner h4{
+    font-size: 35px;
+}
+.admission .applications .application-inner h4 span{
+    font-weight:300;
+}
+/*.............................Admisions end...................................*/
+/*..............................Sections.......................................*/
+.sections .sec-pad {
+    padding: 50px 0;
+}
+.sections h2 {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.sections h2 span{
+    font-weight: 300;
+}
+.sections h2:before {
+    border-bottom: 1px solid #333333;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    position: absolute;
+    width: 80px;
+}
+.sections .sections-desc .info {
+    padding: 20px 10px;
+    background: #f1f0f0;
+    border: 2px solid #023f90;
+}
+.sections .sections-desc .info h3{
+    padding-bottom: 10px;
+    text-align:center;
+}
+.sections .sections-desc .info a{
+    display:inline-block;
+    color: inherit;
+}
+.sections .sections-desc .info .send-us{
+    text-align: center;
+}
+.sections .sections-desc .info .send-us a{
+    padding: 10px 15px;
+    background: #023f90;
+    color: #fff;
+    text-transform:uppercase;
+    border: 2px solid transparent;
+}
+.sections .sections-desc .info .send-us a:hover{
+    border: 2px solid #023f90;
+    text-decoration:none;
+    background:#f1f0f0;
+    color: #023f90;
+}
+.sections .sections-desc .info .fa {
+    color: #023f90;
+}
+.sections .section-part .part-inner{
+    margin: 25px 0;
+    text-align: center;
+}
+.sections .section-part .part-inner h2{
+    margin:0;
+    padding-bottom:10px;
+    text-align:center;
+}
+.sections .section-part .part-inner h2:before{
+   border:none;
+}
+.sections .section-part .part-inner .sec-img{
+    padding:15px 0;
+}
+/*............................sections end.....................................*/
