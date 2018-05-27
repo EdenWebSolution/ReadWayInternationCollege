@@ -366,7 +366,7 @@ header {
 a:active, a:hover {
     background: transparent;
     outline: none;
-    color:#ccc;
+    color: #ccc;
 }
 
 header .header-body .edu-navbar .edu-nav .nav li.active a:before,
@@ -782,6 +782,19 @@ header .tp-rightarrow {
             padding-bottom: 25px;
         }
 
+        .Welcome-area .Welcome-area-text .link-btn a {
+            padding: 10px 15px;
+            color: #023f90;
+            border: 1px solid #023f90;
+        }
+
+            .Welcome-area .Welcome-area-text .link-btn a:hover {
+                text-decoration: none;
+                color: #fff;
+                background: #023f90;
+                border-color:#fff;
+            }
+
     .Welcome-area .read_more-btn {
         color: #333;
         font-size: 16px;
@@ -908,6 +921,7 @@ header .tp-rightarrow {
 
             .Courses-area .single-courses .courses-content-box .courses-content h3 {
                 margin: 0;
+                text-align: center;
             }
 
                 .Courses-area .single-courses .courses-content-box .courses-content h3 a {
@@ -4896,9 +4910,9 @@ footer {
                 }
 
                 .single-courses_v .single-courses-area .single-curses-contert .comments .comment-single-item .img-box {
-                    height: 65px;
+                    height: 120px;
                     padding: 0;
-                    width: 65px;
+                    width: 120px;
                 }
 
                     .single-courses_v .single-courses-area .single-curses-contert .comments .comment-single-item .img-box img {
@@ -8448,17 +8462,18 @@ footer {
             list-style-type: none;
         }
 
-        .become_teachers .become-teachers-01 .contact-form ul li {
-            padding-bottom: 17px;
-        }
-    .become_teachers .become-teachers-01 .contact-form ul li::before {
-        color: #023f90;
-        position: absolute;
-        content: "\f101";
-        font-family: FontAwesome;
-        left: 30px;
-        font-size: 18px;
-    }
+            .become_teachers .become-teachers-01 .contact-form ul li {
+                padding-bottom: 17px;
+            }
+
+                .become_teachers .become-teachers-01 .contact-form ul li::before {
+                    color: #023f90;
+                    position: absolute;
+                    content: "\f101";
+                    font-family: FontAwesome;
+                    left: 30px;
+                    font-size: 18px;
+                }
 
         .become_teachers .become-teachers-01 .contact-form p {
             background: #d9edf7;
@@ -10105,7 +10120,7 @@ footer {
 }
 
 .galleryItem {
-    position:relative;
+    position: relative;
     width: 300px;
     height: 300px;
     margin: 25px;
@@ -10117,45 +10132,48 @@ footer {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
-.galleryItem a:hover img {
-    transform: scale(1.1);
-    border-radius: 0;
-    -webkit-filter: brightness(1.2);
-    -moz-filter: brightness(1.2);
-    -ms-filter: brightness(1.2);
-    -o-filter: brightness(1.2);
-    filter: brightness(1.2);
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
-.galleryItem a .text{
-    position: absolute;
-    top: 40%;
-    left: 43%;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 600;
-    opacity:0;
-}
-.galleryItem a:hover .text{
-    opacity:1;
-    color:#fff;
-}
 
-.galleryItem img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    -webkit-transition: all 0.3s linear;
-    -moz-transition: all 0.3s linear;
-    -o-transition: all 0.3s linear;
-    -ms-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-}
+    .galleryItem a:hover img {
+        transform: scale(1.1);
+        border-radius: 0;
+        -webkit-filter: brightness(1.2);
+        -moz-filter: brightness(1.2);
+        -ms-filter: brightness(1.2);
+        -o-filter: brightness(1.2);
+        filter: brightness(1.2);
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
+
+    .galleryItem a .text {
+        position: absolute;
+        top: 40%;
+        left: 43%;
+        font-size: 35px;
+        text-transform: uppercase;
+        font-weight: 600;
+        opacity: 0;
+    }
+
+    .galleryItem a:hover .text {
+        opacity: 1;
+        color: #fff;
+    }
+
+    .galleryItem img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        -ms-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+    }
 
 .lightbox {
     display: none;
@@ -10259,143 +10277,173 @@ footer {
 /*.............................To top button end...............................*/
 
 /*...............................Admissions....................................*/
-.admission .sec-pad{
+.admission .sec-pad {
     padding: 50px 0;
 }
-.admission h2{
+
+.admission h2 {
     margin-bottom: 30px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     text-align: left;
 }
-.admission h2:before{
-    border-bottom: 1px solid #333333;
-    bottom: 0;
-    content: "";
-    height: 2px;
-    position: absolute;
-    width: 80px;
-}
-.admission h2 span{
-    font-weight: 300;
-}
+
+    .admission h2:before {
+        border-bottom: 1px solid #333333;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        position: absolute;
+        width: 80px;
+    }
+
+    .admission h2 span {
+        font-weight: 300;
+    }
+
 .admission .admission-desc .info {
     padding: 20px 10px;
     background: #f1f0f0;
     border: 2px solid #023f90;
 }
-.admission .admission-desc .info h3{
-    padding-bottom: 10px;
-    text-align:center;
-}
-.admission .admission-desc .info a{
-    display:inline-block;
-    color: inherit;
-}
-.admission .admission-desc .info .send-us{
-    text-align: center;
-}
-.admission .admission-desc .info .send-us a{
-    padding: 10px 15px;
-    background: #023f90;
-    color: #fff;
-    text-transform:uppercase;
-    border: 2px solid transparent;
-}
-.admission .admission-desc .info .send-us a:hover{
-    border: 2px solid #023f90;
-    text-decoration:none;
-    background:#f1f0f0;
-    color: #023f90;
-}
-.admission .admission-desc .info .fa {
-    color: #023f90;
-}
+
+    .admission .admission-desc .info h3 {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .admission .admission-desc .info a {
+        display: inline-block;
+        color: inherit;
+    }
+
+    .admission .admission-desc .info .send-us {
+        text-align: center;
+    }
+
+        .admission .admission-desc .info .send-us a {
+            padding: 10px 15px;
+            background: #023f90;
+            color: #fff;
+            text-transform: uppercase;
+            border: 2px solid transparent;
+        }
+
+            .admission .admission-desc .info .send-us a:hover {
+                border: 2px solid #023f90;
+                text-decoration: none;
+                background: #f1f0f0;
+                color: #023f90;
+            }
+
+    .admission .admission-desc .info .fa {
+        color: #023f90;
+    }
+
 .admission .applications .application-inner {
     padding: 45px 0;
     text-align: center;
     border-bottom: 2px solid #b5b5b5;
 }
-.admission .applications .application-inner a .download-icon-hover{
-    display:none;
-}
-.admission .applications .application-inner a:hover .download-icon-hover{
-    display:block;
-}
-.admission .applications .application-inner a:hover .download-icon{
-    display:none;
-}
-.admission .applications .application-inner h4{
-    font-size: 35px;
-}
-.admission .applications .application-inner h4 span{
-    font-weight:300;
-}
+
+    .admission .applications .application-inner a .download-icon-hover {
+        display: none;
+    }
+
+    .admission .applications .application-inner a:hover .download-icon-hover {
+        display: block;
+    }
+
+    .admission .applications .application-inner a:hover .download-icon {
+        display: none;
+    }
+
+    .admission .applications .application-inner h4 {
+        font-size: 35px;
+    }
+
+        .admission .applications .application-inner h4 span {
+            font-weight: 300;
+        }
 /*.............................Admisions end...................................*/
 /*..............................Sections.......................................*/
 .sections .sec-pad {
     padding: 50px 0;
 }
+
 .sections h2 {
     margin-bottom: 30px;
     padding-bottom: 20px;
     text-align: left;
 }
-.sections h2 span{
-    font-weight: 300;
-}
-.sections h2:before {
-    border-bottom: 1px solid #333333;
-    bottom: 0;
-    content: "";
-    height: 2px;
-    position: absolute;
-    width: 80px;
-}
+
+    .sections h2 span {
+        font-weight: 300;
+    }
+
+    .sections h2:before {
+        border-bottom: 1px solid #333333;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        position: absolute;
+        width: 80px;
+    }
+
 .sections .sections-desc .info {
     padding: 20px 10px;
     background: #f1f0f0;
     border: 2px solid #023f90;
 }
-.sections .sections-desc .info h3{
-    padding-bottom: 10px;
-    text-align:center;
-}
-.sections .sections-desc .info a{
-    display:inline-block;
-    color: inherit;
-}
-.sections .sections-desc .info .send-us{
-    text-align: center;
-}
-.sections .sections-desc .info .send-us a{
-    padding: 10px 15px;
-    background: #023f90;
-    color: #fff;
-    text-transform:uppercase;
-    border: 2px solid transparent;
-}
-.sections .sections-desc .info .send-us a:hover{
-    border: 2px solid #023f90;
-    text-decoration:none;
-    background:#f1f0f0;
-    color: #023f90;
-}
-.sections .sections-desc .info .fa {
-    color: #023f90;
-}
-.sections .section-part .part-inner{
+
+    .sections .sections-desc .info h3 {
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    .sections .sections-desc .info a {
+        display: inline-block;
+        color: inherit;
+    }
+
+    .sections .sections-desc .info .send-us {
+        text-align: center;
+    }
+
+        .sections .sections-desc .info .send-us a {
+            padding: 10px 15px;
+            background: #023f90;
+            color: #fff;
+            text-transform: uppercase;
+            border: 2px solid transparent;
+        }
+
+            .sections .sections-desc .info .send-us a:hover {
+                border: 2px solid #023f90;
+                text-decoration: none;
+                background: #f1f0f0;
+                color: #023f90;
+            }
+
+    .sections .sections-desc .info .fa {
+        color: #023f90;
+    }
+
+.sections .section-part .part-inner {
     margin: 25px 0;
     text-align: center;
 }
-.sections .section-part .part-inner h2{
-    margin:0;
-    padding-bottom:10px;
-    text-align:center;
-}
-.sections .section-part .part-inner h2:before{
-   border:none;
-}
-.sections .section-part .part-inner .sec-img{
-    padding:15px 0;
-}
+
+    .sections .section-part .part-inner h2 {
+        margin: 0;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+        .sections .section-part .part-inner h2:before {
+            border: none;
+        }
+
+    .sections .section-part .part-inner .sec-img {
+        padding: 15px 0;
+    }
 /*............................sections end.....................................*/
