@@ -201,7 +201,6 @@
     <Content Include="Assets\images\about\board2.jpg" />
     <Content Include="Assets\images\about\board3.jpg" />
     <Content Include="Assets\images\about\schoolbadge.jpg" />
-    <Content Include="Assets\images\about\schoolenvironment.jpg" />
     <Content Include="Assets\images\admissions\admissions-banner.jpg" />
     <Content Include="Assets\images\admissions\admissions-circles.jpg" />
     <Content Include="Assets\images\admissions\applications-hover.png" />

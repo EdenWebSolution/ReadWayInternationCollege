@@ -55,7 +55,6 @@ namespace ReadWayInternationCollege.Controllers
 
                 var messageBuilder = new EmailBuilder()
                 {
-                    From = MailingList.MailFromNoReply,
                     To = MailingList.ToAllStaff,
                     Subject = "Inquiry",
                     IsBodyHtml = true,

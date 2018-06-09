@@ -74,7 +74,7 @@ namespace ReadWayInternationCollege
             ));
 
             bundles.Add(new ScriptBundle("~/Bundles/toastr").Include(
-                "~/Scripts/toastr.min.js*"
+                "~/Scripts/toastr.min.js"
                  ));
 
 

@@ -366,12 +366,3 @@ ASALocalRun/
 
 # MSBuild Binary and Structured Log
 *.binlog
-/ReadWayInternationCollege/Assets/css/assets/revolution/layers.min.css
-/ReadWayInternationCollege/Assets/css/assets/revolution/navigation.min.css
-/ReadWayInternationCollege/Assets/css/assets/revolution/settings.min.css
-/ReadWayInternationCollege/Assets/css/assets/magnific-popup.min.css
-/ReadWayInternationCollege/Assets/css/assets/meanmenu.min.css
-/ReadWayInternationCollege/Assets/css/assets/owl.carousel.min.css
-/ReadWayInternationCollege/Assets/css/assets/owl.theme.min.css
-/ReadWayInternationCollege/Assets/css/assets/slick-theme.min.css
-/ReadWayInternationCollege/Assets/css/assets/slick.min.css
