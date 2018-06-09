@@ -62,9 +62,9 @@ namespace ReadWayInternationCollege
                       "~/Assets/css/assets/slick.css",
                       "~/Assets/css/assets/slick-theme.css",
                       "~/Assets/css/assets/meanmenu.css",
-                      "~/Assets/css/style.css",
+                      "~/Assets/css/style.min.css",
                       "~/Assets/css/responsive.css"
-                      ));
+                      ).Include("~/Assets/css/Raleway.css", new CssRewriteUrlTransform())); 
 
 
             #region toastr
