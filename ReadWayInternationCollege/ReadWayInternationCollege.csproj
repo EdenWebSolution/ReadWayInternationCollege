@@ -203,6 +203,7 @@
     <Content Include="Assets\images\about\schoolbadge.jpg" />
     <Content Include="Assets\images\about\schoolenvironment.jpg" />
     <Content Include="Assets\images\admissions\admissions-banner.jpg" />
+    <Content Include="Assets\images\admissions\admissions-circles.jpg" />
     <Content Include="Assets\images\admissions\applications-hover.png" />
     <Content Include="Assets\images\admissions\applications.png" />
     <Content Include="Assets\images\blog\blog-01.jpg" />
@@ -226,6 +227,7 @@
     <Content Include="Assets\images\careers\careers-banner.jpg" />
     <Content Include="Assets\images\contact\bannerpage.jpg" />
     <Content Include="Assets\images\contact\contact-banner.jpg" />
+    <Content Include="Assets\images\EDEN-WEB-LOGOpng.png" />
     <Content Include="Assets\images\event\event-details.jpg" />
     <Content Include="Assets\images\event\events-01.jpg" />
     <Content Include="Assets\images\event\events-02.jpg" />
@@ -308,6 +310,7 @@
     <Content Include="Assets\images\index\welcome.png" />
     <Content Include="Assets\images\loader.gif" />
     <Content Include="Assets\images\logo.png" />
+    <Content Include="Assets\images\logojpg.jpg" />
     <Content Include="Assets\images\logoo.png" />
     <Content Include="Assets\images\post\l-post-03.jpg" />
     <Content Include="Assets\images\post\post-01.jpg" />
@@ -322,9 +325,12 @@
     <Content Include="Assets\images\register-bg.jpg" />
     <Content Include="Assets\images\secondaryLoader.gif" />
     <Content Include="Assets\images\sections\details.jpg" />
+    <Content Include="Assets\images\sections\kindergarten\kindergarten-circles.jpg" />
     <Content Include="Assets\images\sections\kindergarten\kindergarten.jpg" />
     <Content Include="Assets\images\sections\primary\primary-banner.jpg" />
+    <Content Include="Assets\images\sections\primary\primary-circles.jpg" />
     <Content Include="Assets\images\sections\secondary\secondary-banner.jpg" />
+    <Content Include="Assets\images\sections\secondary\secondary-circles.jpg" />
     <Content Include="Assets\images\Single_cources\banner-bg.jpg" />
     <Content Include="Assets\images\Single_cources\comment-01.jpg" />
     <Content Include="Assets\images\Single_cources\course-author.jpg" />
@@ -379,8 +385,7 @@
     </Content>
     <Content Include="Content\toastr.scss" />
     <Content Include="Content\toastr.less" />
-    <None Include="Properties\PublishProfiles\ReadWayInternationalCollege - FTP.pubxml" />
-    <None Include="Properties\PublishProfiles\ReadWayInternationalCollege - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ContactUs.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -399,7 +404,9 @@
     <Content Include="Scripts\toastr.min.js" />
     <Content Include="Scripts\totop.js" />
     <Content Include="Scripts\totop.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>

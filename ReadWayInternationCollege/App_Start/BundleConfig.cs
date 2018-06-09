@@ -70,11 +70,11 @@ namespace ReadWayInternationCollege
             #region toastr
 
             bundles.Add(new StyleBundle("~/toastr/css").Include(
-            "~/Content/toastr.css"
+            "~/Content/toastr.min.css"
             ));
 
             bundles.Add(new ScriptBundle("~/Bundles/toastr").Include(
-                "~/Scripts/toastr.js*"
+                "~/Scripts/toastr.min.js*"
                  ));
 
 

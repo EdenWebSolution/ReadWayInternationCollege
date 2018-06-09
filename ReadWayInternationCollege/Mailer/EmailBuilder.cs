@@ -9,7 +9,7 @@ namespace ReadWayInternationCollege.Mailer
 {
     public class EmailBuilder
     {
-        private static readonly string EncryptionKey = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        //private static readonly string EncryptionKey = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         private static MailMessage mailMessage;
         private static SmtpClient smtpClient;
 
