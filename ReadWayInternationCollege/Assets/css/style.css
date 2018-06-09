@@ -4651,7 +4651,9 @@ footer {
             height: 100%;
             width: 100%;
         }
-
+        .single-courses_v .single-courses-area .single-curses-contert .description-content{
+            padding-top:40px;
+        }
         .single-courses_v .single-courses-area .single-curses-contert .description-content h2 {
             padding-top: 40px;
             padding-bottom: 15px;
