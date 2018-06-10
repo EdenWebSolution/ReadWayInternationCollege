@@ -1,5 +1,4 @@
-﻿@using RedWillow.MvcToastrFlash
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -8,170 +7,183 @@
     <meta name="keywords" content="readway,readway international,readway international college, sri lanka, sri lanka readway, readway sri lanka, dematagoda school,dematagoda international, dematagoda international college, education, institute, responsive, school, teacher, template, university">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Readway International College</title>
-    <link rel="shortcut icon" href="~/Assets/images/favicon.ico" type="image/x-icon">
-    
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    @Styles.Render("~/toastr/css")
-    @Scripts.Render("~/Ajax-scripts")
+    <link rel="shortcut icon" href="~/Assets/images/favicon.ico" type="image/x-icon"> @Styles.Render("~/Content/css")
 </head>
 
 <body class="@(ViewBag.BodyClass?? string.Empty)">
-    <!-- Preloader -->
+    <div id="preloader"> <div id="status">&nbsp;</div></div><header id="header"> <div class="header-top"> <div class="container"> <div class="row"> <div class="col-sm-6 col-xs-12 header-top-left"> <ul class="list-unstyled"> <li> <i class="fa fa-phone top-icon"></i> <a href="tel:+94112669797">0112 669 797</a> </li><li> <i class="fa fa-envelope top-icon"></i> <a href="mailto:info@readwayinternational.com">info@readwayinternational.com</a> </li></ul> </div></div></div></div><div class="header-body"> <nav class="navbar edu-navbar hidden-xs"> <div class="container"> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a href="/Home/Index"><img src="~/Assets/images/logo.png" alt=""></a> </div><div class="collapse navbar-collapse edu-nav main-menu" id="bs-example-navbar-collapse-1"> <ul class="nav navbar-nav"> <li><a class="active" href="/Home/Index">home</a></li><li><a href="/Home/Gallery">gallery</a></li><li><a href="/Home/AboutUs">about us</a></li><li><a href="/Home/Admissions">admissions</a></li><li> <a data-scroll href="#0">sections</a> <ul class="dropdown list-unstyled"> <li><a href="/Sections/Kindergarten">Kindergarten</a></li><li><a href="/Sections/Primary">Primary</a></li><li><a href="/Sections/Secondary">Secondary</a></li></ul> </li><li><a href="/Home/Contact">contact us</a></li><li><a href="/Home/Career">careers</a></li></ul> </div></div></nav> <div class="container"> <div class="row"> <div class="col-md-12"> <div class="intro-text "> <h1>@ViewBag.BannerText</h1> </div></div></div></div></div><!--==================Slider===================--> @RenderSection("Section", false) </header> @RenderBody() <footer> <div class="container"> <div class="row"> <div class=" col-sm-12 footer-content-box"> <div class="col-xs-12 col-sm-4"> <h3><span><i class="fa fa-university footer-h-icon"></i></span>Readway International</h3> <p>We are educators, bound to elevate your passion and find you inspiration, guide you to success and help your dreams come true.</p><ul class="list-unstyled"> <li><span><i class="fa fa-phone footer-icon"></i></span>0112 669 797</li><li><span><i class="fa fa-envelope footer-icon"></i></span>info@readwayinternational.com</li><li><span><i class="fa fa-map-marker footer-icon"></i></span>Readway International College, No.236 Gnanawimala Rd, Colombo - 09</li></ul> </div><div class="col-xs-12 col-sm-3 col-sm-offset-1"> <h3>Quick Links</h3> <ul class="list-unstyled"> <li><a href="/Home/Gallery"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>GALLERY</a></li><li><a href="/Home/AboutUs"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>ABOUT US</a></li><li><a href="/Home/Admissions"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>ADMISSIONS</a></li><li><a href="/Sections/Kindergarten"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>KINDERGARTENS</a></li><li><a href="/Sections/Primary"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>PRIMARY</a></li><li><a href="/Sections/Secondary"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>SECONDARY</a></li><li><a href="/Home/Contact"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>CONTACT US</a></li><li><a href="/Home/Career"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>CAREERS</a></li></ul> </div><div class="col-xs-12 col-sm-4"> <h3>get in touch</h3> <p>Enter your email and we'll send you more information.</p>@using (Ajax.BeginForm("SendMoreInfo", "Home", null, new AjaxOptions { HttpMethod = "POST", OnSuccess = "onFooterAjaxRequestSuccess" }, new { @id = "SendMoreInfoForm", role = "form", name = "SendMoreInfoForm" }))
+    {@Html.AntiForgeryToken() <div class="form-group"> <div id="getIntouchloader" hidden align="center"> <img src="~/Assets/images/whitepngloader.gif" style="height: 80px;" /> <p style="color:cadetblue;align-content:center;font-size:16px;"> sending your message...</p></div><div id="getIntouchID"> <input type="text" id="getInfoEmail" placeholder="Your Email" /> <div class="submit-btn"> <button type="submit" class="text-center">GET STARTED NOW</button> </div></div></div>}</div></div></div></div><div class="footer-bottom"> <div class="container"> <div class="footer-bottom-inner"> <div class="row"> <div class="col-md-8 col-sm-12 footer-no-padding"> <p>&copy; Copyright @DateTime.Now.Year Readway International Colleege of Education | All rights reserved | Web Design by Eden Web Solution </p></div><div class="col-md-4 col-sm-12 footer-no-padding"> <ul class="list-unstyled footer-menu text-right"> <li>Follow us:</li><li><a href="https://www.facebook.com/Readway-International-College-161871674231934/" class="facebook"><i class="fa fa-facebook"></i></a></li><li><a href="https://www.youtube.com/channel/UCsZpXQvipY3ig6Y74gVYYrA" class="youtube"><i class="fa fa-youtube"></i></a></li></ul> </div></div></div></div></div><div class="totop">&uarr;</div></footer> @Styles.Render("~/toastr/css") @Scripts.Render("~/bundles/modernizr") @Scripts.Render("~/Ajax-scripts") @Scripts.Render("~/bundles/jquery") @Scripts.Render("~/bundles/bootstrap") @RenderSection("scripts", required: false) @Scripts.Render("~/Bundles/toastr")
+</body>
+</html>
 
-    <div id="preloader">
-        <div id="status">&nbsp;</div>
-    </div>
 
-    <header id="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 col-xs-12 header-top-left">
-                        <ul class="list-unstyled">
-                            <li>
-                                <i class="fa fa-phone top-icon"></i>
-                                <a href="tel:+94112669797">0112 669 797</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-envelope top-icon"></i>
-                                <a href="mailto:info@readwayinternational.com">info@readwayinternational.com</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div><!-- Ends: .header-top -->
-        <div class="header-body">
-            <nav class="navbar edu-navbar hidden-xs">
+@*<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="description" content="Readway International College, Dematagoda">
+        <meta name="keywords" content="readway,readway international,readway international college, sri lanka, sri lanka readway, readway sri lanka, dematagoda school,dematagoda international, dematagoda international college, education, institute, responsive, school, teacher, template, university">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Readway International College</title>
+        <link rel="shortcut icon" href="~/Assets/images/favicon.ico" type="image/x-icon">
+        @Styles.Render("~/Content/css")
+    </head>
+
+    <body class="@(ViewBag.BodyClass?? string.Empty)">
+        <!-- Preloader -->
+
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+
+        <header id="header">
+            <div class="header-top">
                 <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a href="/Home/Index"><img src="~/Assets/images/logo.png" alt=""></a>
-                    </div>
-                    <div class="collapse navbar-collapse edu-nav main-menu" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li><a class="active" href="/Home/Index">home</a></li>
-                            <li><a href="/Home/Gallery">gallery</a></li>
-                            <li><a href="/Home/AboutUs">about us</a></li>
-                            <li><a href="/Home/Admissions">admissions</a></li>
-                            <li>
-                                <a data-scroll href="#0">sections</a>
-                                <ul class="dropdown list-unstyled">
-                                    <li><a href="/Sections/Kindergarten">Kindergarten</a></li>
-                                    <li><a href="/Sections/Primary">Primary</a></li>
-                                    <li><a href="/Sections/Secondary">Secondary</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/Home/Contact">contact us</a></li>
-                            <li><a href="/Home/Career">careers</a></li>
-                        </ul>
-                    </div><!-- /.navbar-collapse -->
-                </div><!-- /.container -->
-            </nav>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="intro-text ">
-                            <h1>@ViewBag.BannerText</h1>
-                        </div>
-                    </div>
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </div>
-        <!--==================
-            Slider
-        ===================-->
-        @RenderSection("Section", false)
-    </header>
-
-    <!--  End header section-->
-    @RenderBody()
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class=" col-sm-12 footer-content-box">
-                    <div class="col-xs-12 col-sm-4">
-                        <h3><span><i class="fa fa-university footer-h-icon"></i></span>Readway International</h3>
-                        <p>We are educators, bound to elevate your passion and find you inspiration, guide you to success and help your dreams come true.</p>
-                        <ul class="list-unstyled">
-                            <li><span><i class="fa fa-phone footer-icon"></i></span>0112 669 797</li>
-                            <li><span><i class="fa fa-envelope footer-icon"></i></span>info@readwayinternational.com</li>
-                            <li><span><i class="fa fa-map-marker footer-icon"></i></span>Readway International College, No.236 Gnanawimala Rd, Colombo - 09</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-3 col-sm-offset-1">
-                        <h3>Quick Links</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="/Home/Gallery"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>GALLERY</a></li>
-                            <li><a href="/Home/AboutUs"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>ABOUT US</a></li>
-                            <li><a href="/Home/Admissions"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>ADMISSIONS</a></li>
-                            <li><a href="/Sections/Kindergarten"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>KINDERGARTENS</a></li>
-                            <li><a href="/Sections/Primary"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>PRIMARY</a></li>
-                            <li><a href="/Sections/Secondary"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>SECONDARY</a></li>
-                            <li><a href="/Home/Contact"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>CONTACT US</a></li>
-                            <li><a href="/Home/Career"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>CAREERS</a></li>
-
-                        </ul>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4">
-                        <h3>get in touch</h3>
-                        <p>Enter your email and we'll send you more information.</p>
-                        @using (Ajax.BeginForm("SendMoreInfo", "Home", null, new AjaxOptions { HttpMethod = "POST", OnSuccess = "onFooterAjaxRequestSuccess" }, new { @id = "SendMoreInfoForm", role = "form", name = "SendMoreInfoForm" }))
-                        {
-                            @Html.AntiForgeryToken()
-                            <div class="form-group">
-                                <div id="getIntouchloader" hidden align="center">
-                                    <img src="~/Assets/images/whitepngloader.gif" style="height: 80px;" />
-                                    <p style="color:cadetblue;align-content:center;font-size:16px;"> sending your message...</p>
-                                </div>
-                                <div id="getIntouchID">
-                                    <input type="text" id="getInfoEmail" placeholder="Your Email" />
-                                    <div class="submit-btn">
-                                        <button type="submit" class="text-center">GET STARTED NOW</button>
-                                    </div>
-                                </div>
-                            </div>
-                        }
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="footer-bottom-inner">
                     <div class="row">
-                        <div class="col-md-8 col-sm-12 footer-no-padding">
-                            <p>&copy; Copyright @DateTime.Now.Year Readway International Colleege of Education | All rights reserved | Web Design by Eden Web Solution </p>
-                        </div>
-                        <div class="col-md-4 col-sm-12 footer-no-padding">
-                            <ul class="list-unstyled footer-menu text-right">
-                                <li>Follow us:</li>
-                                <li><a href=""><i class="fa fa-facebook facebook"></i></a></li>
-                                <li><a href=""><i class="fa fa-skype skype"></i></a></li>
-                                <li><a href=""><i class="fa fa-twitter twitter"></i></a></li>
-                                <li><a href=""><i class="fa fa-instagram instagram"></i></a></li>
-                                <li><a href=""><i class="fa fa-linkedin google"></i></a></li>
+                        <div class="col-sm-6 col-xs-12 header-top-left">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <i class="fa fa-phone top-icon"></i>
+                                    <a href="tel:+94112669797">0112 669 797</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-envelope top-icon"></i>
+                                    <a href="mailto:info@readwayinternational.com">info@readwayinternational.com</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
+            </div><!-- Ends: .header-top -->
+            <div class="header-body">
+                <nav class="navbar edu-navbar hidden-xs">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="/Home/Index"><img src="~/Assets/images/logo.png" alt=""></a>
+                        </div>
+                        <div class="collapse navbar-collapse edu-nav main-menu" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a class="active" href="/Home/Index">home</a></li>
+                                <li><a href="/Home/Gallery">gallery</a></li>
+                                <li><a href="/Home/AboutUs">about us</a></li>
+                                <li><a href="/Home/Admissions">admissions</a></li>
+                                <li>
+                                    <a data-scroll href="#0">sections</a>
+                                    <ul class="dropdown list-unstyled">
+                                        <li><a href="/Sections/Kindergarten">Kindergarten</a></li>
+                                        <li><a href="/Sections/Primary">Primary</a></li>
+                                        <li><a href="/Sections/Secondary">Secondary</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/Home/Contact">contact us</a></li>
+                                <li><a href="/Home/Career">careers</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </div><!-- /.container -->
+                </nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="intro-text ">
+                                <h1>@ViewBag.BannerText</h1>
+                            </div>
+                        </div>
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
             </div>
-        </div><!-- ./ End footer-bottom -->
-        <div class="totop">&uarr;</div>
-    </footer><!-- ./ End Footer Area-->
+            <!--==================
+                Slider
+            ===================-->
+            @RenderSection("Section", false)
+        </header>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
-    @Scripts.Render("~/Bundles/toastr")
-    @Html.ToastrNotifications()
-</body>
-</html>
+        <!--  End header section-->
+        @RenderBody()
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12 footer-content-box">
+                        <div class="col-xs-12 col-sm-4">
+                            <h3><span><i class="fa fa-university footer-h-icon"></i></span>Readway International</h3>
+                            <p>We are educators, bound to elevate your passion and find you inspiration, guide you to success and help your dreams come true.</p>
+                            <ul class="list-unstyled">
+                                <li><span><i class="fa fa-phone footer-icon"></i></span>0112 669 797</li>
+                                <li><span><i class="fa fa-envelope footer-icon"></i></span>info@readwayinternational.com</li>
+                                <li><span><i class="fa fa-map-marker footer-icon"></i></span>Readway International College, No.236 Gnanawimala Rd, Colombo - 09</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-3 col-sm-offset-1">
+                            <h3>Quick Links</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="/Home/Gallery"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>GALLERY</a></li>
+                                <li><a href="/Home/AboutUs"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>ABOUT US</a></li>
+                                <li><a href="/Home/Admissions"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>ADMISSIONS</a></li>
+                                <li><a href="/Sections/Kindergarten"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>KINDERGARTENS</a></li>
+                                <li><a href="/Sections/Primary"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>PRIMARY</a></li>
+                                <li><a href="/Sections/Secondary"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>SECONDARY</a></li>
+                                <li><a href="/Home/Contact"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>CONTACT US</a></li>
+                                <li><a href="/Home/Career"><span><i class="fa fa-long-arrow-right footer-icon"></i></span>CAREERS</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-4">
+                            <h3>get in touch</h3>
+                            <p>Enter your email and we'll send you more information.</p>
+                            @using (Ajax.BeginForm("SendMoreInfo", "Home", null, new AjaxOptions { HttpMethod = "POST", OnSuccess = "onFooterAjaxRequestSuccess" }, new { @id = "SendMoreInfoForm", role = "form", name = "SendMoreInfoForm" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <div class="form-group">
+                                    <div id="getIntouchloader" hidden align="center">
+                                        <img src="~/Assets/images/whitepngloader.gif" style="height: 80px;" />
+                                        <p style="color:cadetblue;align-content:center;font-size:16px;"> sending your message...</p>
+                                    </div>
+                                    <div id="getIntouchID">
+                                        <input type="text" id="getInfoEmail" placeholder="Your Email" />
+                                        <div class="submit-btn">
+                                            <button type="submit" class="text-center">GET STARTED NOW</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom-inner">
+                        <div class="row">
+                            <div class="col-md-8 col-sm-12 footer-no-padding">
+                                <p>&copy; Copyright @DateTime.Now.Year Readway International Colleege of Education | All rights reserved | Web Design by Eden Web Solution </p>
+                            </div>
+                            <div class="col-md-4 col-sm-12 footer-no-padding">
+                                <ul class="list-unstyled footer-menu text-right">
+                                    <li>Follow us:</li>
+                                    <li><a href="https://www.facebook.com/Readway-International-College-161871674231934/" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCsZpXQvipY3ig6Y74gVYYrA" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- ./ End footer-bottom -->
+            <div class="totop">&uarr;</div>
+        </footer><!-- ./ End Footer Area-->
+        @Styles.Render("~/toastr/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/Ajax-scripts")
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)
+        @Scripts.Render("~/Bundles/toastr")
+    </body>
+    </html>*@

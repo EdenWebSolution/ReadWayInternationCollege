@@ -8,9 +8,7 @@ namespace ReadWayInternationCollege
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            ///AddDefaultIgnorePatterns(bundles.IgnoreList);
-            //bundles.UseCdn = true;
-            //var googleFntsCDN = "https://fonts.googleapis.com/css?family=Montserrat:600,700%7COpen+Sans:400,600";
+            AddDefaultIgnorePatterns(bundles.IgnoreList);
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js",
                         "~/Assets/js/vendor/jquery-1.12.4.min.js",
@@ -33,7 +31,6 @@ namespace ReadWayInternationCollege
                         "~/Assets/js/assets/revolution/extensions/revolution.extension.slideanims.min.js",
                         "~/Assets/js/assets/revolution/extensions/revolution.extension.video.min.js",
                         "~/Assets/js/assets/revolution/revolution.js",
-                        "~/Scripts/totop.js",
                         "~/Scripts/totop.min.js",
                         "~/Assets/js/custom.js"
                         ));
@@ -47,12 +44,12 @@ namespace ReadWayInternationCollege
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Assets/js/assets/bootstrap.min.js",
-                      "~/Scripts/respond.js"));
+                      "~/Scripts/respond.min.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new StyleBundle("~/Content/css"/*, googleFntsCDN*/).Include(
+            bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Assets/css/assets/bootstrap.min.css",
                       "~/Assets/css/assets/font-awesome.min.css",
                       "~/Assets/css/assets/magnific-popup.css",
@@ -81,8 +78,8 @@ namespace ReadWayInternationCollege
             #endregion
 
             bundles.Add(new ScriptBundle("~/Ajax-scripts").Include(
-                "~/Scripts/jquery-1.10.2.js",
-                "~/Scripts/jquery.unobtrusive-ajax.js"
+                "~/Scripts/jquery-1.10.2.min.js",
+                "~/Scripts/jquery.unobtrusive-ajax.min.js"
                 ));
 
             bundles.Add(new ScriptBundle("~/ContactUs/js").Include(

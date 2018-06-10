@@ -17,5 +17,10 @@ namespace ReadWayInternationCollege
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        void Application_PreSendRequestHeaders(Object sender, EventArgs e)
+        {
+            Response.Cache.SetCacheability(HttpCacheability.Public);
+        }
     }
 }

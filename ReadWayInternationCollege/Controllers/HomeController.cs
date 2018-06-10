@@ -1,21 +1,15 @@
 ﻿using ReadWayInternationCollege.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using RedWillow.MvcToastrFlash;
 using ReadWayInternationCollege.Mailer;
 using ReadWayInternationCollege.Enumerations;
 using Microsoft.Security.Application;
 using ReadWayInternationCollege.MailTemplates;
-using System.ComponentModel.DataAnnotations;
 using ReadWayInternationCollege.Services;
 
 namespace ReadWayInternationCollege.Controllers
 {
-
     public class HomeController : Controller
     {
         private readonly GalleryFilePathService _galleryFilePathService;
@@ -107,10 +101,6 @@ namespace ReadWayInternationCollege.Controllers
         public ActionResult Career()
         {
             return View();
-
         }
-
-
-
     }
 }
