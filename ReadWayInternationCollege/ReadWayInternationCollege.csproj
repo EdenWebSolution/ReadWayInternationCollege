@@ -308,6 +308,7 @@
     <Content Include="Files\concert-2018.txt" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="googledb7af12944edc4fa.html" />
     <Content Include="MailTemplates\ContactUsTemplate.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
