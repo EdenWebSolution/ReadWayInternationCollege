@@ -7,6 +7,6 @@ namespace ReadWayInternationCollege.Mailer
 {
     public static class MailingList
     {
-        public readonly static string[] ToAllStaff = new string[] { "tnlthanzeel@gmail.com", "d015240@student.nibm.lk", "kg.prabhani@gmail.com", "edenbritishacademy@gmail.com", "mohamedakmal03@gmail.com", "zu.mailzark@gmail.com" };
+        public readonly static string[] ToAllStaff = new string[] { "admin@readwayinternational.com", "principal@readwayinternational.com", "inquiry@readwayinternational.com"};
     }
 }
